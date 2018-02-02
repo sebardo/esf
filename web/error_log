@@ -1,0 +1,15 @@
+[10-Jan-2018 15:07:56 Europe/Madrid] PHP Fatal error:  require(): Failed opening required '/var/www/vhosts/englishsummerfun.com/httpdocs/symfony/data/vendor/symfony/lib/controller/sfRouting.class.php' (include_path='/home/infodevelop/public_html/esf/lib:/home/infodevelop/public_html/esf:/home/infodevelop/public_html/esf/apps/summer_fun/lib:/home/infodevelop/public_html/esf/config/../data/vendor/symfony/lib/vendor:.
+;
+; Windows: \path1') in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/util/sfCore.class.php on line 168
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 484
+[10-Jan-2018 15:08:11 Europe/Madrid] PHP Deprecated:  Function set_magic_quotes_runtime() is deprecated in /home/infodevelop/public_html/esf/data/vendor/symfony/lib/cache/sfFileCache.class.php on line 491

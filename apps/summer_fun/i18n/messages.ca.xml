@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file orginal="global" source-language="es_ES" datatype="plaintext" date="2013-04-05T10:49:38Z">
+		<body>
+			<trans-unit id="197">
+				<source>condicions_pdf</source>
+				<target>Declaro haver llegit i acceptat les condicions generals i autoritzacions enviades en un document annex al full d’inscripció. Completar amb nom, data i signatura del tutor legal, mare o pare.</target>
+			</trans-unit>
+			<trans-unit id="198">
+				<source>fullInscripcio</source>
+				<target>Full d'inscripció. Codi de la inscripció:</target>
+			</trans-unit>
+
+			<trans-unit id="199">
+				<source>fullInscripcio2</source>
+				<target>Full dades de pagament</target>
+			</trans-unit>
+            <trans-unit id="200">
+				<source>pagament</source>
+				<target>*El pagament s'haurà d'efectuar en el transcurs de cinc dies hàbils indicant al concepte el nom del nen/s.</target>
+			</trans-unit>
+            <trans-unit id="201">
+				<source>error_tipo_fichero</source>
+				<target>Format d'imatge no vàlid. Únicament jpg, jpeg, png, gif i estan permesos</target>
+			</trans-unit>
+            <trans-unit id="202">
+				<source>imagen_no_valida</source>
+				<target>La imatge seleccionada no és vàlida</target>
+			</trans-unit>
+            <trans-unit id="203">
+				<source>imagen_ancho_minimo_menor</source>
+				<target>La imatge ha de tenir un ample mínim de %min_width% píxels</target>
+			</trans-unit>
+            <trans-unit id="204">
+				<source>imagen_alto_minimo_menor</source>
+				<target>La imatge ha de tenir un alt mínim de %min_height% píxels</target>
+			</trans-unit>
+			<trans-unit id="205">
+				<source>Alumne KidsUs</source>
+				<target><![CDATA[Alumne Kids&Us]]></target>
+			</trans-unit>
+			<trans-unit id="206">
+	            <source>Pagament amb rebut domiciliat</source>
+	            <target>Rebut domiciliat</target>
+	        </trans-unit>
+	        <trans-unit>
+		        <source>Seleccione primero un centro por favor</source>
+		        <target>Si us plau, seleccioni un centre</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>Tomar una foto frontal del niño – se puede hacer con cualquier dispositivo móvil.</source>
+		        <target>Feu una foto frontal del nen – es pot fer amb qualsevol dispositiu mòbil.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>Guardar / descargar la imagen en el escritorio.</source>
+		        <target>Guardeu / descarregueu la imatge a l’escriptori.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>En el momento de realizar la inscripción, seleccionarla e iniciar el proceso de carga. El archivo deberá estar en formato de imagen: jpg/png.</source>
+		        <target>En el moment de fer la inscripció, seleccioneu-la i inicieu el procés de càrrega. L’arxiu ha d’estar sempre en format d’imatge: jpg/png.</target>
+		    </trans-unit>
+	        <trans-unit>
+		        <source>privacity_police</source>
+		        <target>En compliment de la Llei Orgànica 15/1999, de 13 de desembre, de Protecció de Dades de caràcter personal, Kids&amp;Us S.L. informa que totes les dades que li siguin facilitades seran tractades amb estricta confidencialitat i que tan sols seran utilitzades amb el propòsit indicat en aquestes bases. L’aportació d’aquestes dades suposa el consentiment del remitent per al seu tractament. Així mateix, informem de la possibilitat d’exercir els drets d’accés, rectificació, oposició i cancel·lació en els termes establerts en la legislació vigent a l’adreça de Kids&amp;Us English S.L., C/ Canonge Montanyà, 1-5 de Manresa.</target>
+		    </trans-unit>
+            <trans-unit>
+		        <source>TPV</source>
+		        <target>Passarel·la de pagament (TPV)</target>
+		    </trans-unit>
+            <trans-unit>
+                <source><![CDATA[You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.]]></source>
+                <target><![CDATA[El seu navegador web és antic i no és compatible amb aquesta plataforma. Si us plau, actualitza el teu navegador web de forma gratuïta fent clic <a href="http://browsehappy.com/">aquí</a>]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>out_of_service</source>
+                <target>El sistema d'inscripcions es troba temporalment fora de servei per tasques de manteniment, si us plau, torni passats uns minuts. Gràcies.</target>
+            </trans-unit>
+			<trans-unit>
+				<source>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</source>
+				<target>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</target>
+			</trans-unit>
+			<trans-unit>
+				<source><![CDATA[Descompte per a alumnes Kids&Us: [1][2]]]></source>
+				<target><![CDATA[Descompte per a alumnes Kids&Us: [1][2]]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>On?</source>
+				<target>Centres</target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans168</source>
+				<target><![CDATA[Curs Kids&Us realitzat:]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans234</source>
+				<target><![CDATA[Altre]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans227</source>
+				<target><![CDATA[Seleccioneu un curs]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans228</source>
+				<target><![CDATA[Seleccioneu el curs que ha fet. Si no apareix al llistat, escriviu-lo al camp &quot;Altre&quot;]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>Descuento</source>
+				<target><![CDATA[Descompte]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>Servicios añadidos</source>
+				<target><![CDATA[Serveis addicionals]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>origin_kids_and_us_center</source>
+				<target><![CDATA[Centre Kids&Us de procedència]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>summer_fun_center</source>
+				<target><![CDATA[Escola de procedència]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>summer_fun_center_other_error</source>
+				<target><![CDATA[Seleccioneu la escola de procedència. Si no apareix al llistat, escriviu-lo al camp &quot;Altre&quot;]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>school_year</source>
+				<target><![CDATA[Curs escolar cursat]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans237</source>
+				<target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?]]></target>
+			</trans-unit>
+			<trans-unit>
+				<source>registration.trans238</source>
+				<target><![CDATA[En cas que l'infant no estigui vacunat, els tutors hauran de passar a signar una declaració de responsabilitat pel centre Kids&Us. Consulta-ho directament en el teu centre.]]></target>
+			</trans-unit>
+			<trans-unit>
+                <source>registration.trans239</source>
+                <target><![CDATA[Alumne Kids&Us]]></target>
+            </trans-unit>
+			<trans-unit>
+				<source>Recordatorio segundo pago</source>
+				<target><![CDATA[Recordatori segon pagament]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,17 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        English Summer Fun | Kids&amp;Us School of English
+    robots:       index, follow
+    description:  "Casal d'estiu per a nens i nenes on viuen experiències divertides i diferents mentre aprenen anglès"
+    keywords:
+    language:     ca
+
+  stylesheets:    [ summer_fun/base.css, summer_fun/main.css, summer_fun/rcorner.css, summer_fun/fonts.css, prettyPhoto.css ]
+
+  javascripts:    [ jq/jquery.js, jq/jquery.lightbox-0.5.js, jq/rcorner.js, kids, jq/jquery.prettyPhoto.js, jq/jquery.form.min.js ]
+
+  has_layout:     on
+  layout:         layout

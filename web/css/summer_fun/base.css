@@ -1,0 +1,28 @@
+body { margin:0; padding:0; font-family:"DINAlternateRegular"; font-size:8.7pt; color:#58585a; }
+#background_wrap {
+    background: url("../../images/summer_fun/backgrounds/body2017.jpg") no-repeat top center #fff;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.clear { clear:both; }
+/*titols*/
+h1, h2, h3, h4, h5 { margin:0; padding:0; }
+/*paragrafs*/
+p { line-height:16px; text-align: justify; }
+/*enllaços*/
+a { outline:none; }
+a:hover {}
+a img { border:none;¬†}
+
+/*MARGES*/
+.nm { margin:0 auto !important; }
+
+/*ALINEACIO*/
+.esquerra { text-align:left; }
+.dreta { text-align:right; }
+.centre { text-align:center; }
+.justificat { text-align:justify; }
