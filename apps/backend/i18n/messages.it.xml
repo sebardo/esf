@@ -1062,6 +1062,10 @@
 				<source>address_tpv:</source>
 				<target><![CDATA[Dirección postal centro (TPV):]]></target>
 			</trans-unit>
+                        <trans-unit>
+                           <source>registration.trans230</source>
+                          <target><![CDATA[Desitjo pagar %importe% euros ara i el següent pagament de %importe% euros abans del %date%.]]></target>
+                         </trans-unit>
 		</body>
 
 	</file>

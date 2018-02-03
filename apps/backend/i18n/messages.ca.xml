@@ -1444,6 +1444,10 @@
         <source>student_excursion:</source>
         <target>Permís excursions</target>
       </trans-unit>
+      <trans-unit>
+         <source>registration.trans230</source>
+        <target><![CDATA[Desitjo pagar %importe% euros ara i el següent pagament de %importe% rutos abans del %date%.]]></target>
+       </trans-unit>
     </body>
   </file>
 </xliff>

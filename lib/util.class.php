@@ -702,7 +702,8 @@ class util extends sfActions
             }
             else {
                 if ($studentInscrCenter->getSecondPaymentDate()) {
-                    $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.', array('%date%' => date("d/m/Y", strtotime($studentInscrCenter->getSecondPaymentDate())))), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
+                    $date = DateTime::createFromFormat('Y-m-d', $studentInscrCenter->getSecondPaymentDate());
+                    $pdf->Cell(0, 0, sfContext::getInstance()->getI18N()->__('registration.trans230', array('%importe%' => ($total/2) , '%date%' => $date->format('d/m/Y'))), 0, 0, 'L', 0, '', 0, false, 'M', 'C');
                 }
             }
 
