@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0">
-    <file orginal="global" source-language="en_Un" datatype="plaintext"
-        date="2011-03-15T10:45:23Z">
+    <file orginal="global" source-language="es_ES" datatype="plaintext"
+          date="2011-03-15T10:45:23Z">
         <body>
             <!-- ##### SF_ADMIN_ DASH ########## -->
             <trans-unit id="19">
@@ -89,11 +89,11 @@
             </trans-unit>
             <trans-unit id="19">
                 <source>Qui som</source>
-                <target>About Us</target>
+                <target>who we are</target>
             </trans-unit>
             <trans-unit id="19">
                 <source>Cursos</source>
-                <target>Courses</target>
+                <target>Cours</target>
             </trans-unit>
             <trans-unit id="19">
                 <source>Notícies</source>
@@ -119,7 +119,8 @@
                 <target></target>
             </trans-unit>
             <trans-unit id="33">
-                <source>[0] no result|[1] 1 result|(1,+Inf] %1% results</source>
+                <source>[0] no result|[1] 1 result|(1,+Inf] %1% results
+                </source>
                 <target></target>
             </trans-unit>
             <trans-unit id="21">
@@ -206,7 +207,7 @@
             </trans-unit>
             <trans-unit id="33">
                 <source>no</source>
-                <target>no</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>yes or no</source>
@@ -250,299 +251,282 @@
             </trans-unit>
             <trans-unit id="33">
                 <source>Did you type the URL?</source>
-                <target>Ha escrito bien la URL?</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>You may have typed the address (URL)
                     incorrectly. Check it to make sure you've got the
                     exact right spelling, capitalization, etc.</source>
-                <target>Puede haber escrito la dirección (URL)
-                    incorrectamente. Compruébelo para asegurarse que la
-                    ortografia es correcta, las mayúsculas, etc.
-                </target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Did you follow a link from somewhere else at
                     this site?</source>
-                <target>Ha seguido un enlace desde esta misma web?
-                </target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>If you reached this page from another part of
                     this site, please email us at [[1]] so we can
                     correct our mistake.</source>
-                <target>Si ha llegado a esta página desde otra parte de
-                    esta web, por favor envíenos un email a [[1]] para
-                    así poder corregir el error.</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Did you follow a link from another site?
                 </source>
-                <target>Ha seguido un enlace desde otra web?</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Links from other sites can sometimes be outdated
                     or misspelled. Email us at [[1]] where you came from
                     and we can try to contact the other site in order to
                     fix the problem.</source>
-                <target>Los enlaces externos a veces están
-                    desactualizados o mal escritos. Envíenos un email a
-                    [[1]] indicando la página de procedencia y nos
-                    intentaremos poner en contacto con la otra web para
-                    arreglar el problema.</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Go to Homepage</source>
-                <target>Ir a la página principal</target>
+                <target></target>
             </trans-unit>
 
 
             <!-- ##### CREDENTIALS SCREEN ########## -->
             <trans-unit id="33">
                 <source>Credentials Required</source>
-                <target>Permisos Insuficientes</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>This page is in a restricted area.</source>
-                <target>Esta página está en una zona restringida.
-                </target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>You do not have the proper credentials to access
                     this page</source>
-                <target>No tiene los permisos adecuados para acceder a
-                    esta página</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Even though you are already logged in, this page
                     requires special credentials that you currently
                     don't have.</source>
-                <target>Aunque ya se ha autenticado, esta página
-                    requiere permisos especiales que su usuario no tiene
-                    asignados.</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>How to access this page</source>
-                <target>Cómo acceder a esta página</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>You must ask a site administrator to grant you
                     some special credentials.</source>
-                <target>Debe pedir al administrador de la web que le
-                    conceda los correspondientes permisos.</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>What's next</source>
-                <target>Posibles acciones</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Back to previous page</source>
-                <target>Volver a la página anterior</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Logout and enter again</source>
-                <target>Salir y entrar de nuevo</target>
+                <target></target>
             </trans-unit>
 
 
             <!-- ##### SF_GUARD ########## -->
             <trans-unit id="33">
                 <source>User list</source>
-                <target>Listado de Usuarios</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Username</source>
-                <target>Nombre usuario</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Last login</source>
-                <target>Última entrada</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Last login:</source>
-                <target>Última entrada:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="">
                 <source>Username:</source>
-                <target>Usuario:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="">
                 <source>Password:</source>
-                <target>Contraseña:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="">
                 <source>Remember me?</source>
-                <target>Recordarme?</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="">
                 <source>Forgot your password?</source>
-                <target>Olvidó su contraseña?</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Password (again):</source>
-                <target>Contraseña (de nuevo):</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="">
                 <source>sign in</source>
-                <target>entrar</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Groups:</source>
-                <target>Grupos:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Edit "%%username%%" user</source>
-                <target>Editar usuario "%%username%%"</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Permissions and groups</source>
-                <target>Permisos y grupos</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Groups/Roles:</source>
-                <target>Grupos/Roles:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>permissions:</source>
-                <target>permisos:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Information</source>
-                <target>Información</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Group list</source>
-                <target>Listado de Grupos</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Name</source>
-                <target>Nombre</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Edit "%%name%%" group</source>
-                <target>Editar grupo "%%name%%"</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Name:</source>
-                <target>Nombre:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Is active:</source>
-                <target>Activado:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Permissions:</source>
-                <target>Permisos:</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Description</source>
-                <target>Descripción</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Permission list</source>
-                <target>Listado de Permisos</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Edit "%%name%%" permission</source>
-                <target>Editar permiso "%%name%%"</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Your username is required</source>
-                <target>El nombre de usuario es obligatorio</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Your password is required</source>
-                <target>La contraseña es obligatoria</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Authentication</source>
-                <target>Autenticación</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Please, enter a username</source>
-                <target>Por favor, escriba un nombre de usuario</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Password is mandatory</source>
-                <target>La contraseña es obligatoria</target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Username or password is not valid.</source>
-                <target>El usuario o la contraseña no son válidos
-                </target>
+                <target></target>
             </trans-unit>
             <trans-unit id="33">
                 <source>Created at</source>
-                <target>Fecha creación</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="1">
                 <source>Canviar contrasenya "admin"</source>
-                <target>Cambiar contraseña "admin"</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="2">
                 <source>Password (again)</source>
-                <target>Contraseña (de nuevo)</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="3">
                 <source>General</source>
-                <target>General</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="4">
                 <source>The minimum length for the password is 4
                 </source>
-                <target>La contraseña ha de tener mínimo 4 caracteres
-                </target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="5">
                 <source>Passwords do not match</source>
-                <target>Las contraseñas no coinciden</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="6">
                 <source>Llistar fitxers Animal Planet (Estudiants)
                 </source>
-                <target>Listar ficheros Animal Planet (Estudiantes)
+                <target>List files Animal Planet (Students)
                 </target>
             </trans-unit>
 
             <trans-unit id="7">
                 <source>Editar fitxer "%%name_ca%%"</source>
-                <target>Editar fichero "%%name_ca%%"</target>
+                <target>Edit file "%%name_ca%%"</target>
             </trans-unit>
 
             <trans-unit id="8">
                 <source>Creat</source>
-                <target>Creado</target>
+                <target>Create</target>
             </trans-unit>
 
             <trans-unit id="9">
                 <source>Publicat</source>
-                <target>Publicado</target>
+                <target>Publish</target>
             </trans-unit>
 
             <trans-unit id="10">
                 <source>Títol:</source>
-                <target>Título:</target>
+                <target>Title</target>
             </trans-unit>
 
             <trans-unit id="11">
                 <source>Descripció:</source>
-                <target>Descripción:</target>
+                <target>Description:</target>
             </trans-unit>
 
             <trans-unit id="12">
                 <source>Arxiu adjunt</source>
-                <target>Archivo adjunto</target>
+                <target>Attachment</target>
             </trans-unit>
 
             <trans-unit id="13">
                 <source>Fitxers de so</source>
-                <target>Ficheros de sonido</target>
+                <target>Sound files</target>
             </trans-unit>
 
             <trans-unit id="14">
@@ -552,129 +536,126 @@
 
             <trans-unit id="15">
                 <source>-Castellà</source>
-                <target>-Castellano</target>
+                <target>-Spanish</target>
             </trans-unit>
 
             <trans-unit id="16">
                 <source>-Anglès</source>
-                <target>-Inglés</target>
+                <target>-English</target>
             </trans-unit>
 
             <trans-unit id="17">
                 <source>Detalls</source>
-                <target>Detalles</target>
+                <target>Details</target>
             </trans-unit>
 
             <trans-unit id="18">
                 <source>Per favor, escrigui el títol del fitxer</source>
-                <target>Por favor, escriba el título del fichero
+                <target>Please write a file name
                 </target>
             </trans-unit>
 
             <trans-unit id="19">
                 <source>La longitud mínima pel títol és 4</source>
-                <target>La longitud mínima para el título es de 4
-                    caracteres</target>
+                <target>The length min is 4 character</target>
             </trans-unit>
 
             <trans-unit id="20">
                 <source>Llistar fitxers Animal Planet (Estudiants 2)
                 </source>
-                <target>Listar ficheros Animal planet (Estudiantes 2)
+                <target>List files Animal Planet (Students 2)
                 </target>
             </trans-unit>
 
             <trans-unit id="21">
                 <source>Llistar fitxers Animal Planet (Professors)
                 </source>
-                <target>Listar ficheros Animal Planet (Profesores)
+                <target>List files Animal Planet Teachers
                 </target>
             </trans-unit>
 
             <trans-unit id="22">
                 <source>El banner "[1]" ha estat mogut a la posició #[2]
                 </source>
-                <target>El banner "[1]" se ha movido a la posición #[2]
+                <target>Banner "[1]" moved to position #[2]
                 </target>
             </trans-unit>
 
             <trans-unit id="23">
                 <source>Could not delete the selected %name%</source>
-                <target>No se puede eliminar %name%</target>
+                <target></target>
             </trans-unit>
 
             <trans-unit id="24">
                 <source>Llistar banners</source>
-                <target>Listar banners</target>
+                <target>List banners</target>
             </trans-unit>
 
             <trans-unit id="25">
                 <source>Editar banner "%%name%%"</source>
-                <target>Editar banner "%%name%%"</target>
+                <target>Edit banner "%%name%%"</target>
             </trans-unit>
 
             <trans-unit id="26">
                 <source>Data creació</source>
-                <target>Fecha creación</target>
+                <target>Creation date</target>
             </trans-unit>
 
             <trans-unit id="27">
                 <source>Nom</source>
-                <target>Nombre</target>
+                <target>Name</target>
             </trans-unit>
 
             <trans-unit id="28">
                 <source>URL enllaç</source>
-                <target>URL enlace</target>
+                <target>URL links</target>
             </trans-unit>
 
             <trans-unit id="29">
                 <source>Posició</source>
-                <target>Posición</target>
+                <target>Position</target>
             </trans-unit>
 
             <trans-unit id="30">
                 <source>Imatge (català)</source>
-                <target>Imagen (catalan)</target>
+                <target>Image (catalan)</target>
             </trans-unit>
 
             <trans-unit id="31">
                 <source>El banner serà visible si té una imatge
                     assignada</source>
-                <target>El banner será visible si tiene una imagen
-                    asociada</target>
+                <target>Banner has been visible if has assigned image</target>
             </trans-unit>
 
             <trans-unit id="32">
                 <source>Imatge (castellà)</source>
-                <target>Imagen (castellano)</target>
+                <target>Image (spanish)</target>
             </trans-unit>
 
             <trans-unit id="33">
                 <source>Imatge (anglès)</source>
-                <target>Imagen (inglés)</target>
+                <target>Image (english)</target>
             </trans-unit>
 
             <trans-unit id="34">
                 <source>Document (català)</source>
-                <target>Documento (catalan)</target>
+                <target>Document (catalan)</target>
             </trans-unit>
 
             <trans-unit id="35">
                 <source>El Banner enllaçarà a la URL en cas que hi hagi
                     URL i Document</source>
-                <target>El Banner enlazará a la URL en caso que exista
-                    una URL y un documento</target>
+                <target>Banner linked to the URL in case an URL and a Document exists</target>
             </trans-unit>
 
             <trans-unit id="36">
                 <source>Document (castellà)</source>
-                <target>Documento (castellano)</target>
+                <target>Document (spanish)</target>
             </trans-unit>
 
             <trans-unit id="37">
                 <source>Document (anglès)</source>
-                <target>Documento (inglés)</target>
+                <target>Document (english)</target>
             </trans-unit>
 
             <trans-unit id="38">
@@ -684,78 +665,77 @@
 
             <trans-unit id="39">
                 <source>URL (castellà)</source>
-                <target>URL (castellano)</target>
+                <target>URL (spanish)</target>
             </trans-unit>
 
             <trans-unit id="40">
                 <source>URL (anglès)</source>
-                <target>URL (inglés)</target>
+                <target>URL (english)</target>
             </trans-unit>
 
             <trans-unit id="41">
                 <source>Castellà</source>
-                <target>Castellano</target>
+                <target>Spanish</target>
             </trans-unit>
 
             <trans-unit id="42">
                 <source>Anglès</source>
-                <target>Inglés</target>
+                <target>English</target>
             </trans-unit>
 
             <trans-unit id="43">
                 <source>Per favor, escrigui el nom del banner</source>
-                <target>Por favor, escriba el nombre del banner</target>
+                <target>Plase write a banner name</target>
             </trans-unit>
 
             <trans-unit id="44">
                 <source>La longitud mínima pel nom és 4</source>
-                <target>La longitud mínima para el nombre es de 4
-                    caracteres</target>
+                <target>The min length is 4 character</target>
             </trans-unit>
 
             <trans-unit id="45">
                 <source>Nom:</source>
-                <target>Nombre:</target>
+                <target>Name:</target>
             </trans-unit>
 
             <trans-unit id="46">
                 <source>Població:</source>
-                <target>Población:</target>
+                <target>City:</target>
             </trans-unit>
 
             <trans-unit id="47">
                 <source>Provincia:</source>
-                <target>Provincia:</target>
+                <target>State:</target>
             </trans-unit>
 
             <trans-unit id="48">
                 <source>Continent:</source>
-                <target>Continente:</target>
+                <target>Continent:</target>
             </trans-unit>
 
             <trans-unit id="49">
                 <source>Llistar centres</source>
-                <target>Listar centros</target>
+                <target>List centers</target>
             </trans-unit>
 
             <trans-unit id="50">
                 <source>Editar centre "%%name%%"</source>
-                <target>Editar centro "%%name%%"</target>
+                <target>Edita centro "%%name%%"</target>
             </trans-unit>
 
             <trans-unit id="51">
                 <source>Adreça:</source>
-                <target>Dirección:</target>
+                <target>Address:</target>
             </trans-unit>
 
             <trans-unit id="52">
                 <source>Població:</source>
-                <target>Población:</target>
+                <target>City:</target>
             </trans-unit>
 
             <trans-unit id="53">
                 <source>Codi postal:</source>
-                <target>Código Postal:</target>
+                <target>Postal code:</target>
             </trans-unit>
 
             <trans-unit id="54">
@@ -770,12 +750,12 @@
 
             <trans-unit id="56">
                 <source>Continent</source>
-                <target>Continente</target>
+                <target>Continent</target>
             </trans-unit>
 
             <trans-unit id="57">
                 <source>Telèfon:</source>
-                <target>Teléfono:</target>
+                <target>Telephone:</target>
             </trans-unit>
 
             <trans-unit id="58">
@@ -795,17 +775,17 @@
 
             <trans-unit id="61">
                 <source>Imatges:</source>
-                <target>Imágenes:</target>
+                <target>Images:</target>
             </trans-unit>
 
             <trans-unit id="62">
                 <source>Documents</source>
-                <target>Documentos</target>
+                <target>Documents</target>
             </trans-unit>
 
             <trans-unit id="63">
                 <source>Text introducció</source>
-                <target>Texto introducción</target>
+                <target>Introducción text</target>
             </trans-unit>
 
             <trans-unit id="64">
@@ -1455,12 +1435,12 @@
 
             <trans-unit>
                 <source>Zones</source>
-                <target>Zones</target>
+                <target>Zonas</target>
             </trans-unit>
 
             <trans-unit>
                 <source>Documents:</source>
-                <target>Documents:</target>
+                <target>Documentos:</target>
             </trans-unit>
 
             <trans-unit>
@@ -1470,17 +1450,32 @@
 
             <trans-unit>
                 <source>Data publicació:</source>
-                <target>Published date:</target>
+                <target>Fecha publicación:</target>
             </trans-unit>
 
             <trans-unit>
                 <source>Està publicada:</source>
-                <target>Is published:</target>
+                <target>Está publicada:</target>
             </trans-unit>
 
             <trans-unit>
                 <source>Usuari:</source>
-                <target>User:</target>
+                <target>Usuario:</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Notícies del centre</source>
+                <target>Noticias del centro</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Tallers</source>
+                <target>Talleres</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Centre:</source>
+                <target>Centro:</target>
             </trans-unit>
 
             <trans-unit>
@@ -1488,94 +1483,1616 @@
                 <target>Opcionalmente puede asignar un usuario para que pueda editar información relacionada con esta zona. El usuario debe de tener el permiso "summer-fun".</target>
             </trans-unit>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <trans-unit id="51">
+                <source>Inscripcions</source>
+                <target>Inscripciones</target>
+            </trans-unit>
+
+            <trans-unit id="52">
+                <source>Selecciona un centre</source>
+                <target>Seleccione un centro</target>
+            </trans-unit>
+
+            <trans-unit id="53">
+                <source>Camp Obligatori</source>
+                <target/></trans-unit>
+
+            <trans-unit id="54">
+                <source>Selecciona un centre de procedència</source>
+                <target>Seleccione un centro de procedencia</target></trans-unit>
+
+            <trans-unit id="55">
+                <source>La data no és correcta</source>
+                <target>La fecha no es correcta</target></trans-unit>
+
+            <trans-unit id="56">
+                <source>L'Email no és correcte</source>
+                <target>El e-mail no es correcto</target></trans-unit>
+
+            <trans-unit id="57">
+                <source>Els Emails no són iguals</source>
+                <target>Los e-mails no son iguales</target></trans-unit>
+
+            <trans-unit id="58">
+                <source>S'ha de seleccionar un dels dos Emails com a principal</source>
+                <target/></trans-unit>
+
+            <trans-unit id="59">
+                <source>Selecciona una setmana</source>
+                <target>Seleccione una semana</target></trans-unit>
+
+            <trans-unit id="60">
+                <source>Ha d'acceptar la política de privacitat</source>
+                <target>Debe aceptar la política de privacidad</target></trans-unit>
+
+            <trans-unit id="61">
+                <source>DADES PERSONALS</source>
+                <target>DATOS PERSONALES</target></trans-unit>
+
+            <trans-unit id="62">
+                <source>Nom alumne/a:</source>
+                <target>Nombre alumno/a:</target></trans-unit>
+
+            <trans-unit id="63">
+                <source>Domicili:</source>
+                <target>Domicilio:</target></trans-unit>
+
+            <trans-unit id="64">
+                <source>Població:</source>
+                <target>Población:</target></trans-unit>
+
+            <trans-unit id="65">
+                <source>Codi Postal:</source>
+                <target>Código postal:</target></trans-unit>
+
+            <trans-unit id="66">
+                <source>Nom i cognoms mare/tutor:</source>
+                <target>Nombre y apellidos padre/madre/tutor legal</target></trans-unit>
+
+            <trans-unit id="67">
+                <source>DNI:</source>
+                <target/></trans-unit>
+
+            <trans-unit id="68">
+                <source>Mòbil:</source>
+                <target>Móvil</target></trans-unit>
+
+            <trans-unit id="69">
+                <source>e-mail:</source>
+                <target/></trans-unit>
+
+            <trans-unit id="70">
+                <source>Nom i cognoms pare/tutor:</source>
+                <target/></trans-unit>
+
+            <trans-unit id="71">
+                <source>DADES ACADÈMIQUES</source>
+                <target>DATOS ACADÉMICOS</target></trans-unit>
+
+            <trans-unit id="72">
+                <source>Escola de procedència:</source>
+                <target>Centro de procedencia:</target></trans-unit>
+
+            <trans-unit id="73">
+                <source>Curs Kids&amp;Us:</source>
+                <target>Curso Kids&amp;Us:</target></trans-unit>
+
+            <trans-unit id="74">
+                <source>DADES MÈDIQUES</source>
+                <target>DATOS MÉDICOS</target></trans-unit>
+
+            <trans-unit id="75">
+                <source>Té algun tipus de malaltia o al·lèrgia?</source>
+                <target>¿Tiene algún tipo de enfermedad o alergia?</target></trans-unit>
+
+            <trans-unit id="76">
+                <source>Té alguna discapacitat que presenti especial dificultat d'integració?</source>
+                <target>¿Tiene alguna discapacidad que presente especial dificultad de integración?</target></trans-unit>
+
+            <trans-unit id="77">
+                <source>DADES INSCRIPCIÓ</source>
+                <target>DATOS DE INSCRIPCIÓN</target></trans-unit>
+
+            <trans-unit id="78">
+                <source>Centre:</source>
+                <target>Centro:</target></trans-unit>
+
+            <trans-unit id="79">
+                <source>Servei d'acollida:</source>
+                <target>Servicio de acogida:</target></trans-unit>
+
+            <trans-unit id="80">
+                <source>Hi ha amics de l'infant que assistiran a les colònies?</source>
+                <target>¿Hay amigos del niño que asistan a los campamentos?</target></trans-unit>
+
+            <trans-unit id="81">
+                <source>En cas afirmatiu, indiqueu nom i cognoms:</source>
+                <target>En caso afirmativo, indicar nombre y apellidos:</target></trans-unit>
+
+            <trans-unit id="82">
+                <source>Setmanes</source>
+                <target>Semanas</target></trans-unit>
+
+            <trans-unit id="83">
+                <source>Nom i cognoms del pare, mare o tutor legal:</source>
+                <target>Nombre y apellidos del padre, madre o tutor legal:</target></trans-unit>
+
+            <trans-unit id="84">
+                <source>Data:</source>
+                <target>Fecha:</target></trans-unit>
+
+            <trans-unit id="85">
+                <source>Signatura</source>
+                <target>Firma</target></trans-unit>
+
+            <trans-unit id="86">
+                <source>DADES DE LA INSCRIPCIÓ</source>
+                <target>DATOS DE LA INSCRIPCIÓN</target></trans-unit>
+
+            <trans-unit id="87">
+                <source>Número d'inscripcions:</source>
+                <target>Número de inscripciones:</target></trans-unit>
+
+            <trans-unit id="88">
+                <source>S'acull a alguna beca?</source>
+                <target>¿Dispone de alguna beca?</target></trans-unit>
+
+            <trans-unit id="89">
+                <source>Especificar:</source>
+                <target/></trans-unit>
+
+            <trans-unit id="90">
+                <source>MODALITAT DE PAGAMENT</source>
+                <target>MODALIDAD DE PAGO</target></trans-unit>
+
+            <trans-unit id="91">
+                <source>Transferència bancària:</source>
+                <target>Transferencia bancaria:</target></trans-unit>
+
+            <trans-unit id="92">
+                <source>Desitjo fer el 100% del pagament.</source>
+                <target>Deseo realizar el 100% de pago.</target></trans-unit>
+
+            <trans-unit id="93">
+                <source>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</source>
+                <target>Deseo realizar el 50% del pago ahora y el siguiente pago antes del %date%.</target>
+            </trans-unit>
+
+            <trans-unit>
+                <source>Desitjo fer el 50% del pagament ara i el següent pagament abans del 31 de maig.</source>
+                <target>Deseo realizar el 50% del pago ahora y el siguiente pago antes del 31 de mayo.</target>
+            </trans-unit>
+
+            <trans-unit id="94">
+                <source>pagament</source>
+                <target>*El pago deberá efectuarse en el transcurso de cinco días hábiles, indicando en el concepto el nombre del niño/s.</target></trans-unit>
+
+            <trans-unit id="95">
+                <source>Inscripció English Summer Fun</source>
+                <target>Inscripción English Summer Fun</target></trans-unit>
+
+            <trans-unit id="96">
+                <source>Dades de l'alumne </source>
+                <target>Datos del alumno </target></trans-unit>
+
+            <trans-unit id="97">
+                <source>Setmanes disponibles</source>
+                <target>Semanas disponibles</target></trans-unit>
+
+            <trans-unit id="98">
+                <source>Servei d'acollida</source>
+                <target>Servicio de acogida</target></trans-unit>
+
+            <trans-unit id="99">
+                <source>Nom complet:</source>
+                <target>Nombre completo:</target></trans-unit>
+
+            <trans-unit id="100">
+                <source>Data de naixement:</source>
+                <target>Fecha de nacimiento:</target></trans-unit>
+
+            <trans-unit id="101">
+                <source>Adreça:</source>
+                <target>Dirección:</target></trans-unit>
+
+            <trans-unit id="102">
+                <source>Codi postal:</source>
+                <target>Código postal:</target></trans-unit>
+
+            <trans-unit id="103">
+                <source>Curs Kids&amp;Us cursat:</source>
+                <target>Curso Kids&amp;Us cursado:</target></trans-unit>
+
+            <trans-unit id="104">
+                <source>default</source>
+                <target/></trans-unit>
+
+            <trans-unit id="105">
+                <source>Amics que vindran al casal:</source>
+                <target>Amigos que asistirán a los campamentos:</target></trans-unit>
+
+            <trans-unit id="106">
+                <source>Indiqueu si l'infant té alguna discapacitat: (En cas afirmatiu es podrà sol·licitar a l'Institut de Persones amb Discapacitat la valoració de reforç en l'equip de monitors.)</source>
+                <target>Indique si el niño / la niña tiene alguna discapacidad: (En caso afirmativo se podrá solicitar al Instituto de Personas con Discapacidad la valoración de refuerzo en el equipo de monitores.)</target></trans-unit>
+
+            <trans-unit id="107">
+                <source>Indiqueu si l'infant té al·lèrgies, intoleràncies o malalties cròniques:</source>
+                <target>Indique si el niño / la niña tiene alguna discapacidad: (En caso afirmativo se podrá solicitar al Instituto de Personas con Discapacidad la valoración de refuerzo en el equipo de monitores.)</target></trans-unit>
+
+            <trans-unit id="108">
+                <source>No</source>
+                <target/></trans-unit>
+
+            <trans-unit id="109">
+                <source>Si, indiqueu quines:</source>
+                <target>Sí, indique cuál/es:</target></trans-unit>
+
+            <trans-unit id="110">
+                <source>S'acull a una beca? Indiqueu si us plau quina:</source>
+                <target>¿Recibe alguna beca? Indique, por favor, cuál:</target></trans-unit>
+
+            <trans-unit id="111">
+                <source>Activeu en cas que les dades dels pares o tutors siguin diferents que el primer fill/a.</source>
+                <target>Activar en caso que los datos de los padres o tutores sean diferentes que el primer hijo/a.</target></trans-unit>
+
+            <trans-unit id="112">
+                <source>Selecciona el centre on vol realitzar la inscripció</source>
+                <target>Seleccione el centro donde quiere realizar la inscripción</target></trans-unit>
+
+            <trans-unit id="113">
+                <source>Següent Pas</source>
+                <target>Siguiente Paso</target></trans-unit>
+
+            <trans-unit id="114">
+                <source>Dades del pare / tutor legar</source>
+                <target/></trans-unit>
+
+            <trans-unit id="116">
+                <source>Telèfon:</source>
+                <target>Teléfono:</target></trans-unit>
+
+            <trans-unit id="117">
+                <source>Email:</source>
+                <target>E-mail:</target></trans-unit>
+
+            <trans-unit id="118">
+                <source>Dades de la mare / tutora legal</source>
+                <target/></trans-unit>
+
+            <trans-unit id="119">
+                <source>Per a inscriure el vostre fill/a a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
+                <target>Para inscribir a su hijo/a en las actividades del English Summer Fun, siga las indicaciones y rellene el formulario siguiente.</target></trans-unit>
+
+            <trans-unit id="120">
+                <source>Dades del centre on realitzarà l'English Summer Fun</source>
+                <target>Datos del centro donde realizará el English Summer Fun</target></trans-unit>
+
+            <trans-unit id="121">
+                <source>Modalitat de pagament</source>
+                <target>Forma de pago</target></trans-unit>
+
+            <trans-unit id="122">
+                <source>Per fer efectiva la inscripció a l'English Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</source>
+                <target>Para hacer efectiva la inscripción en el English Summer Fun, confirme por favor la modalidad de pago deseada.</target></trans-unit>
+
+            <trans-unit id="123">
+                <source>Indiqueu si voleu fraccionar el pagament:</source>
+                <target>Indique si desea fraccionar el pago:</target></trans-unit>
+
+            <trans-unit id="124">
+                <source>Si, pagar ara el 50%</source>
+                <target>Sí, pagar ahora el 50%</target></trans-unit>
+
+            <trans-unit id="125">
+                <source>No, pagar ara el 100%</source>
+                <target>No, pagar ahora el 100%</target></trans-unit>
+
+            <trans-unit id="126">
+                <source>He llegit i accepto la</source>
+                <target>He leído y acepto la</target></trans-unit>
+
+            <trans-unit id="127">
+                <source>política de privacitat</source>
+                <target>política de privacidad</target></trans-unit>
+
+            <trans-unit id="128">
+                <source>PROTECCIÓ DE DADES DE CARÀCTER PERSONAL.</source>
+                <target>Protección de datos de carácter personal.</target></trans-unit>
+
+            <trans-unit id="129">
+                <source>En compliment de la Llei Orgànica 15/1999, de 13 de desembre, de Protecció de Dades de caràcter personal, Kids&amp;Us S.L. informa que totes les dades que li siguin facilitades seran tractades amb estricta confidencialitat i que tan sols seran utilitzades amb el propòsit indicat en aquestes bases. L’aportació d’aquestes dades suposa el consentiment del remitent per al seu tractament. Així mateix, informem de la possibilitat d’exercir els drets d’accés, rectificació, oposició i cancel·lació en els termes establerts en la legislació vigent a l’adreça de Kids&amp;Us English S.L., carrer Cardenal Lluch 3-5 de Manresa.</source>
+                <target>En cumplimiento de la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, Kids&amp;Us S.L. informa de que todos los datos que le sean facilitados serán tratados con estricta confidencialidad y que solo serán utilizados con el propósito indicado en este documento. La aportación de estos datos supone el consentimiento del remitente para su tratamiento. Asimismo, informamos de la posibilidad de ejercer los derechos de acceso, rectificación, oposición y cancelación en los términos establecidos en la legislación vigente en la dirección de Kids&amp;Us English S.L., calle Cardenal Lluch 3-5 de Manresa.</target></trans-unit>
+
+            <trans-unit id="130">
+                <source>Confirmació</source>
+                <target>Confirmación</target></trans-unit>
+
+            <trans-unit id="131">
+                <source>Revisa que les dades de la inscripció siguin correctes.</source>
+                <target>Revisa que los datos de la inscripción sean correctos.</target></trans-unit>
+
+            <trans-unit id="132">
+                <source>Informació general</source>
+                <target>Información general</target></trans-unit>
+
+            <trans-unit id="133">
+                <source>Inscripcions:</source>
+                <target>Inscripciones:</target></trans-unit>
+
+            <trans-unit id="134">
+                <source>Pagament:</source>
+                <target>Pago:</target></trans-unit>
+
+            <trans-unit id="135">
+                <source>Fraccionar pagament:</source>
+                <target>Fraccionar pago:</target></trans-unit>
+
+            <trans-unit id="136">
+                <source>Inscripció</source>
+                <target>Inscripción:</target></trans-unit>
+
+            <trans-unit id="137">
+                <source>Total a pagar</source>
+                <target/></trans-unit>
+
+            <trans-unit id="138">
+                <source>Escola de procedència:</source>
+                <target>Escuela de procedencia:</target></trans-unit>
+
+            <trans-unit id="139">
+                <source>Discapacitats:</source>
+                <target>Discapacidades:</target></trans-unit>
+
+
+            <trans-unit id="141">
+                <source>Beca:</source>
+                <target/></trans-unit>
+
+            <trans-unit id="142">
+                <source>Setmanes de la inscripció</source>
+                <target>Semanas de la inscripción</target></trans-unit>
+
+            <trans-unit id="143">
+                <source>Setmana </source>
+                <target>Semana</target></trans-unit>
+
+            <trans-unit id="144">
+                <source>Matí</source>
+                <target>Mañana</target></trans-unit>
+
+            <trans-unit id="145">
+                <source>Tarda</source>
+                <target>Tarde</target></trans-unit>
+
+            <trans-unit id="146">
+                <source>Dades del pare o tutor legal</source>
+                <target/></trans-unit>
+
+            <trans-unit id="147">
+                <source>Principal de contacte</source>
+                <target>Principal de contacto</target></trans-unit>
+
+            <trans-unit id="148">
+                <source>Dades de la mare o tutora legal</source>
+                <target/></trans-unit>
+
+            <trans-unit id="149">
+                <source>Les dades dels pares o tutors legals son iguals que el primer fill/a.</source>
+                <target>Los datos de los padres o tutores legales son iguales que el primer hijo/a.</target></trans-unit>
+
+            <trans-unit id="150">
+                <source>Modificar</source>
+                <target/></trans-unit>
+
+            <trans-unit id="151">
+                <source>Confirmar</source>
+                <target/></trans-unit>
+
+            <trans-unit id="152">
+                <source>Inscripció realitzada correctament</source>
+                <target>Inscripción realizada correctamente</target></trans-unit>
+
+            <trans-unit id="153">
+                <source>Gràcies per inscriure-us a les activitats de l'English Summer Fun.</source>
+                <target>Gracias por inscribirse en las actividades de la English Summer Fun.</target>
+            </trans-unit>
+
+            <trans-unit id="154">
+                <source>En breus instants rebreu un correu electrònic a l'adreça principal de contacte indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.</source>
+                <target>En breves instantes recibirá un correo electrónico a la dirección principal de contacto indicada donde encontrará la información necesaria para formalizar la reserva y realizar el pago.</target></trans-unit>
+
+
+
+            <trans-unit id="156">
+                <source>El servei d'acollida té un cost adicional de %preu% € per setmana</source>
+                <target/>El servicio de acogida tiene un coste adicional de %preu% € por semana</trans-unit>
+
+            <trans-unit id="157">
+                <source>Benvolguts pares,</source>
+                <target>Apreciados padres,</target></trans-unit>
+
+            <trans-unit id="158">
+                <source>Gràcies per la vostra inscripció a les activitats de l'English Summer Fun.</source>
+                <target>Gracias por vuestra inscripción en las actividades del English Summer Fun.</target></trans-unit>
+
+            <trans-unit id="159">
+                <source>Per formalitzar la reserva, cal que seguiu els passos següents:</source>
+                <target>Para formalizar la reserva, es necesario seguir los siguientes pasos:</target></trans-unit>
+
+            <trans-unit id="160">
+                <source>Descarregueu els PDF.</source>
+                <target>Descargar los documentos PDF.</target></trans-unit>
+
+            <trans-unit id="161">
+                <source>Imprimiu-los.</source>
+                <target>Imprimirlos.</target></trans-unit>
+
+            <trans-unit id="162">
+                <source>Realitzeu el pagament segons condicions.</source>
+                <target>Realizar el pago según condiciones.</target></trans-unit>
+
+            <trans-unit id="163">
+                <source>Signeu el document.</source>
+                <target>Firmar el documento.</target></trans-unit>
+
+            <trans-unit id="164">
+                <source>Presenteu-lo al centre juntament amb una fotografia del nen i una fotocopia de la targeta sanitària, abans del 24 d'abril.</source>
+                <target>Presente en el centro junto con una fotografía del niño y una fotocopia de la tarjeta sanitaria, antes del 24 de abril.</target></trans-unit>
+
+            <trans-unit id="165">
+                <source>El termini per fer el pagament, en la modalitat seleccionada (import total o fragmentat), és de 5 dies hàbils a partir de la recepció d’aquest missatge. En cas que el feu per transferència bancària, haureu de presentar el comprovant de pagament al centre, juntament amb el document PDF de la inscripció signat, una fotografia del nen i una fotocopia de la targeta sanitària abans del 24 d'abril.</source>
+                <target>El plazo para realizar el pago, en la modalidad seleccionada (importe total o fragmentado), es de 5 días hábiles a partir de la recepción de este mensaje. Si se hace por transferencia bancaria, habrá que presentar el comprobante de pago al centro, junto con el documento PDF de la inscripción firmado, una fotografía del niño y una fotocopia de la tarjeta sanitaria antes del 24 de abril.</target></trans-unit>
+
+            <trans-unit id="166">
+                <source>Recordeu que la reserva de plaça només serà efectiva un cop s’hagi efectuat aquest pagament.</source>
+                <target>Os recordamos que la reserva de plaza sólo será efectiva una vez se haya efectuado el pago.</target></trans-unit>
+
+            <trans-unit id="167">
+                <source>Moltes gràcies un cop més per confiar en Kids&amp;Us!</source>
+                <target>Muchas gracias una vez más por confiar en Kids&amp;Us!</target></trans-unit>
+
+            <trans-unit id="168">
+                <source>Atentament, </source>
+                <target>Cordialmente,</target></trans-unit>
+
+            <trans-unit id="169">
+                <source>T. (+34) 902 93 40 23, </source>
+                <target/></trans-unit>
+
+            <trans-unit id="170">
+                <source>Preu:</source>
+                <target>Precio:</target></trans-unit>
+
+            <trans-unit id="171">
+                <source>Llista d'espera</source>
+                <target>Lista de espera</target></trans-unit>
+
+            <trans-unit id="172">
+                <source>No queden plaçes</source>
+                <target>No hay plazas</target></trans-unit>
+
+            <trans-unit id="173">
+                <source>Transferència bancària</source>
+                <target>Transferencia bancaria</target></trans-unit>
+
+            <trans-unit id="174">
+                <source>Vull que aquest sigui l'email principal de contacte per rebre les notificacions del center Kids&amp;Us</source>
+                <target/></trans-unit>
+
+            <trans-unit id="175">
+                <source>Descarrega</source>
+                <target>Descargar</target>
+            </trans-unit>
+
+            <trans-unit id="176">
+                <source>Seleccioneu un centre</source>
+                <target>Seleccionar un centro</target>
+            </trans-unit>
+
+            <trans-unit id="177">
+                <source>Seleccioneu un centre de procedència, sinó apareix al llistat escriu-lo al camp altre </source>
+                <target>Seleccionar un centro de procedencia, si no aparece en el listado, escríbelo en el campo -Otro-</target>
+            </trans-unit>
+
+            <trans-unit id="178">
+                <source>S'ha de seleccionar l'e-mail com a principal</source>
+                <target>Debe seleccionar un e-mail como principal</target>
+            </trans-unit>
+
+            <trans-unit id="179">
+                <source>en cas de no contractar servei d’acollida, deixar en blanc</source>
+                <target>en caso de no contratar el servicio de acogida, dejar en blanco</target>
+            </trans-unit>
+
+            <trans-unit id="180">
+                <source>Sí, indiqueu quines:</source>
+                <target>Sí, indique cuál/es:</target>
+            </trans-unit>
+
+            <trans-unit id="181">
+                <source>Pare / mare / tutor legal</source>
+                <target>Padre / madre / tutor legal</target>
+            </trans-unit>
+
+            <trans-unit id="182">
+                <source>E-mail:</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="183">
+                <source>Per inscriure el vostre fill / la vostra filla a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
+                <target>Para inscribir a su hijo/a en las actividades del English Summer Fun, siga las indicaciones y rellene el formulario siguiente.</target>
+            </trans-unit>
+
+            <trans-unit id="184">
+                <source>Sí, pagar ara el 50%</source>
+                <target>Sí, pagar ahora el 50%</target>
+            </trans-unit>
+
+            <trans-unit id="185">
+                <source>Al·lèrgies, intoleràncies o malalties cròniques:</source>
+                <target>Alergias, intolerancias o enfermedades crónicas:</target>
+            </trans-unit>
+
+            <trans-unit id="186">
+                <source>Recordeu que fins no fer efectiu el pagament no es formalitzarà la reserva de la plaça.</source>
+                <target>Recuerde que hasta no hacer efectivo el pago no se formalizará la reserva de la plaza.</target>
+            </trans-unit>
+
+            <trans-unit id="187">
+                <source>Vull que aquest sigui l'e-mail principal de contacte per rebre les notificacions del centre Kids&amp;Us</source>
+                <target>Quiero que éste sea el e-mail principal de contacto para recibir las notificaciones del centro Kids&amp;Us</target>
+            </trans-unit>
+
+
+
+            <trans-unit id="189">
+                <source>Nom alumne:</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="190">
+                <source>Té algun tipus de malaltia o al·lèrgia:</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="191">
+                <source>Té alguna discapacitat que presenti especial dificultat d'integració:</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="192">
+                <source>Nom i Cognoms:</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="193">
+                <source>Desitjo ferl el 100% del pagament.</source>
+                <target/>
+            </trans-unit>
+
+            <trans-unit id="194">
+                <source>Dades del pare/mare/tutor legal</source>
+                <target>Datos del padre/madre/tutor legal</target>
+            </trans-unit>
+
+            <trans-unit id="195">
+                <source>Dades dels pares/tutors legals de l'alumne</source>
+                <target>Datos de los padres/tutores legales del alumno</target>
+            </trans-unit>
+
+            <trans-unit id="196">
+                <source>Dades dels pares/tutors legals</source>
+                <target>Datos de los padres/tutores legales</target>
+            </trans-unit>
+
+            <trans-unit id="197">
+                <source>condicions_pdf</source>
+                <target>Declaro haber leído y aceptado las condiciones generales y autorizaciones enviadas en un documento anexo a la hoja de inscripción. Completar con nombre, fecha y firma del tutor legal, madre o padre.</target>
+            </trans-unit>
+
+            <trans-unit id="199">
+                <source>fullInscripcio</source>
+                <target>Hoja de inscripción. Código de inscripción:</target>
+            </trans-unit>
+
+
+            <trans-unit id="199">
+                <source>fullInscripcio2</source>
+                <target>Hoja datos de pago</target>
+            </trans-unit>
+
+
+            <trans-unit id="200">
+                <source>Nom i cognoms pare/mare/tutor:</source>
+                <target>Nombre y apellidos padre/madre/tutor:</target></trans-unit>
+
+
+            <trans-unit id="201">
+                <source>Moltes gràcies.</source>
+                <target>Muchas gracias</target>
+            </trans-unit>
+
+            <trans-unit id="202">
+                <source>*Escola de procedència:</source>
+                <target>*Escuela de procedencia:</target>
+            </trans-unit>
+
+            <trans-unit id="203">
+                <source>Altra:</source>
+                <target>Otra:</target>
+            </trans-unit>
+
+            <trans-unit id="204">
+                <source>Repetir e-mail:</source>
+                <target>Repetir e-mail:</target>
+            </trans-unit>
+            <trans-unit id="205">
+                <source>Document per entregar a l'escola un cop signat.</source>
+                <target>Documento para entregar a la escuela una vez firmado.</target>
+            </trans-unit>
+
+            <trans-unit id="206">
+                <source>Nom</source>
+                <target>Nombre</target>
+            </trans-unit>
+            <trans-unit id="207">
+                <source>Cognom 1</source>
+                <target>Primer apellido</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 1:</source>
+                <target>Primer apellido:</target>
+            </trans-unit>
+            <trans-unit id="208">
+                <source>Cognom 2</source>
+                <target>Segundo apellido</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 2:</source>
+                <target>Segundo apellido:</target>
+            </trans-unit>
+            <trans-unit id="209">
+                <source>Grau</source>
+                <target>Grado</target>
+            </trans-unit>
+            <trans-unit id="210">
+                <source>Quina</source>
+                <target>Cuál</target>
+            </trans-unit>
+            <trans-unit id="211">
+                <source>Altres aspectes a tenir en compte:</source>
+                <target>Otros aspectos a tener en cuenta:</target>
+            </trans-unit>
+            <trans-unit id="212">
+                <source>Sol·licita ajut econòmic, beca?:</source>
+                <target>Solicita ayuda económica, beca?:</target>
+            </trans-unit>
+            <trans-unit id="213">
+                <source>Excursions</source>
+                <target>Excursiones</target>
+            </trans-unit>
+            <trans-unit id="214">
+                <source>Sí, done permís per a que l'infant faci excursions</source>
+                <target>Sí, doy permiso para que el niño haga excursiones</target>
+            </trans-unit>
+            <trans-unit id="215">
+                <source>No, no done permís per a que l'infant faci excursions</source>
+                <target>No, no doy permiso para que el niño haga excursiones</target>
+            </trans-unit>
+            <trans-unit id="216">
+                <source>Centre de procedència</source>
+                <target>Centro de procedencia</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Centre de procedència:</source>
+                <target>Centro de procedencia:</target>
+            </trans-unit>
+            <trans-unit id="217">
+                <source>Acollida</source>
+                <target>Acogida</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Editar inscripció</source>
+                <target>Editar inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descripció al·lèrgia:</source>
+                <target>Descripción de la alergia:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Altre:</source>
+                <target>Otro:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Grau de discapacitat:</source>
+                <target>Grado de discapacidad:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Amics:</source>
+                <target>Amigos:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Curs escolar cursat:</source>
+                <target>Curso escolar cursado:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Provincía:</source>
+                <target>Provincia:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Té alguna al·lèrgia?:</source>
+                <target>¿Tiene alguna alergia?:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pregunta personalitzada:</source>
+                <target>Pregunta personalizada:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Grup:</source>
+                <target>Grupo:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pagament fraccionat (50%):</source>
+                <target>Pago fraccionado (50%):</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Modalitat de pagament:</source>
+                <target>Forma de pago:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estat pagament:</source>
+                <target>Estado del pago:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estat inscripció:</source>
+                <target>Estado de la inscripción:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Curs:</source>
+                <target>Curso:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Codi inscripció:</source>
+                <target>Código inscripción:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Data inscripció:</source>
+                <target>Fecha inscripción:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Data inscripció</source>
+                <target>Fecha inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Dades generals</source>
+                <target>Datos generales</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Dades de l'alumne</source>
+                <target>Datos del alumno</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Professor:</source>
+                <target>Profesor:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Resposta pregunta personalitzada:</source>
+                <target>Respuesta pregunta personalizada:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Dades del pare / tutor legal</source>
+                <target>Datos del padre / tutor legal</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Dades de la mare / tutora legal</source>
+                <target>Datos de la madre / tutora legal</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Forma de pagament:</source>
+                <target>Forma de pago:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Centre Inscripció:</source>
+                <target>Centro inscripción:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Setmanes:</source>
+                <target>Weeks</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Codi inscripció</source>
+                <target>Inscription code</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estat pagament</source>
+                <target>Estado pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estat inscripció</source>
+                <target>Estado inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistat d'inscripcions</source>
+                <target>Inscription list</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Usuaris</source>
+                <target>Users</target>
+            </trans-unit>
+            <trans-unit>
+                <source>results</source>
+                <target>resultados</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Centres</source>
+                <target>Centros</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Notícies dels Centres</source>
+                <target>Listar noticias de los centros</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Notícies dels centres</source>
+                <target>Noticias de los centros</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Activitats</source>
+                <target>Actividades</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Grups</source>
+                <target>Groups</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Professors</source>
+                <target>Teachers</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Professors:</source>
+                <target>Teachers:</target>
+            </trans-unit>
+            <trans-unit>
+                <source><![CDATA[Gestió central Kids&Us]]></source>
+                <target><![CDATA[Control panel Kids&Us]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Change password</source>
+                <target></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Títol català:</source>
+                <target>Título catalán:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Títol castellano:</source>
+                <target>Título castellano:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Títol italiano:</source>
+                <target>Título italiano:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Editar Notícia del Centre</source>
+                <target>Editar Noticia del Centro</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumnes llista espera</source>
+                <target>Alumnos lista de espera</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumnes inscrits</source>
+                <target>Alumnos inscritos</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Registre obert ?</source>
+                <target>Registro abierto?</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Registre obert ?:</source>
+                <target>Registro abierto?:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>nº de places</source>
+                <target>Nº of places</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Preu</source>
+                <target>Price</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Horari</source>
+                <target>Hour</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Horari:</source>
+                <target>Hour:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Setmana</source>
+                <target>Week</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Setmana:</source>
+                <target>Week:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Cursos</source>
+                <target>Cours list</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Excursió:</source>
+                <target>Excursion:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Data creació:</source>
+                <target>Fecha de creación:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Els decimals han d'anar separats per un punt (Ex: 00.00)</source>
+                <target>Los decimales debe ir separados por un punto (Ej: 00.00)</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripcions obertes?</source>
+                <target>Inscripciones abiertas?</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Title</source>
+                <target>Título</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Servei d'acollida matí?:</source>
+                <target>Servicio de acogida mañana:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Servei d'acollida tarda?:</source>
+                <target>Servicio de acogida tarde:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Transferència bancària:</source>
+                <target>Transferencia bancaria:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pagament efectiu:</source>
+                <target>Pago en efectivo:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pagament amb rebut domiciliat:</source>
+                <target>Pago con recibo domiciliado:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripcions obertes:</source>
+                <target>Activar inscripciones:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nº de compte:</source>
+                <target>Nº de cuenta:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Suplement per servei d'acollida?:</source>
+                <target>Suplemento por servicio de acogida:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Preu acollida:</source>
+                <target>Precio acogida:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mostrar "check" autorització excursió:</source>
+                <target>Mostrar "check" autorización excursión:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>% de descompte per setmanes:</source>
+                <target>% de descuento por semanas:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Germans:</source>
+                <target>Hermanos:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>% de descompte per germans:</source>
+                <target>% de descuento por hermanos:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Text servei d'acollida:</source>
+                <target>Texto servicio de acogida:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Text email:</source>
+                <target>Texto email:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Condicions generals (PDF):</source>
+                <target>Condiciones generales (PDF):</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pregunta personalitzada (Sí/No):</source>
+                <target>Pregunta personalizada (Si/No):</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripcions Català</source>
+                <target>Inscripciones Catalán</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripcions Castellano</source>
+                <target>Inscripciones Castellano</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripcions Italiano</source>
+                <target>Inscripciones Italiano</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nº de places:</source>
+                <target>Nº de plazas:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Màxim 10 documents. Format PDF o DOC. Pes màxim 2 MB.</source>
+                <target>Máximo 10 documentos. Formato PDF o DOC. Peso máximo 2 MB.</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Opcionalment pot assignar un usuari per a que pugui editar informació relacionada amb aquest centre. El usuari ha de tenir el permís "summer-fun".</source>
+                <target>Opcionalmente puede asignar un usuario para que pueda editar información relacionada con este centro. El usuario debe tener el permiso "summer-fun".</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descripció pagament rebut domiciliat:</source>
+                <target>Descripción pago recibo domiciliado:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Configuració general</source>
+                <target>Configuración general</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Configuració centre</source>
+                <target>Configuración centro</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió notícies</source>
+                <target>Gestión noticias</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió setmanes</source>
+                <target>Gestión semanas</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió excursions</source>
+                <target>Gestión excursiones</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió activitats</source>
+                <target>Gestión actividades</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió inscripcions</source>
+                <target>Gestión inscripciones</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió professors</source>
+                <target>Gestión profesores</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió grups</source>
+                <target>Gestión grupos</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mostrar "beca" en inscripció</source>
+                <target>Mostrar "beca" en inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom infant</source>
+                <target>Nombre niño</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 1 infant</source>
+                <target>Apellido 1 niño</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 2 infant</source>
+                <target>Apellido 2 niño</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom pare/mare/tutor</source>
+                <target>Nombre padre/madre/tutor</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 1 pare/mare/tutor</source>
+                <target>Apellido 2 padre/madre/tutor</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cognom 2 pare/mare/tutor</source>
+                <target>Apellido 2 padre/madre/tutor</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom Tutor</source>
+                <target>Nombre Tutor</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Comptabilitat</source>
+                <target>Contabilidad</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mostrar tots</source>
+                <target>Mostrar todos</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mostrar pendents de pagament</source>
+                <target>Mostrar pendientes de pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cód. inscripció</source>
+                <target>Cód. inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mod. pagament</source>
+                <target>Forma de pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import beca</source>
+                <target>Importe beca</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import descompte</source>
+                <target>Importe descuento</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import 1er pag.</source>
+                <target>Importe 1er pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import 2on pag.</source>
+                <target>Importe 2do pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import total</source>
+                <target>Importe total</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Import pendent</source>
+                <target>Importe pendiente</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom Alumne</source>
+                <target>Nombre alumno</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Mod. de pagament</source>
+                <target>Forma de pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Importe pendent de cobrar</source>
+                <target>Importe pendiente de cobro</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Efectiu</source>
+                <target>Efectivo</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Transferència</source>
+                <target>Transferencia</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Rebut</source>
+                <target>Recibo</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Núm. targeta sanitària</source>
+                <target>Núm. tarjeta sanitaria</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Companyia</source>
+                <target>Compañía</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Grau discapacitat</source>
+                <target>Grado de discapacidad</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descarregar fotos</source>
+                <target>Descargar fotos</target>
+            </trans-unit>
             <trans-unit>
                 <source>no_group</source>
-                <target>Without group</target>
+                <target>Sin grupo</target>
             </trans-unit>
             <trans-unit>
                 <source>payment_date</source>
-                <target>Payment date</target>
+                <target>Fecha de pago</target>
             </trans-unit>
             <trans-unit>
                 <source>date_from</source>
-                <target>From:</target>
+                <target>Desde:</target>
             </trans-unit>
             <trans-unit>
                 <source>date_to</source>
-                <target>To:</target>
+                <target>Hasta:</target>
             </trans-unit>
             <trans-unit>
                 <source>mark_as_paid</source>
-                <target>Mark paid</target>
+                <target>Marcar como pagado</target>
+            </trans-unit>
+            <trans-unit>
+                <source>mark_half_as_paid</source>
+                <target>Marcar la mitad pagado</target>
             </trans-unit>
             <trans-unit>
                 <source>mark_as_paid_question</source>
-                <target>Are you sure you want to mark as paid the inscription?</target>
+                <target>¿Seguro que quiere marcar la inscripción como pagada?</target>
+            </trans-unit>
+            <trans-unit>
+                <source>mark_as_half_paid_question</source>
+                <target>¿Seguro que quiere marcar la inscripción como pagada al 50%?</target>
             </trans-unit>
             <trans-unit>
                 <source>number_of_becas</source>
-                <target>Number of becas</target>
+                <target>Número de becas</target>
             </trans-unit>
             <trans-unit>
                 <source>amount_becas</source>
-                <target>Amount becas</target>
+                <target>Importe becas</target>
             </trans-unit>
             <trans-unit>
                 <source>amount_first_payment</source>
-                <target>Amount first payment</target>
+                <target>Importe primer pago</target>
             </trans-unit>
 
             <trans-unit>
                 <source>Horari d'acollida matí:</source>
-                <target>Morning shelter schedule:</target>
+                <target>Horario de acogida mañana:</target>
             </trans-unit>
             <trans-unit>
                 <source>Horari d'acollida tarda:</source>
-                <target>Afternoon shelter schedule:</target>
+                <target>Horario de acogida tarde:</target>
             </trans-unit>
 
             <trans-unit>
                 <source>Francès</source>
-                <target>French</target>
+                <target>Francés</target>
             </trans-unit>
 
             <trans-unit>
-                <source>Pagament TPV</source>
-                <target>TPV Payment</target>
+                <source>Pagament TPV:</source>
+                <target>Pago TPV:</target>
             </trans-unit>
-
+            <trans-unit>
+                <source>Telèfons</source>
+                <target>Teléfonos</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Usuaris:</source>
+                <target>Usuarios:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Generar full inscripció</source>
+                <target>Generar hoja de inscripción</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Generar fitxa de l'alumne</source>
+                <target>Generar ficha del alumno</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Curs escolar cursat</source>
+                <target>Curso escolar cursado</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Data enviament recordatori 2on pagament:</source>
+                <target>Fecha de envío recordatorio 2o pago:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>text_email_body_tpv:</source>
+                <target>Texto email recordatorio segundo pago (TPV):</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Alumne / Setmana</source>
+                <target>Alumno / Semana</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Al·lèrgies</source>
+                <target>Alergias</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Grup</source>
+                <target>Grupo</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió serveis</source>
+                <target>Gestión servicios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Serveis</source>
+                <target>Listar servicios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Servei %%name%%</source>
+                <target>Servicio %%name%%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Excursió %%nombre%%</source>
+                <target>Excursión %%nombre%%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Gestió d'horaris de serveis</source>
+                <target>Gestión de horarios de servicios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Horaris</source>
+                <target>Listar horarios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Edició horari</source>
+                <target>Edición horario</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Horaris</source>
+                <target>Horarios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Servei</source>
+                <target>Servicio</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Serveis</source>
+                <target>Servicios</target>
+            </trans-unit>
             <trans-unit>
                 <source>Serveis addicionals</source>
-                <target>Additional services</target>
-            </trans-unit>
-
-            <trans-unit>
-                <source>Descompte (%)</source>
-                <target>Discount (%)</target>
+                <target>Servicios adicionales</target>
             </trans-unit>
             <trans-unit>
-                <source>Beca:</source>
-                <target>Scholarship:</target>
+                <source>Servei:</source>
+                <target>Servicio:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Serveis:</source>
+                <target>Servicios:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Afegir horari</source>
+                <target>Añadir horario</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Activitats</source>
+                <target>Listar Actividades</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Horaris de serveis</source>
+                <target>Horarios de servicios</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Setmana %%_summer_fun_center_id_list%%</source>
+                <target>Semana %%_summer_fun_center_id_list%%</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Llistar Setmanes</source>
+                <target>Listar Semanas</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estat</source>
+                <target>Estado</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Ordre</source>
+                <target>Orden</target>
+            </trans-unit>
+            <trans-unit>
+                <source>TPV</source>
+                <target>Pasarela de pago (TPV)</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descompte</source>
+                <target>Descuento</target>
             </trans-unit>
             <trans-unit>
                 <source>Targeta bancària</source>
-                <target>Credit card</target>
+                <target>Tarjeta bancaria</target>
+            </trans-unit>
+            <trans-unit>
+                <source>first_payment_date</source>
+                <target>1er pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>second_payment_date</source>
+                <target>2o pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Pujar foto</source>
+                <target>Subir foto</target>
+            </trans-unit>
+            <trans-unit>
+                <source>second_payment_date:</source>
+                <target>Fecha segundo pago:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Formes de pagament</source>
+                <target>Formas de pago</target>
+            </trans-unit>
+            <trans-unit>
+                <source>wrong_discounts</source>
+                <target>Error en valores de los descuentos. Sólo se permite un tipo de descuento (% o €)</target>
+            </trans-unit>
+            <trans-unit>
+                <source>week_discount_help</source>
+                <target>Número de semanas a partir de la cual se aplica el descuento</target>
+            </trans-unit>
+            <trans-unit>
+                <source>decimal_help</source>
+                <target>Para introducir un número decimal, utilizar el punto como separador. Ej.: 2.5</target>
+            </trans-unit>
+            <trans-unit>
+                <source>brothers_discount_help</source>
+                <target>Número de hermanos a partir del cual se aplica el descuento</target>
+            </trans-unit>
+            <trans-unit>
+                <source>student_kids_and_us:</source>
+                <target><![CDATA[Alumno Kids&Us:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>discounts_help_title</source>
+                <target><![CDATA[Información importante]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>discounts_help_1</source>
+                <target><![CDATA[Los descuentos se aplican siempre sobre el importe total base de la inscripción. El importe base total es el resultado del coste de las semanas por niño/a, queda excluido el precio de los servicios.]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>discounts_help_2</source>
+                <target><![CDATA[Los descuentos son acumulables. Si por ejemmplo se activan todos los desceuntos con un 5%, una inscripción que cumpla con las tres condiciones obtendrá un descuento del 15%.]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>discounts_help_3</source>
+                <target><![CDATA[Cada tipología de descuento acepta un valor en € o en %, no siendo posible indicar un valor en euros y un % a la vez.]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Email del centre:</source>
+                <target><![CDATA[Email del centro]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Text email confirmació:</source>
+                <target><![CDATA[Texto email de confirmación]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripció activa:</source>
+                <target><![CDATA[Inscripción activa]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.trans168</source>
+                <target><![CDATA[Curso Kids&Us realizado]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.trans168:</source>
+                <target><![CDATA[Curso Kids&Us realizado:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>text_email_body_no_tpv:</source>
+                <target><![CDATA[Texto email recordatorio de pago (Sin TPV):]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>split_payment</source>
+                <target><![CDATA[Pago aplazado]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>custom_discount_text:</source>
+                <target><![CDATA[Texto descuento personalizado:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>origin_kids_and_us_center:</source>
+                <target><![CDATA[Centro Kids&Us de procedencia:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>origin_kids_and_us_center</source>
+                <target><![CDATA[Centro Kids&Us de procedencia]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>origin_kids_and_us_center_other:</source>
+                <target><![CDATA[Otra escuela de procedencia:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Té alguna discapacitat?:</source>
+                <target><![CDATA[¿Tiene alguna discapacidad?]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descarregar Fotos</source>
+                <target><![CDATA[Descargar Fotos]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Companyia:</source>
+                <target><![CDATA[Compañia:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Descripció discapacitat:</source>
+                <target><![CDATA[Descripción discapacidad:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Dades de la mare / tutora legal</source>
+                <target><![CDATA[Datos de la madre / tutora legal]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscrit</source>
+                <target><![CDATA[Inscrito]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>En llista d'espera</source>
+                <target><![CDATA[En lista de espera]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>summer_fun_center</source>
+                <target><![CDATA[Escuela de procedencia]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>summer_fun_center:</source>
+                <target><![CDATA[Escuela de procedencia:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>summer_fun_center_other</source>
+                <target><![CDATA[Escuela de procedencia (otra)]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>summer_fun_center_other:</source>
+                <target><![CDATA[Escuela de procedencia (otra):]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source><![CDATA[Centre Kids&Us de procedència:]]></source>
+                <target><![CDATA[Centro Kids&Us de procedencia:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>school_year</source>
+                <target><![CDATA[Curso escolar cursado]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>school_year:</source>
+                <target><![CDATA[Curso escolar cursado:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.is_vaccinated:</source>
+                <target><![CDATA[¿El niño esta vacunado de acuerdo con el calendario de vacunaciones establecido por el organismo competente?:]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.vaccinated</source>
+                <target><![CDATA[Vacunado]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.trans237</source>
+                <target><![CDATA[¿El niño/a está vacunado/a de acuerdo con el calendario de vacunaciones establecido por el organismo competente?]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>registration.trans238</source>
+                <target><![CDATA[Autorización excursiones]]></target>
             </trans-unit>
             <trans-unit>
                 <source>confirm_message</source>
-                <target><![CDATA[Are you sure you want to delete it?]]></target>
+                <target><![CDATA[¡Atención! Estas a punto de eliminar de forma definitiva una semana y todas las inscripciones asociadas a la misma. ¿Deseas proceder igualmente?]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>confirm_message</source>
+                <target><![CDATA[¿Seguro que quieres eliminarlo?]]></target>
             </trans-unit>
             <trans-unit>
                 <source>confirm_message_2</source>
-                <target><![CDATA[Attention! You are about to permanently delete a week and all the inscriptions associated with it. Do you wish to do likewise?]]></target>
+                <target><![CDATA[¡Atención! Estas a punto de eliminar de forma definitiva una semana y todas las inscripciones asociadas a la misma. ¿Deseas proceder igualmente?]]></target>
             </trans-unit>
             <trans-unit>
                 <source>confirm_message_3</source>
-                <target><![CDATA[Attention! You are about to permanently delete a service. Do you wish to do likewise?]]></target>
+                <target><![CDATA[¡Atención! Estas a punto de eliminar de forma definitiva un servicio. ¿Deseas proceder igualmente?]]></target>
             </trans-unit>
             <trans-unit>
                 <source>address_tpv:</source>
                 <target><![CDATA[Dirección postal centro (TPV):]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>student_excursion:</source>
+                <target>Permiso excursiones</target>
             </trans-unit>
         </body>
     </file>

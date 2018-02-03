@@ -7,7 +7,7 @@ all:
     available_cultures:
       ca: Catalan
       es: Spanish
-#      en: English
+      en: English
 #      eu: Euskera
       it: Italiano
 
