@@ -56,7 +56,33 @@ class InscriptionActions extends autoInscriptionActions
         $pdfGenerated->Output('Inscription.pdf', 'I');
     }
 
+    public function executeSendEmail()
+    {
+                
+        $user = $this->getUser();
+        $user->getCulture();
 
+        $this->getUser()->setCulture($user->getCulture());
+       
+        $idInscription = $this->getRequestParameter('id');
+        $inscripcio = InscriptionPeer::retrieveByPK($idInscription);
+        $centre = $inscripcio->getSummerFunCenter();
+        $idCentre = $centre->getId();
+        $this->forward404Unless($inscripcio);
+        
+       
+        $pdf[1][1] = $inscripcio->getId();
+        $mailsEnviar[1][1] = $inscripcio->getFatherMail();
+
+         
+        list($pdfGenerated, $idCentre) = util::generarPdf($pdf);
+        util::enviarPdf($pdfGenerated, $mailsEnviar, $idCentre);
+
+        $this->setFlash('notice', 'Inscription email has been sent');
+        
+        $this->redirect($this->getRequest()->getReferer());        
+    }
+    
     public function executeMarcarPagat()
     {
         $idInscription = $this->getRequestParameter('id');

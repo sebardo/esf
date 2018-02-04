@@ -21,6 +21,14 @@ array()) ?></h1>
 </div>
 
 <div id="sf_admin_content">
+    
+<?php if ($sf_flash->has('notice')): ?>
+<div class="save-ok">
+<h2><?php echo __($sf_flash->get('notice')) ?></h2>
+</div>
+<?php endif; ?>
+
+    
 <?php if (!$pager->getNbResults()): ?>
 <?php echo __('no result') ?>
 <?php else: ?>

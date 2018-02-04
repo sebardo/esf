@@ -12,6 +12,7 @@ generator:
       sort:   [inscription_code, desc]
       object_actions:
         generatePdf:      { name: 'Generar full inscripció', action: generatePdf, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
+        sendEmail:      { name: 'Enviar email inscripció', action: sendEmail, icon: /sf/sf_admin/images/mail-pdf.gif, params: target=_self }
         generateFicha:      { name: "Generar fitxa de l\\'alumne", action: pdfFichaComplete, icon: /sfAdminDashPlugin/images/icon_pdf.gif, params: target=_blank }
         #marcarPagat:    { name: 'Marcar com a pagat', action: marcarPagat, icon: /sfAdminDashPlugin/images/Euro.png }
         _edit:       ~
