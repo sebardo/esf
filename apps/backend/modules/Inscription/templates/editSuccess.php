@@ -85,6 +85,76 @@ array()) ?></h1>
         }
 
         updateServices($('#inscription_student_course_inscription').val(), 1);
+        
+        function addValidation(){
+            $('#inscription_student_name').attr('required', 'required');
+            $('#inscription_student_primer_apellido').attr('required', 'required');
+            $('#inscription_student_segundo_apellido').attr('required', 'required');
+            $('#inscription_student_birth_date').attr('required', 'required');
+            $('#inscription_student_address').attr('required', 'required');
+            $('#inscription_student_zip').attr('required', 'required');
+            $('#inscription_student_city').attr('required', 'required');
+            $('#inscription_student_provincia').attr('required', 'required');
+            $('#inscription_student_school_year').attr('required', 'required');
+            $('#inscription_kids_and_us_center_id').attr('required', 'required');
+            $('#inscription_summer_fun_center_id').attr('required', 'required');
+            $('#inscription_school_year_id').attr('required', 'required');
+            $('#inscription_student_num_tarjeta_sanitaria').attr('required', 'required');
+            $('#inscription_student_tarjeta_sanitaria_companyia').attr('required', 'required');
+        }
+        
+        function addFatherValidation(){
+            $('#inscription_father_name').attr('required', 'required');
+            $('#inscription_father_primer_apellido').attr('required', 'required');
+            $('#inscription_father_phone').attr('required', 'required');
+            $('#inscription_father_dni').attr('required', 'required');
+            $('#inscription_father_mail').attr('required', 'required');
+        }
+        
+        function removeFatherValidation(){
+            $('#inscription_father_name').removeAttr('required');
+            $('#inscription_father_primer_apellido').removeAttr('required');
+            $('#inscription_father_phone').removeAttr('required');
+            $('#inscription_father_dni').removeAttr('required');
+            $('#inscription_father_mail').removeAttr('required');
+        }
+        
+        function addMotherValidation(){
+            $('#inscription_mother_name').attr('required', 'required');
+            $('#inscription_mother_primer_apellido').attr('required', 'required');
+            $('#inscription_mother_phone').attr('required', 'required');
+            $('#inscription_mother_dni').attr('required', 'required');
+            $('#inscription_mother_mail').attr('required', 'required');
+        }
+        
+        function removeMotherValidation(){
+            $('#inscription_mother_name').removeAttr('required');
+            $('#inscription_mother_primer_apellido').removeAttr('required');
+            $('#inscription_mother_phone').removeAttr('required');
+            $('#inscription_mother_dni').removeAttr('required');
+            $('#inscription_mother_mail').removeAttr('required');
+        }
+        
+        addValidation();
+        addFatherValidation();
+        addMotherValidation();
+        
+        $('#inscription_is_father_mail_main').click(function(){
+            if(document.getElementById('inscription_is_father_mail_main').checked){
+                addFatherValidation();
+            }else{
+                removeFatherValidation();
+            }
+        });
+        
+        $('#inscription_is_mother_mail_main').click(function(){
+            if(document.getElementById('inscription_is_mother_mail_main').checked){
+                addMotherValidation();
+            }else{
+                removeMotherValidation();
+            }
+        });
+        
     });
 
 
