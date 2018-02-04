@@ -271,6 +271,16 @@ class InscriptionPeer extends BaseInscriptionPeer
 
         return InscriptionPeer::doSelect($criteria, $con);
     }
+    
+    public static function retrieveByStudentCourseInscription($studentCourseInscription)
+    {
+        $con = Propel::getConnection(self::DATABASE_NAME);
+        $criteria = new Criteria();
+        $criteria->add(InscriptionPeer::STUDENT_COURSE_INSCRIPTION, $studentCourseInscription);
+        $criteria->addAscendingOrderByColumn(InscriptionPeer::INSCRIPTION_CODE);
+
+        return InscriptionPeer::doSelect($criteria, $con);
+    }
 
     public static function retrieveByInscriptionCode($inscriptionCode)
     {

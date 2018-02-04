@@ -283,4 +283,32 @@ class courseActions extends autocourseActions
 
         return sfView::NONE;
     }
+    
+    
+    public function executeDelete()
+    {
+    $this->course = CoursePeer::retrieveByPk($this->getRequestParameter('id'));
+    $this->forward404Unless($this->course);
+
+    
+    try
+    {
+        $inscriptions = InscriptionPeer::retrieveByStudentCourseInscription($this->course->getId());
+  
+        if(count($inscriptions) > 0 ){
+            throw new PropelException();
+        }else{
+            $this->deleteCourse($this->course);
+            $this->setFlash('notice', 'Items has been deleted');
+        }
+    }
+    catch (PropelException $e)
+    {
+        //$this->setFlash('notice', 'Could not delete the selected Course. Make sure it does not have any associated items.');
+        $this->getRequest()->setError('delete', 'Could not delete the selected Course. Make sure it does not have any associated items.');
+        return $this->forward('course', 'list');
+    }
+
+    return $this->redirect('course/list');
+  }
 }

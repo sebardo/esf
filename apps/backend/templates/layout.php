@@ -36,23 +36,20 @@ jQuery(document).ready(function(){
     jQuery('.delete').click(function(e) {
         var url = jQuery(this).attr('data');
         var check1=confirm("<?php echo __('confirm_message')?>");
-        if (check1) {
-            var check2=confirm("<?php echo __('confirm_message_2')?>");
-            if (check2)
-            {
-                f = document.createElement('form'); 
-                document.body.appendChild(f); 
-                f.method = 'POST'; 
-                f.action = url; 
-                f.submit(); 
-            }
-            else
-            {
-                return false;
-            }
-        } else {
+         
+        if (check1)
+        {
+            f = document.createElement('form'); 
+            document.body.appendChild(f); 
+            f.method = 'POST'; 
+            f.action = url; 
+            f.submit(); 
+        }
+        else
+        {
             return false;
         }
+         
     });
     
     jQuery('.delete2').click(function(e) {
