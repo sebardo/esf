@@ -2,7 +2,27 @@
 $i = $j = 0;
 $hayExcursiones = false;
 ?>
-
+<style>
+    .badge-secondary {
+        color: #fff;
+        background-color: #6c757d;
+    }
+    .badge-warning {
+        color: #212529;
+        background-color: #ffc107;
+    }
+    .badge {
+        display: inline-block;
+        padding: .25em .4em;
+        font-size: 75%;
+        font-weight: 700;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25rem;
+    }
+</style>
 <?php foreach ($courses as $clave => $course): ?>
     <?php $j++ ?>
     <div class="setmana">
@@ -16,7 +36,7 @@ $hayExcursiones = false;
             <?php
                 $label = $course->getWeekWithSchedule() . ' - ' . __('Preu:') . $course->getPrice() .' €';
                 if (count($course->getInscriptionsByCourse()) >= $course->getNumberOfPlaces()) {
-                    $label .= ' ' . __('Llista d\'espera') . '*';
+                    $label .= ' * <span class="badge badge-warning" style="float: right;padding: 5px;font-size: 12px;">' . __('Llista d\'espera') . '</span>';
                 }
             ?>
             <?php echo label_for('week' . $i .'alumne' . $id,  $label) ?>
@@ -52,7 +72,7 @@ $hayExcursiones = false;
 
             <input type="checkbox" name="setmanaDisabled" id="setmanaDisabled" disabled>
             <?php echo label_for("setmana",  $course->getWeek()) ?>
-            <span> <?php echo __('No queden places') ?>  </span>
+            <span class="badge badge-warning" style="float: right;padding: 5px;font-size: 12px;"> <?php echo __('No queden places') ?>  </span>
             <p class="horari"> <?php if ($course->getSchedule()) echo $course->getSchedule() ?></p>
 
         <?php endif ?>
