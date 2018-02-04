@@ -149,7 +149,12 @@
             $worksheet->write($row, $col, utf8_decode($inscription['father_name']), $center);
             $col++;
         }
-
+        
+        if (in_array('father_mail', $selectedColumns)) {
+            $worksheet->write($row, $col, utf8_decode($inscription['father_mail']), $center);
+            $col++;
+        }
+        
         if (in_array('phones', $selectedColumns)) {
             $worksheet->write($row, $col, utf8_decode($inscription['phones']), $center);
             $col++;
@@ -317,6 +322,7 @@
 
         $row++;
 
+        
         if ($inscription['NUM_REG'] > 1) {
             foreach ($inscriptionsNotGrouped as $insc)
             {
@@ -331,6 +337,11 @@
 
                     if (in_array('father_name', $selectedColumns)) {
                         $worksheet->write($row, $col, utf8_decode($insc['father_name']), $child);
+                        $col++;
+                    }
+                    
+                    if (in_array('father_mail', $selectedColumns)) {
+                        $worksheet->write($row, $col, utf8_decode($insc['father_mail']), $child);
                         $col++;
                     }
 
@@ -445,6 +456,7 @@
                 }
             }
         }
+        
     }
 
     $workbook->close();

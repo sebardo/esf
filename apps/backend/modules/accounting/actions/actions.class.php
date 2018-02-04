@@ -369,7 +369,7 @@ class accountingActions extends sfActions
 		$user->getCulture();
 		
 		$query = "SELECT i.father_dni,
-						 CONCAT_WS(' ', i.father_name, i.father_primer_apellido, i.father_segundo_apellido) AS father_name,
+						 CONCAT_WS(' ', i.father_name, i.father_primer_apellido, i.father_segundo_apellido) AS father_name, i.father_mail AS father_mail,
 						 CONCAT(IF(i.father_phone IS NOT NULL, i.father_phone, ''), IF(i.mother_phone IS NOT NULL AND i.mother_phone != '', CONCAT(' / ', i.mother_phone), '')) AS phones,
 						 CONCAT_WS(' ', i.student_name, i.student_primer_apellido, i.student_segundo_apellido) AS student_name,
 				  		 i.inscription_code,
@@ -415,6 +415,9 @@ class accountingActions extends sfActions
 		}
 		if (isset($this->filters['father_name']) && $this->filters['father_name'] !== '') {
 			$query .= " AND i.father_name = '" . addslashes($this->filters['father_name']) . "'";
+		}
+                if (isset($this->filters['father_mail']) && $this->filters['father_mail'] !== '') {
+			$query .= " AND i.father_mail = '" . addslashes($this->filters['father_mail']) . "'";
 		}
 		if (isset($this->filters['father_primer_apellido']) && $this->filters['father_primer_apellido'] !== '') {
 			$query .= " AND i.father_primer_apellido = '" . addslashes($this->filters['father_primer_apellido']) . "'";
@@ -607,6 +610,7 @@ class accountingActions extends sfActions
 
 		$columns['father_dni'] = $translator->__('DNI');
 		$columns['father_name'] = $translator->__('Nom Tutor');
+                $columns['father_mail'] = $translator->__('Mail Tutor');
 		$columns['phones'] = $translator->__('Telèfons');
 		$columns['student_name'] = $translator->__('Nom Alumne');
 		$columns['inscription_code'] = $translator->__('Cód. insc.');
