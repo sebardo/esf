@@ -865,4 +865,46 @@ class util extends sfActions
         $mail->AddAttachment($fitxerCondicions, $fitxerCondicionsNom);
         $mail->Send();
     }
+    
+    public static function enviarAviso($insc, $llistaCorreus, $type)
+    {
+        require_once('lib/phpMailer/phpmailer.class.php');
+        $centre = $insc->getSummerFunCenter();
+        sfLoader::loadHelpers('Partial');
+        
+        if($type == 'all'){
+            $missatge = get_partial('inscription/all_payment_mail', array('centre' => $centre, 'inscription' => $insc));
+        }else{
+            $missatge = get_partial('inscription/half_payment_mail', array('centre' => $centre, 'inscription' => $insc));
+        }
+        
+
+        $mail = new PHPMailer();
+        $mail->IsSMTP();
+        $mail->SMTPAuth = true;                  // enable SMTP authentication
+        $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+        $mail->Host = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+        $mail->Port = 465;                   // set the SMTP port
+        $mail->Username = sfConfig::get('app_email_user');  // GMAIL username
+        $mail->Password = sfConfig::get('app_email_password'); // GMAIL password
+        $mail->From = strlen($centre->getMail()) != 0 ? $centre->getMail() : 'info@kidsandus.es';
+        $mail->AddReplyTo($mail->From, 'Kids&Us');
+        $mail->Helo = "www.kidsandus.es.mx";
+        $mail->FromName = 'Kids&Us';
+        $mail->Subject = sfContext::getInstance()->getI18N()->__('Pagament English Summer Fun');
+        $mail->Body = $missatge;
+        $mail->AltBody = $missatge;
+        $mail->CharSet = 'UTF-8';
+        $mail->WordWrap = 50;
+        $mail->IsHTML(true);
+        for ($i = 1; $i <= count($llistaCorreus); $i++) {
+            for ($j = 1; $j <= 2; $j++) {
+                if (isset($llistaCorreus[$i][$j])) {
+                    $mail->AddAddress($llistaCorreus[$i][$j]);
+                }
+            }
+        }
+
+        $mail->Send();
+    }
 }

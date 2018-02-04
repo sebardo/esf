@@ -30,6 +30,7 @@ class accountingActions extends sfActions
 	
 	public function executeUpdate()
 	{
+
 		try
 		{
 			$request = $this->getRequest();
@@ -167,6 +168,10 @@ class accountingActions extends sfActions
                             }
                             $inscription->setIsPaid(InscriptionPeer::IS_PAID_100);
                             $inscription->save();
+
+                            //send email 100%
+                            $mailsEnviar[1][1] = $inscription->getFatherMail();
+                            util::enviarAviso($inscription, $mailsEnviar, 'all');
                         }
                     }
                 }
@@ -197,7 +202,11 @@ class accountingActions extends sfActions
 							}
 
 							$inscription->setIsPaid(InscriptionPeer::IS_PAID_50);
-							$inscription->save();
+                                                        $inscription->save();
+
+                                                        //send email 50%
+                                                        $mailsEnviar[1][1] = $inscription->getFatherMail();
+                                                        util::enviarAviso($inscription, $mailsEnviar, 'half');
 						}
 					}
 				}
