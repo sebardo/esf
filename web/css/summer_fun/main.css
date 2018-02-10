@@ -136,7 +136,15 @@ h1 { position: absolute; }
 
 /*** ACTIVITIES ***/
 /* layout */
-#container-activities .content-activities { padding: 22px; position: relative; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; background-color:#fff; }
+#container-activities .content-activities { 
+    padding: 22px; 
+    position: relative; 
+    -webkit-border-radius: 30px; 
+    -moz-border-radius: 30px; 
+    border-radius: 30px; 
+    background-color:#fff; 
+    box-shadow: 0px 0px 37px 0px #777
+}
 #container-activities .content-activities .subnavigation { position: absolute; }
 #container-activities .content-activities .activity { position: relative; width: 593px; height: 428px; margin-left: 243px; }
 #container-activities .content-activities .activity .box { padding: 10px; }
@@ -149,42 +157,126 @@ h1 { position: absolute; }
 
 /* subnavigation */
 #container-activities .content-activities .subnavigation { position: absolute; top: 83px; left: 22px; margin: 0; padding: 0; }
-#container-activities .content-activities .subnavigation li { display: block; width: 278px; height: 48px; list-style: none; margin-bottom: 16px; }
-#container-activities .content-activities .subnavigation li a { display: block; width: 262px; height: 34px; padding-left: 16px; padding-top: 14px; text-align: left; font-size: 17px; text-transform:uppercase; text-decoration: none; font-family: 'DINAlternateLightRegular'; color: #fff; }
-#container-activities .content-activities .subnavigation li.subnav1 a { height: 46px; padding-top: 2px; background: url(../../images/summer_fun/backgrounds/subnav1.png) no-repeat top; }
-#container-activities .content-activities .subnavigation li.subnav2 a { background: url(../../images/summer_fun/backgrounds/subnav2.png) no-repeat top; }
-#container-activities .content-activities .subnavigation li.subnav3 a { background: url(../../images/summer_fun/backgrounds/subnav3.png) no-repeat top; }
+#container-activities .content-activities .subnavigation li { 
+    display: block; 
+    width: 278px; 
+    list-style: none; 
+    margin-bottom: 16px;
+}
+#container-activities .content-activities .subnavigation li a { 
+    display: block; 
+    width: 262px;  
+    padding-left: 16px; 
+    padding-top: 14px; 
+    text-align: left; 
+    font-size: 17px; 
+    text-transform:uppercase; 
+    text-decoration: none; 
+    font-family: 'DINAlternateLightRegular'; 
+    color: #6aa19c;
+}
+#container-activities .content-activities .subnavigation li.subnav1 a { 
+    padding: 8px 10px; 
+}
+#container-activities .content-activities .subnavigation li.subnav2 a { 
+    
+    padding: 18px 10px;
+}
+#container-activities .content-activities .subnavigation li.subnav3 a { 
+    
+    padding: 18px 10px;
+}
 #container-activities .content-activities .subnavigation li a:hover,
-#container-activities .content-activities .subnavigation li a.active { background-position: bottom; }
+#container-activities .content-activities .subnavigation li a.active { 
+    
+    background-color: #6aa19c;  
+    border-radius: 15px 0 0 15px;
+    color: #fff;
+}
 
 /* party time */
-#container-activities .content-activities .party-time { background: url(../../images/summer_fun/backgrounds/activities-party.jpg) no-repeat; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+#container-activities .content-activities .party-time { 
+    background: url(../../images/summer_fun/backgrounds/activities_2018_.jpg) no-repeat; 
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #ddd;
+}
 #container-activities .content-activities .party-time .party1 { position: absolute; top: 18px; left: 12px; width: 214px; min-height: 158px; height: auto !important; height: 158px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 #container-activities .content-activities .party-time .party2 { position: absolute; top: 18px; left: 265px; width: 296px; min-height: 228px; height: auto !important; height: 228px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 /* games */
-#container-activities .content-activities .games { background: url(../../images/summer_fun/backgrounds/activities-games.jpg) no-repeat; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
+#container-activities .content-activities .games { 
+    background: url(../../images/summer_fun/backgrounds/activities_2018.jpg) no-repeat; 
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px; 
+    border-radius: 15px; 
+    box-shadow: 0px 0px 10px 0px #ddd;
+}
 #container-activities .content-activities .games .games1 { position: absolute; top: 15px; left: 10px; width: 261px; min-height: 115px; height: auto !important; height: 115px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 #container-activities .content-activities .games .games2 { position: absolute; top: 15px; left: 303px; width: 260px; min-height: 296px; height: auto !important; height: 296px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 /* theater */
-#container-activities .content-activities .theater { background: url(../../images/summer_fun/backgrounds/activities-theater.jpg) no-repeat; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; }
-#container-activities .content-activities .theater .theater1 { position: absolute; top: 225px; left: 12px; width: 255px; min-height: 173px; height: auto !important; height: 173px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
+#container-activities .content-activities .theater { 
+    background: url(../../images/summer_fun/backgrounds/activities-theater_2018.jpg) no-repeat; 
+    -webkit-border-radius: 15px; 
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #ddd;
+}
+#container-activities .content-activities .theater .theater1 { position: absolute; top: 15px; left: 12px; width: 255px; min-height: 173px; height: auto !important; height: 173px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 #container-activities .content-activities .theater .theater2 { position: absolute; top: 15px; left: 300px; width: 260px; min-height: 110px; height: auto !important; height: 110px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 #container-activities .content-activities .theater .theater3 { position: absolute; top: 170px; left: 300px; width: 260px; min-height: 228px; height: auto !important; height: 228px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 
 /*** CENTERS ***/
 /* zones */
 #container-centers .content-centers { padding: 22px;position:relative; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; background-color:#fff; }
-#container-centers .content-centers h2 { margin-bottom: 50px; font-size: 30px; font-family: 'DINAlternateLightRegular'; color: #58585A; }
+#container-centers .content-centers h2 { 
+    margin: 14px 50px 50px 25px;
+    font-size: 18px;
+    font-family: 'DINAlternateLightRegular';
+    color: #58585A;
+    text-transform: uppercase;
+}
 #container-centers .content-centers ul.centers-list { margin: 0; padding: 0 0 0 25px; }
 /*#container-centers .content-centers ul.centers-list li { display: -moz-inline-stack; display: inline-block; vertical-align: top; zoom: 1; *display: inline; width: 348px; margin-right: 88px; margin-bottom: 15px; }*/
-#container-centers .content-centers ul.centers-list li { display: -moz-inline-stack; display: inline-block; vertical-align: top; zoom: 1; *display: inline; width: 348px; margin-right: 88px; margin-bottom: 15px; background-color:#e51a53; border-radius: 15px; }
+#container-centers .content-centers ul.centers-list li { 
+    display: -moz-inline-stack; 
+    display: inline-block; 
+    vertical-align: top; 
+    zoom: 1; 
+    *display: inline; 
+    width: 255px; 
+    margin-bottom: 15px;
+    /*background-color:#e51a53;*/ 
+    border-radius: 15px; 
+}
 #container-centers .content-centers ul.centers-list li.even { margin-right: 0px; }
-#container-centers .content-centers ul.centers-list li span { display: block; width: 300px; min-height: 28px; height: auto !important; height: 28px; padding: 7px 24px 0 24px; font-size: 18px; color: #fff; /*background: url(../../images/summer_fun/backgrounds/center-box-top.png) no-repeat top;*/ }
+#container-centers .content-centers ul.centers-list li span { 
+    display: block; 
+    line-height: 20px; 
+    font-size: 16px;
+    color: #3b5c65;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 #container-centers .content-centers ul.centers-list li span a { text-decoration: none; }
-#container-centers .content-centers ul.centers-list li ul { width: 348px; margin: 0; padding: 0; }
-#container-centers .content-centers ul.centers-list li ul li { float: none; display: block; width: 300px; min-height: 21px; height: auto !important; height: 21px; padding:3px 24px 3px 24px; margin-right: 0px; margin-bottom: 0px; font-family: 'DINAlternateLightRegular'; font-size: 16px; text-transform: uppercase; /*background: url(../../images/summer_fun/backgrounds/center-box-item.png) repeat-y;*/ }
-#container-centers .content-centers ul.centers-list li ul li a { color: #fff; text-decoration: none; }
-#container-centers .content-centers ul.centers-list li ul li.last { min-height: 28px; height: auto !important; height: 28px; padding:3px 24px 3px 24px; /*background: url(../../images/summer_fun/backgrounds/center-box-bottom.png) no-repeat bottom;*/ }
+#container-centers .content-centers ul.centers-list li ul { margin: 0; padding: 0; }
+#container-centers .content-centers ul.centers-list li ul li { 
+    float: none; 
+    display: block; 
+    min-height: 21px; 
+    height: auto !important;
+    height: 21px; 
+    margin-right: 0px; 
+    margin-bottom: 0px; 
+    font-family: 'DINAlternateLightRegular'; 
+    font-size: 16px;  
+}
+#container-centers .content-centers ul.centers-list li ul li a { color: #92aeb2; text-decoration: underline; text-transform: capitalize;}
+#container-centers .content-centers ul.centers-list li ul li.last { 
+    min-height: 28px; 
+    height: auto !important; 
+    height: 28px; 
+}
 #container-centers .content-centers ul.centers-list li ul li img { vertical-align: middle; }
 /* zone */
 #container-centers .content-centers .center-wrapper { position: relative; overflow: hidden; background: url(../../images/summer_fun/backgrounds/center-wrapper.png) repeat-y; }
@@ -264,7 +356,7 @@ select.empty{
 #container-inscriptions .content_inscriptions {padding:20px; position:relative; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; background-color:#fff;}
 #container-inscriptions h2{color: #58585A; font-size: 30px; font-weight: bold;}
 #container-inscriptions h3{
-    color: #E74C3D;
+    color: #3b5c65;
     font-size: 16px;
     font-weight: bold;
     border-style: solid;
@@ -372,7 +464,20 @@ float: left;
 #submit_step1, #return_step1, #confirm_button{
     cursor:pointer;
     margin-top:20px;
-    text-align: left; display: block; width: 94px; height: 26px; line-height: 25px; color: #fff; font-size: 12px; text-decoration: none; text-transform: uppercase; text-align: center; background: url(../../images/summer_fun/backgrounds/back.png) no-repeat; }
+    text-align: left; 
+    display: block; 
+    width: 94px; 
+    height: 26px; 
+    line-height: 25px; 
+    color: #fff; 
+    font-size: 12px; 
+    text-decoration: none; 
+    text-transform: uppercase; 
+    text-align: center; 
+    background-color: #3b5c65;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
 
 #return_step1{
     position:relative;
@@ -439,7 +544,7 @@ float: left;
 }
 #container-inscriptions #final_line, #confirmation-inscription #final_line{
 
-    color: #E74C3D;
+    color: #3b5c65;
     font-size: 16px;
     font-weight: bold;
     border-style: solid;
@@ -600,7 +705,7 @@ float: left;
 }
 
 #inscriptionStep2 h4{
-    color: #E74C3D;
+    color: #3b5c65;
     font-size: 14px;
     font-weight: bold;
     border-style: solid;
@@ -917,4 +1022,21 @@ div.excursion {
 
 div.excursion span {
     margin-left: 5px;
+}
+
+.content-centers{   
+/*    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;*/
+}
+
+.centers-list{
+    height:500px;
+    overflow:scroll;
+    overflow-x:hidden;
 }

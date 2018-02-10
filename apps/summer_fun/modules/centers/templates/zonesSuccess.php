@@ -13,8 +13,8 @@
 	                        <ul>
 	                            <?php foreach ($centers as $center): ?>                                
 	                            	<?php if($center->getTitle() != ""): ?>
-		                                <li<?php echo $num_centers == $cont2 ? ' class="last"':""; ?>>
-		                                	<?php echo image_tag('summer_fun/icons/pointer.png'); ?> <?php echo link_to_i18n($center->getTitle(), '@center?stripped_center=' . ThairaProjectTools::createStrippedName($center->getTitle()) . '&id=' . $center->getId(), array('title' => $center->getTitle())); ?>
+		                                <li<?php echo $num_centers == $cont2 ? ' class="last"':""; ?> data="<?php echo $center->getTitle() ?>">
+                                                    <?php echo link_to_i18n($center->getTitle(), '@center?stripped_center=' . ThairaProjectTools::createStrippedName($center->getTitle()) . '&id=' . $center->getId(), array('title' => $center->getTitle())); ?>
 		                                </li>
 		                            <?php endif; ?>
 	                                <?php $cont2++; ?>
@@ -37,8 +37,8 @@
 	                        <ul>
 	                            <?php foreach ($centers as $center): ?>                                
 	                            	<?php if($center->getTitle() != ""): ?>
-		                                <li<?php echo $num_centers == $cont2 ? ' class="last"':""; ?>>
-		                                	<?php echo image_tag('summer_fun/icons/pointer.png'); ?> <?php echo link_to_i18n($center->getTitle(), '@center?stripped_center=' . ThairaProjectTools::createStrippedName($center->getTitle()) . '&id=' . $center->getId(), array('title' => $center->getTitle())); ?>
+                                    <li<?php echo $num_centers == $cont2 ? ' class="last"':""; ?> data="<?php echo strtolower($center->getTitle()) ?>">
+                                                    <?php echo link_to_i18n(strtolower($center->getTitle()), '@center?stripped_center=' . ThairaProjectTools::createStrippedName($center->getTitle()) . '&id=' . $center->getId(), array('title' => $center->getTitle())); ?>
 		                                </li>
 		                            <?php endif; ?>
 	                                <?php $cont2++; ?>
