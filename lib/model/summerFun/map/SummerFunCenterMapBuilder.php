@@ -89,6 +89,8 @@ class SummerFunCenterMapBuilder {
 		$tMap->addColumn('BROTHERS_AMOUNT_DISCOUNT', 'BrothersAmountDiscount', 'double', CreoleTypes::DECIMAL, false, 5);
 
 		$tMap->addColumn('SECOND_PAYMENT_DATE', 'SecondPaymentDate', 'int', CreoleTypes::DATE, false, null);
+                
+                $tMap->addColumn('IS_VACCINATION', 'IsVaccination', 'boolean', CreoleTypes::BOOLEAN, true, null);
 
 	} 
 } 

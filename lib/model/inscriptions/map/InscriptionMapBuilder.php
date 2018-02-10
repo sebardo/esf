@@ -170,5 +170,6 @@ class InscriptionMapBuilder {
 
 		$tMap->addColumn('IS_VACCINATED', 'IsVaccinated', 'boolean', CreoleTypes::BOOLEAN, false, null);
 
+                $tMap->addColumn('VACCINATION_FILE', 'VaccinationFile', 'string', CreoleTypes::VARCHAR, false, 255);
 	} 
 } 

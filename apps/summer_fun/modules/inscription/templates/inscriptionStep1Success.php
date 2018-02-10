@@ -31,7 +31,7 @@
 
 
 
-        <?php echo form_tag('@inscription_step1_' . $sf_user->getCulture(), array('name' => 'inscriptionStep1', 'id' => 'inscriptionStep1', 'class' => $mostrar_formulari)); ?>
+        <?php echo form_tag('@inscription_step1_' . $sf_user->getCulture(), array('name' => 'inscriptionStep1', 'id' => 'inscriptionStep1', 'class' => $mostrar_formulari, 'enctype' => 'multipart/form-data')); ?>
 
         <h2><?php echo __('Inscripcions') ?></h2>
         <p><?php  echo __('Per inscriure el vostre fill / la vostra filla a les activitats de l\'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.')?></p>
@@ -558,11 +558,18 @@
                         data = JSON.parse(data);
                         $('#a-cond-generales').attr('href', data.pdf);
                         $('#beca-widget').toggle(data.showBeca == 1);
+                        if(data.showVaccination){
+                            $('.vaccination').fadeIn('slow');
+                        }else{
+                            $('.vaccination').fadeOut('slow');
+                        }
+                    }else{
+                        $('.vaccination').fadeOut('slow');
                     }
-    			},
-       			error: function(data) {
-    	  		    console.log(data);
-    		  	}
+                },
+                error: function(data) {
+                    console.log(data);
+                }
             });
         });
 

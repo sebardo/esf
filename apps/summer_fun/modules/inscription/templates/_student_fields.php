@@ -170,6 +170,15 @@
         <p>*<?php echo __('registration.trans237') ?>:</p>
         <div><?php echo radiobutton_tag('studentIsVaccinated' . $id, 1, true) ?><span><?php echo __('Sí')?></span></div>
         <?php echo radiobutton_tag('studentIsVaccinated' . $id, 0, false) ?><span><?php echo __('No')?></span>
+        
+    
+            <div class="vaccination" style="display: none">
+                <label>
+                    Upload vaccination file:
+                </label>
+                <input type="file" name="studentVaccinationFile<?php echo $id ?>" id="studentVaccinationFile<?php echo $id ?>"/>
+            </div>
+        
         <p><?php echo __('registration.trans238') ?></p>
 
     </div>

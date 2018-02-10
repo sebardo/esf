@@ -1412,6 +1412,10 @@
         <source>registration.is_vaccinated:</source>
         <target><![CDATA[L'infant està vacunat d'acord al calendari de vacunacions establert per l'òrgan competent?]]></target>
       </trans-unit>
+        <trans-unit>
+            <source>registration.vaccination_file</source>
+            <target><![CDATA[Documento de vacunación]]></target>
+        </trans-unit>
       <trans-unit>
         <source>registration.vaccinated</source>
         <target><![CDATA[Vacunat]]></target>

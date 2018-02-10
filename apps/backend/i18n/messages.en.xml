@@ -3059,6 +3059,10 @@
                 <target><![CDATA[¿El niño esta vacunado de acuerdo con el calendario de vacunaciones establecido por el organismo competente?:]]></target>
             </trans-unit>
             <trans-unit>
+                <source>registration.vaccination_file</source>
+                <target><![CDATA[Documento de vacunación]]></target>
+            </trans-unit>
+            <trans-unit>
                 <source>registration.vaccinated</source>
                 <target><![CDATA[Vacunado]]></target>
             </trans-unit>

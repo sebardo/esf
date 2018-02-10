@@ -39,7 +39,7 @@ class inscriptionActions extends sfActions
         else {
 
             $this->getDifferentsParents();
-
+            
             $this->inscripcions = $this->getRequestParameter('inscripcions');
             $this->center = $this->getRequestParameter('center');
 
@@ -152,7 +152,7 @@ class inscriptionActions extends sfActions
 
                 $this->{'amountServices' . $i} = 0;
 
-                $fields = array("studentName$i", "studentPrimerApellido$i", "studentBirthDate$i", "studentZip$i", "studentCity$i", "studentAddress$i", "studentPhoto$i", "schoolYear$i");
+                $fields = array("studentName$i", "studentPrimerApellido$i", "studentBirthDate$i", "studentZip$i", "studentCity$i", "studentAddress$i", "schoolYear$i");//"studentPhoto$i", 
 
                 if ($this->getUser()->getCulture() != 'fr') {
                     $fields[] = 'studentSegundoApellido' . $i;
@@ -522,6 +522,20 @@ class inscriptionActions extends sfActions
             $this->{'studentPhoto'. $i} = $this->getRequestParameter('studentPhoto' . $i);
             $this->{'studentCustomQuestion'. $i} = $this->getRequestParameter('studentCustomQuestion' . $i);
             $this->{'studentIsVaccinated'.$i} = $this->getRequestParameter('studentIsVaccinated' . $i);
+            if(isset($_FILES['studentVaccinationFile'.$i])){
+                $uploadDir = sfConfig::get('app_inscripcion_imagen_directorio');
+                $filename = basename($_FILES['studentVaccinationFile'.$i]['name']);
+                $fichero_subido = $uploadDir . $filename;
+                if (move_uploaded_file($_FILES['studentVaccinationFile'.$i]['tmp_name'], $fichero_subido)) {
+                    $_SESSION['studentVaccinationFile'.$i] = $filename;
+                    $this->{'studentVaccinationFile'.$i} = $filename;
+                } else {
+                    $this->{'studentVaccinationFile'.$i} = '';
+                }
+                
+            }else{
+                $this->{'studentVaccinationFile'.$i} = '';
+            }
         }
     }
 
@@ -888,7 +902,14 @@ class inscriptionActions extends sfActions
                         $inscripcio->setInscriptionNum($numInscripcion);
                         $inscripcio->setCulture($this->getUser()->getCulture());
                         $inscripcio->setIsVaccinated($this->{'studentIsVaccinated' . $i} == 1 ? 1 : 0);
-
+                        
+                        // Gestionamos el archivo
+                        if(isset($_SESSION['studentVaccinationFile'.$i]) && $_SESSION['studentVaccinationFile'.$i] != ''){
+                            $inscripcio->setVaccinationFile($_SESSION['studentVaccinationFile'.$i]);
+                        }else{
+                            $inscripcio->setVaccinationFile('');
+                        }
+                      
                         if ($this->getUser()->getCulture() == 'fr') {
                             $inscripcio->setCertificated($this->certificated);
                             $inscripcio->setCertificatedname($this->certificatedName);
@@ -1198,6 +1219,11 @@ class inscriptionActions extends sfActions
             $result['showBeca'] = 0;
             if ($centro->getShowBecaWidget()) {
                 $result['showBeca'] = 1;
+            }
+            
+            $result['showVaccination'] = 0;
+            if ($centro->getIsVaccination()) {
+                $result['showVaccination'] = 1;
             }
 
             $result['pdf'] = $pdf;

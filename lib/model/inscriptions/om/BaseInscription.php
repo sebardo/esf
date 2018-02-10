@@ -282,6 +282,9 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 	
 	protected $is_vaccinated;
+        
+        
+        protected $vaccination_file;
 
 	
 	protected $aCourse;
@@ -854,6 +857,13 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 	{
 
 		return $this->is_vaccinated;
+	}
+        
+        
+        public function getVaccinationFile()
+	{
+
+		return $this->vaccination_file;
 	}
 
 	
@@ -1782,6 +1792,19 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		}
 
 	} 
+        
+        public function setVaccinationFile($v)
+	{
+                if ($v !== null && !is_string($v)) {
+			$v = (string) $v; 
+		}
+
+		if ($this->vaccination_file !== $v) {
+			$this->vaccination_file = $v;
+			$this->modifiedColumns[] = InscriptionPeer::VACCINATION_FILE;
+		}
+
+	} 
 	
 	public function hydrate(ResultSet $rs, $startcol = 1)
 	{
@@ -1925,11 +1948,13 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 			$this->is_vaccinated = $rs->getBoolean($startcol + 68);
 
+			$this->vaccination_file = $rs->getString($startcol + 69);
+
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 69; 
+						return $startcol + 70; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating Inscription object", $e);
 		}
@@ -2399,6 +2424,9 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 			case 68:
 				return $this->getIsVaccinated();
 				break;
+                        case 69:
+				return $this->getVaccinationFile();
+				break;
 			default:
 				return null;
 				break;
@@ -2478,6 +2506,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 			$keys[66] => $this->getSummerFunCenterOther(),
 			$keys[67] => $this->getSchoolYearId(),
 			$keys[68] => $this->getIsVaccinated(),
+			$keys[69] => $this->getVaccinationFile(),
 		);
 		return $result;
 	}
@@ -2700,6 +2729,9 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 			case 68:
 				$this->setIsVaccinated($value);
 				break;
+                        case 69:
+				$this->setVaccinationFile($value);
+				break;
 		} 	}
 
 	
@@ -2776,6 +2808,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[66], $arr)) $this->setSummerFunCenterOther($arr[$keys[66]]);
 		if (array_key_exists($keys[67], $arr)) $this->setSchoolYearId($arr[$keys[67]]);
 		if (array_key_exists($keys[68], $arr)) $this->setIsVaccinated($arr[$keys[68]]);
+		if (array_key_exists($keys[69], $arr)) $this->setVaccinationFile($arr[$keys[69]]);
 	}
 
 	
@@ -2852,6 +2885,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(InscriptionPeer::SUMMER_FUN_CENTER_OTHER)) $criteria->add(InscriptionPeer::SUMMER_FUN_CENTER_OTHER, $this->summer_fun_center_other);
 		if ($this->isColumnModified(InscriptionPeer::SCHOOL_YEAR_ID)) $criteria->add(InscriptionPeer::SCHOOL_YEAR_ID, $this->school_year_id);
 		if ($this->isColumnModified(InscriptionPeer::IS_VACCINATED)) $criteria->add(InscriptionPeer::IS_VACCINATED, $this->is_vaccinated);
+		if ($this->isColumnModified(InscriptionPeer::VACCINATION_FILE)) $criteria->add(InscriptionPeer::VACCINATION_FILE, $this->vaccination_file);
 
 		return $criteria;
 	}
@@ -3017,6 +3051,8 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 		$copyObj->setSchoolYearId($this->school_year_id);
 
 		$copyObj->setIsVaccinated($this->is_vaccinated);
+                
+                $copyObj->setVaccinationFile($this->vaccination_file);
 
 
 		if ($deepCopy) {

@@ -16,7 +16,7 @@ generator:
       title:            'Editar Centre'
       display:          
         "General":      [ summer_fun_zone_id, summer_fun_center_has_profile, mail ]
-        "Inscripcions": [ is_registration_open, show_excursion_widget, show_beca_widget ]
+        "Inscripcions": [ is_registration_open, is_vaccination, show_excursion_widget, show_beca_widget ]
         "Formes de pagament": [ transfer_payment, account_number, cash_payment, recibo_domiciliado_payment, tpv_payment, merchant_code, merchant_key, url_tpv, address_tpv, second_payment_date, second_payment_mailing_date]
         "Descomptes": [weeks_discount, weeks_percent_discount, weeks_amount_discount, brothers_discount, brothers_percent_discount, brothers_amount_discount, _student_kids_and_us, kids_and_us_student_percent_discount, kids_and_us_student_amount_discount]
         "Català":       [ title_ca, description_ca, _docs_ca, inscription_confirmation_mail_ca, inscription_conditions_terms_pdf_ca, custom_question_ca, recibo_domiciliado_txt_ca, second_payment_mailing_body_ca, second_payment_mailing_body_no_tpv_ca, custom_discount_ca ]
@@ -149,6 +149,7 @@ generator:
       cash_payment:    {  name: 'Pagament efectiu' }
       recibo_domiciliado_payment:    {  name: 'Pagament amb rebut domiciliat' }
       is_registration_open:    {  name: 'Inscripcions obertes' }
+      is_vaccination:    {  name: 'Vaccination' }
       account_number:    {  name: 'Nº de compte', help: 'EX: 1234-1234-12-1234567890'}
       text_shelter_ca:  { name: 'Text servei d\'acollida' }
       text_shelter_es:  { name: 'Text servei d\'acollida' }

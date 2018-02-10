@@ -22,7 +22,7 @@ generator:
       title: 'Editar inscripció'
       display:
           "Dades generals":  [created_at, inscription_code, _student_course_inscription, _state, _grupo_id, custom_question, custom_question_answer, _inscription_service_schedule, student_excursion]
-          "Dades de l\'alumne": [_student_photo, student_name, student_primer_apellido,  student_segundo_apellido, student_birth_date, student_address, student_zip, student_city, student_provincia, student_school_year, student_friends, is_student_disability, student_disability_level, student_disability, student_allergies, student_allergies_description, beca, kids_and_us_center_id, summer_fun_center_id, summer_fun_center_other, school_year_id, student_comments, student_num_tarjeta_sanitaria, student_tarjeta_sanitaria_companyia, is_vaccinated]
+          "Dades de l\'alumne": [_student_photo, student_name, student_primer_apellido,  student_segundo_apellido, student_birth_date, student_address, student_zip, student_city, student_provincia, student_school_year, student_friends, is_student_disability, student_disability_level, student_disability, student_allergies, student_allergies_description, beca, kids_and_us_center_id, summer_fun_center_id, summer_fun_center_other, school_year_id, student_comments, student_num_tarjeta_sanitaria, student_tarjeta_sanitaria_companyia, is_vaccinated, _vaccination_file]
           "Dades del pare / tutor legal": [father_name, father_primer_apellido, father_segundo_apellido, father_phone, father_dni, father_mail, is_father_mail_main]
           "Dades de la mare / tutora legal": [mother_name, mother_primer_apellido, mother_segundo_apellido, mother_phone, mother_dni, mother_mail, is_mother_mail_main]
 
@@ -87,6 +87,7 @@ generator:
           school_year_id: { name: 'school_year' }
           discountpercent: { name: 'Descompte (%)', help: 'Els decimals han d\'anar separats per un punt (Ex: 00.00)' }
           is_vaccinated: { name: 'registration.is_vaccinated' }
+          vaccination_file: { name: 'registration.vaccination_file' }
           student_excursion: { name: 'student_excursion' }
 
           

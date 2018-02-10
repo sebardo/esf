@@ -122,6 +122,9 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 
 	
 	protected $second_payment_date;
+        
+        
+        protected $is_vaccination = false;
 
 	
 	protected $aSummerFunZone;
@@ -295,6 +298,11 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 		return $this->is_registration_open;
 	}
 
+        public function getIsVaccination()
+	{
+
+		return $this->is_vaccination;
+	}
 	
 	public function getAccountNumber()
 	{
@@ -581,6 +589,16 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 		if ($this->is_registration_open !== $v || $v === false) {
 			$this->is_registration_open = $v;
 			$this->modifiedColumns[] = SummerFunCenterPeer::IS_REGISTRATION_OPEN;
+		}
+
+	} 
+        
+        public function setIsVaccination($v)
+	{
+
+		if ($this->is_vaccination !== $v || $v === false) {
+			$this->is_vaccination = $v;
+			$this->modifiedColumns[] = SummerFunCenterPeer::IS_VACCINATION;
 		}
 
 	} 
@@ -883,11 +901,13 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 
 			$this->second_payment_date = $rs->getDate($startcol + 28, null);
 
+			$this->is_vaccination = $rs->getBoolean($startcol + 29);
+
 			$this->resetModified();
 
 			$this->setNew(false);
 
-						return $startcol + 29; 
+						return $startcol + 30; 
 		} catch (Exception $e) {
 			throw new PropelException("Error populating SummerFunCenter object", $e);
 		}
@@ -1321,6 +1341,9 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 			case 28:
 				return $this->getSecondPaymentDate();
 				break;
+                        case 29:
+				return $this->getIsVaccination();
+				break;
 			default:
 				return null;
 				break;
@@ -1360,6 +1383,7 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 			$keys[26] => $this->getWeeksAmountDiscount(),
 			$keys[27] => $this->getBrothersAmountDiscount(),
 			$keys[28] => $this->getSecondPaymentDate(),
+			$keys[29] => $this->getIsVaccination(),
 		);
 		return $result;
 	}
@@ -1462,6 +1486,9 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 			case 28:
 				$this->setSecondPaymentDate($value);
 				break;
+                        case 29:
+				$this->setIsVaccination($value);
+				break;
 		} 	}
 
 	
@@ -1498,6 +1525,7 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 		if (array_key_exists($keys[26], $arr)) $this->setWeeksAmountDiscount($arr[$keys[26]]);
 		if (array_key_exists($keys[27], $arr)) $this->setBrothersAmountDiscount($arr[$keys[27]]);
 		if (array_key_exists($keys[28], $arr)) $this->setSecondPaymentDate($arr[$keys[28]]);
+		if (array_key_exists($keys[29], $arr)) $this->setIsVaccination($arr[$keys[29]]);
 	}
 
 	
@@ -1534,6 +1562,7 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 		if ($this->isColumnModified(SummerFunCenterPeer::WEEKS_AMOUNT_DISCOUNT)) $criteria->add(SummerFunCenterPeer::WEEKS_AMOUNT_DISCOUNT, $this->weeks_amount_discount);
 		if ($this->isColumnModified(SummerFunCenterPeer::BROTHERS_AMOUNT_DISCOUNT)) $criteria->add(SummerFunCenterPeer::BROTHERS_AMOUNT_DISCOUNT, $this->brothers_amount_discount);
 		if ($this->isColumnModified(SummerFunCenterPeer::SECOND_PAYMENT_DATE)) $criteria->add(SummerFunCenterPeer::SECOND_PAYMENT_DATE, $this->second_payment_date);
+		if ($this->isColumnModified(SummerFunCenterPeer::IS_VACCINATION)) $criteria->add(SummerFunCenterPeer::IS_VACCINATION, $this->is_vaccination);
 
 		return $criteria;
 	}
@@ -1619,6 +1648,9 @@ abstract class BaseSummerFunCenter extends BaseObject  implements Persistent {
 		$copyObj->setBrothersAmountDiscount($this->brothers_amount_discount);
 
 		$copyObj->setSecondPaymentDate($this->second_payment_date);
+		
+                
+                $copyObj->setIsVaccination($this->is_vaccination);
 
 
 		if ($deepCopy) {

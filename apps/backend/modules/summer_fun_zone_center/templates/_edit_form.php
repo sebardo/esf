@@ -79,6 +79,22 @@
     </div>
 </div>
 
+
+<div class="form-row">
+  <?php echo label_for('summer_fun_center[is_vaccination]', __($labels['summer_fun_center{is_vaccination}']), 'class="required" ') ?>
+  <div class="content<?php if ($sf_request->hasError('summer_fun_center{is_vaccination}')): ?> form-error<?php endif; ?>">
+  <?php if ($sf_request->hasError('summer_fun_center{is_vaccination}')): ?>
+    <?php echo form_error('summer_fun_center{is_vaccination}', array('class' => 'form-error-msg')) ?>
+  <?php endif; ?>
+
+  <?php $value = object_checkbox_tag($summer_fun_center, 'getIsVaccination', array (
+  'control_name' => 'summer_fun_center[is_vaccination]',
+)); echo $value ? $value : '&nbsp;' ?>
+    </div>
+</div>
+
+
+
 <div class="form-row">
   <?php echo label_for('summer_fun_center[show_excursion_widget]', __($labels['summer_fun_center{show_excursion_widget}']), 'class="required" ') ?>
   <div class="content<?php if ($sf_request->hasError('summer_fun_center{show_excursion_widget}')): ?> form-error<?php endif; ?>">
