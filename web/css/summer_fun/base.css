@@ -1,6 +1,6 @@
 body { margin:0; padding:0; font-family:"DINAlternateRegular"; font-size:8.7pt; color:#58585a; }
 #background_wrap {
-    background: url("../../images/summer_fun/backgrounds/body2017.jpg") no-repeat top center #fff;
+    background: url("../../images/summer_fun/backgrounds/body2018.jpg") no-repeat top center #fff;
     height: 100%;
     position: fixed;
     right: 0;
@@ -16,7 +16,7 @@ p { line-height:16px; text-align: justify; }
 /*enllaços*/
 a { outline:none; }
 a:hover {}
-a img { border:none;¬†}
+a img { border:none;}
 
 /*MARGES*/
 .nm { margin:0 auto !important; }

@@ -1,6 +1,6 @@
 <div id="header">
     <h1>
-        <?php echo image_link('summer_fun/logos/kidsandus.png', '@index', array('alt' => 'Kidsandus'), array('title' => 'Kidsandus')); ?>
+        <?php echo image_link('summer_fun/logos/kidsandus_2018.png', '@index', array('alt' => 'Kidsandus'), array('title' => 'Kidsandus')); ?>
     </h1>
     <div id="idiomes">
         <?php echo link_to("català", '@index_ca', array('title' => "versió en català")) ?> |

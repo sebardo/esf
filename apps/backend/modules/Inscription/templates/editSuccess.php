@@ -155,6 +155,16 @@ array()) ?></h1>
             }
         });
         
+        if(document.getElementById('inscription_is_father_mail_main').checked){
+            addFatherValidation();
+        }else{
+            removeFatherValidation();
+        }
+        if(document.getElementById('inscription_is_mother_mail_main').checked){
+            addMotherValidation();
+        }else{
+            removeMotherValidation();
+        }
     });
 
 

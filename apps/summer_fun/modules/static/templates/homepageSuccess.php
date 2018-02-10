@@ -2,12 +2,12 @@
 <div id="container-home">
     <div class="content-home">      
         <div class="content-intro">    
-            <?php echo image_tag("summer_fun/details/home1.jpg", array('alt' => '', 'class' => 'main-image')); ?>
+            <?php echo image_tag("summer_fun/details/home_2018.jpg", array('alt' => '', 'class' => 'main-image')); ?>
             <div class="intro">
                 <h2><?php echo __("ENGLISH SUMMER FUN[1]ESTIU [2]", array('[1]' => '<br /><span>', '[2]' => date('Y') . "</span>")); ?></h2>
                 <p><?php echo __("L'English Summer Fun és el resultat de l'esforç continu d'un equip de persones amb gran experiència en el món de l'ensenyament de l'anglès per a nens petits. Els coneixements pedagògics de l'equip d'I+D de Kids[1]Us i les necessitats motivacionals dels nostres alumnes es combinen per oferir una experiència única als petits mentre aprenen anglès.", array('[1]' => '&amp;')); ?></p>
                 <p><?php echo __("L'English Summer Fun by Kids[1]Us és un casal d'estiu amb un objectiu molt clar: [2]Que els alumnes tornin cada dia a casa amb la sensació que han viscut unes experiències divertides i diferents i sense adonar-se que tot això ho han fet al mateix temps que aprenen anglès[2].", array('[1]' => '&amp;', '[2]' => '"')); ?></p>
-                <p class="centre nm"><?php echo link_to_i18n(__("On?"), '@centers', array('title' => __("On seran?"), 'class' => 'where')); ?></p>
+                <p class="nm" style="float:right"><?php echo link_to_i18n(__("On?"), '@centers', array('title' => __("On seran?"), 'class' => 'where')); ?></p>
             </div>
             <br class="clear" />
         </div>
