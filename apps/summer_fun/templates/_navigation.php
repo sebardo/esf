@@ -25,6 +25,6 @@ switch ($module)
         <li class="nav2" <?php echo $locale == 'fr' ? 'style="display:none"' : '' ?>><?php echo link_to_i18n(__("Activitats"), '@party_time', array('title' => __("Activitats"), 'class' => "$classActivities")); ?></li>
         <li class="nav3"><?php echo link_to_i18n(__("On?"), '@centers', array('title' => __("On?"), 'class' => "$classCenters")); ?></li>
 		<li class="nav4"><?php echo link_to_i18n(__("Inscripcions"), '@inscription_step1', array('title' => __("Inscripcions"), 'class' => "$classInscriptions")); ?></li>
-		<li class="nav5" <?php echo $locale == 'fr' ? 'style="display:none"' : '' ?>><a href="http://blog.englishsummerfun.com/<?php echo $locale == 'es' ? $locale : ($locale == 'ca' ? $locale : 'es') ?>" class="" title="Blog">Blog</a></li>
+		<li class="nav5" <?php echo $locale == 'fr' ? 'style="display:none"' : '' ?>><a href="http://blog.kidsandussummerfun.com/<?php echo $locale == 'es' ? $locale : ($locale == 'ca' ? $locale : 'es') ?>" class="" title="Blog">Blog</a></li>
     </ul>
 <?php endif; ?>
