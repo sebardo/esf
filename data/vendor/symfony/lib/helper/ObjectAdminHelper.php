@@ -102,7 +102,6 @@ function object_admin_double_list($object, $method, $options = array(), $callbac
 ';
 
   $response = sfContext::getInstance()->getResponse();
-  $response->addJavascript(sfConfig::get('sf_prototype_web_dir').'/js/prototype');
   $response->addJavascript(sfConfig::get('sf_admin_web_dir').'/js/double_list');
 
   return sprintf($html,
@@ -110,10 +109,10 @@ function object_admin_double_list($object, $method, $options = array(), $callbac
     $select1,
     submit_image_tag(
         sfConfig::get('sf_admin_web_dir').'/images/next.png',
-        array("style"=> "border: 0",  "onclick"=>"double_list_move(\$('{$name1}'), $('{$name2}')); return false;")),
+        array("style"=> "border: 0",  "onclick"=>"double_list_move('{$name1}', '{$name2}'); return false;")),
     submit_image_tag(
         sfConfig::get('sf_admin_web_dir').'/images/previous.png',
-        array("style"=> "border: 0",  "onclick"=>"double_list_move($('{$name2}'), $('{$name1}')); return false;")), $label_assoc,
+        array("style"=> "border: 0",  "onclick"=>"double_list_move('{$name2}', '{$name1}'); return false;")), $label_assoc,
     $select2
   );
 }
