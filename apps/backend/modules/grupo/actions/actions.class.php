@@ -21,7 +21,41 @@ class grupoActions extends autogrupoActions
             // WHERE
             $c->add(SummerFunCenterHasProfilePeer::PROFILE_ID, $profile->getId());
 		}
-	
+
 		parent::addFiltersCriteria($c);
 	}
+
+    public function executeGetInscriptions()
+    {
+        sfConfig::set('sf_web_debug', false);
+        $this->getResponse()->setContentType('application/json');
+        return isset($_GET['term'])
+            ? $this->renderText(json_encode(array('results' => Inscription::getListForGroup($_GET['term']))))
+            : $this->renderText('{}');
+    }
+
+
+    protected function saveGrupo($grupo)
+    {
+        parent::saveGrupo($grupo);
+
+        # Update many-to-many for "grupo_has_profesors"
+        if (isset($_POST['id'])) { # when updating only
+            mysql::updateTable(
+                'inscription',
+                array('grupo_id' => null),
+                array('grupo_id' => $grupo->getPrimaryKey())
+            );
+        }
+
+        if (isset($_POST['inscriptions'])) {
+            foreach ($_POST['inscriptions'] as $inscription) {
+                mysql::updateTable(
+                    'inscription',
+                    array('grupo_id' => $grupo->getPrimaryKey()),
+                    array('id' => $inscription)
+                );
+            }
+        }
+    }
 }
