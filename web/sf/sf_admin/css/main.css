@@ -399,3 +399,15 @@
     padding-left:0 !important;
 }
 
+
+
+.grupo-inscription-list {
+    display: none;
+}
+#sf_admin_container .grupo-inscription-list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.expand-inscription-list {
+    cursor: pointer;
+}
