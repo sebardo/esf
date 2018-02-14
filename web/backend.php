@@ -4,8 +4,8 @@ define('SF_APP',         'backend');
 define('SF_ENVIRONMENT', 'prod');
 define('SF_DEBUG',       false);
 
-require SF_ROOT_DIR . '/apps/backend/lib/kint.php';
-Kint::$enabled_mode = false;
+require SF_ROOT_DIR . '/apps/backend/lib/kint/Kint.class.php';
+Kint::enabled(false);
 
 require_once(SF_ROOT_DIR.DIRECTORY_SEPARATOR.'apps'.DIRECTORY_SEPARATOR.SF_APP.DIRECTORY_SEPARATOR.'config'.DIRECTORY_SEPARATOR.'config.php');
 
