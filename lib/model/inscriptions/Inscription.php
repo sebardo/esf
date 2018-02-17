@@ -100,10 +100,46 @@ class Inscription extends BaseInscription
 
     public static function getListForGroup($search)
     {
-        if (!isset($_GET['term'])) return array();
+        $extraSearch = '';
+        $boundValues = array();
+
+        if (!empty($search['week'])) {
+            $extraSearch .= ' AND student_course_inscription = :week';
+            $boundValues['week'] = $search['week'];
+        }
+
+
+        if (!empty($search['name'])) {
+            $parts = explode(' ', trim($search['name'])); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        student_name LIKE :name{$k}
+                        OR student_primer_apellido LIKE  :name{$k} 
+                        OR student_segundo_apellido LIKE :name{$k}
+                    )";
+                $boundValues["name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $extraSearch .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+
+        if (!empty($search['inscription'])) {
+            $extraSearch .= ' AND inscription_code like :inscription';
+            $boundValues['inscription'] = '%' . $search['inscription'] . '%';
+        }
+
+
+        if (!empty($search['dni'])) {
+            $extraSearch .= ' AND father_dni like :dni';
+            $boundValues['dni'] = '%' . $search['dni'] . '%';
+        }
+
 
         # !!!IMPORTANT!!! Select clause mirrors that of Inscription::getAssignedToGrupo()
-        $inscriptions = mysql::getAll("
+        $query = "
             SELECT    inscription.id
                     , inscription_code
                     , student_name
@@ -113,22 +149,16 @@ class Inscription extends BaseInscription
                     , grupo_id
                     , course.starts_at 
                     , course.ends_at 
-                    -- , course_names.schedule 
                     
             FROM      inscription
             
             LEFT JOIN course ON course.id = student_course_inscription 
-            -- LEFT JOIN course_names ON course_names.id = student_course_inscription 
             
-            WHERE      student_name LIKE :search
-                    OR student_primer_apellido LIKE  :search 
-                    OR student_segundo_apellido LIKE :search 
-                    OR inscription_code LIKE :search 
-                    OR father_dni LIKE :search 
-            LIMIT 200",
-            array('search' => '%' . $search . '%')
-        );
+            WHERE   1
+                    {$extraSearch}
+            LIMIT 200";
 
+        $inscriptions = mysql::getAll($query, $boundValues);
         return self::_decorateInscriptionText($inscriptions, true);
     }
 
@@ -147,12 +177,10 @@ class Inscription extends BaseInscription
                     , grupo_id 
                     , course.starts_at 
                     , course.ends_at 
-                    -- , course_names.schedule 
                     
             FROM      inscription
             
             LEFT JOIN course ON course.id = student_course_inscription 
-            -- LEFT JOIN course_names ON course_names.id = student_course_inscription 
             
             WHERE      grupo_id = ?",
             $grupo_id

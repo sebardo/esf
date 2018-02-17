@@ -25,16 +25,6 @@ class grupoActions extends autogrupoActions
 		parent::addFiltersCriteria($c);
 	}
 
-    public function executeGetInscriptions()
-    {
-        sfConfig::set('sf_web_debug', false);
-        $this->getResponse()->setContentType('application/json');
-        return isset($_GET['term'])
-            ? $this->renderText(json_encode(array('results' => Inscription::getListForGroup($_GET['term']))))
-            : $this->renderText('{}');
-    }
-
-
     protected function saveGrupo($grupo)
     {
         parent::saveGrupo($grupo);
@@ -57,5 +47,18 @@ class grupoActions extends autogrupoActions
                 );
             }
         }
+    }
+
+    /**
+     * AJAX action - search for inscriptions during group edit
+     */
+
+    public function executeGetInscriptions()
+    {
+        sfConfig::set('sf_web_debug', false);
+        $this->getResponse()->setContentType('application/json');
+
+
+        return $this->renderText(json_encode(array('results' => Inscription::getListForGroup($_GET))));
     }
 }
