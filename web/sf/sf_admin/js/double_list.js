@@ -1,15 +1,18 @@
+
 function double_list_move(src, dest)
 {
-  if (src.options != null) {
-	  for (var i = 0; i < src.options.length; i++)
-	  {
-		if (src.options[i].selected)
-		{
-		  dest.options[dest.length] = new Option(src.options[i].text, src.options[i].value);
-		  src.options[i] = null;
-		  --i;
-		}
-	  }
+  src = document.getElementById(src);
+  dest = document.getElementById(dest);
+  if (src.options == null) return;
+
+  for (var i = 0; i < src.options.length; i++)
+  {
+    if (src.options[i].selected)
+    {
+      dest.options[dest.length] = new Option(src.options[i].text, src.options[i].value);
+      src.options[i] = null;
+      --i;
+    }
   }
 }
 
@@ -20,7 +23,7 @@ function double_list_submit(form_name)
     var form_name = 'sf_admin_edit_form';
   }
 
-  var form = $(form_name);
+  var form = document.getElementById(form_name);
   var element;
 
   // find multiple selects with name beginning 'associated_' and select all their options
@@ -39,4 +42,3 @@ function double_list_submit(form_name)
     }
   }
 }
-

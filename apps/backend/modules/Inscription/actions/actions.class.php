@@ -22,6 +22,53 @@ class InscriptionActions extends autoInscriptionActions
         parent::executeList();
     }
 
+    public function executeStudents()
+    {
+    }
+
+    public function executeStudentsList()
+    {
+        $query = "
+            SELECT    inscription.*
+                      , sfci18n.title AS centre_title
+                      , course.starts_at 
+                      , course.ends_at 
+                    
+            FROM      inscription
+            
+            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id 
+            LEFT JOIN course ON course.id = student_course_inscription 
+            
+            WHERE     1";
+        $boundValues = [];
+
+        if (!empty($_GET['name'])) {
+            $parts = explode(' ', trim($_GET['name'])); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        student_name LIKE :name{$k}
+                        OR student_primer_apellido LIKE  :name{$k} 
+                        OR student_segundo_apellido LIKE :name{$k}
+                    )";
+                $boundValues["name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($_GET['dni'])) {
+            $query .= ' AND ( father_dni LIKE :dni OR mother_dni LIKE :dni )';
+            $boundValues['dni'] = '%' . $_GET['dni'] . '%';
+        }
+
+        $query .= " ORDER BY student_name LIMIT 100";
+
+        $this->setLayout(false);
+        $this->setVar('inscriptions', mysql::getAll($query, $boundValues));
+    }
+
     /**
      * @var myBackendSummerFun
      */
@@ -58,31 +105,31 @@ class InscriptionActions extends autoInscriptionActions
 
     public function executeSendEmail()
     {
-                
+
         $user = $this->getUser();
         $user->getCulture();
 
         $this->getUser()->setCulture($user->getCulture());
-       
+
         $idInscription = $this->getRequestParameter('id');
         $inscripcio = InscriptionPeer::retrieveByPK($idInscription);
         $centre = $inscripcio->getSummerFunCenter();
         $idCentre = $centre->getId();
         $this->forward404Unless($inscripcio);
-        
-       
+
+
         $pdf[1][1] = $inscripcio->getId();
         $mailsEnviar[1][1] = $inscripcio->getFatherMail();
 
-         
+
         list($pdfGenerated, $idCentre) = util::generarPdf($pdf);
         util::enviarPdf($pdfGenerated, $mailsEnviar, $idCentre);
 
         $this->setFlash('notice', 'Inscription email has been sent');
-        
-        $this->redirect($this->getRequest()->getReferer());        
+
+        $this->redirect($this->getRequest()->getReferer());
     }
-    
+
     public function executeMarcarPagat()
     {
         $idInscription = $this->getRequestParameter('id');
