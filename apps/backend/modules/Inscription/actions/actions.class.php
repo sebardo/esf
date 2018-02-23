@@ -22,6 +22,53 @@ class InscriptionActions extends autoInscriptionActions
         parent::executeList();
     }
 
+    public function executeStudents()
+    {
+        $query = "
+            SELECT    SQL_CALC_FOUND_ROWS 
+                      inscription.*
+                      , sfci18n.title AS centre_title
+                      , kauc.name AS kids_centre_title
+                      , course.starts_at 
+                      , course.ends_at 
+                    
+            FROM      inscription
+            
+            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id 
+            LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
+            LEFT JOIN course ON course.id = student_course_inscription 
+            
+            WHERE     1";
+
+        $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
+
+        list($query, $boundValues) = $this->_filterStudents($filters, $query);
+
+
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 0;
+        $offset = $page * 100;
+        $query .= " ORDER BY student_name LIMIT 100 OFFSET {$offset}";
+        $inscriptions = mysql::getAll($query, $boundValues);
+        $numberOfResults = mysql::getOne('SELECT FOUND_ROWS()');
+
+        $this->setVar('inscriptions', $inscriptions);
+        $this->setVar('columns', $this->getArrayExportColumns());
+        $this->setVar('page', $page);
+        $this->setVar('filters', $filters);
+        $this->setVar('totalRows', $numberOfResults);
+    }
+
+    public function executeExportstudents()
+    {
+        
+        $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
+
+        list($query, $boundValues) = $this->_filterStudents($filters, "select id from inscription where 1");
+
+        $this->getUser()->setAttribute('ids', mysql::getSingleColumn($query, $boundValues));
+        $this->forward('Inscription','export');
+    }
+
     /**
      * @var myBackendSummerFun
      */
@@ -996,5 +1043,72 @@ class InscriptionActions extends autoInscriptionActions
         }
 
         return $this->renderText($result);
+    }
+
+
+    private function _filterStudents($filters, $query)
+    {
+        $boundValues = array();
+        if (empty($filters)) return array($query, $boundValues);
+
+        if (!empty($filters['name'])) {
+            $parts = explode(' ', $filters['name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        student_name LIKE :name{$k}
+                        OR student_primer_apellido LIKE  :name{$k} 
+                        OR student_segundo_apellido LIKE :name{$k}
+                    )";
+                $boundValues["name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['father_name'])) {
+            $parts = explode(' ', $filters['father_name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        father_name LIKE :father_name{$k}
+                        OR father_primer_apellido LIKE  :father_name{$k} 
+                        OR father_primer_apellido LIKE :father_name{$k}
+                    )";
+                $boundValues["father_name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['mother_name'])) {
+            $parts = explode(' ', $filters['mother_name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        mother_name LIKE :mother_name{$k}
+                        OR mother_primer_apellido LIKE  :mother_name{$k} 
+                        OR mother_primer_apellido LIKE :mother_name{$k}
+                    )";
+                $boundValues["mother_name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['dni'])) {
+            $query .= ' AND ( father_dni LIKE :dni OR mother_dni LIKE :dni )';
+            $boundValues['dni'] = '%' . $filters['dni'] . '%';
+        }
+
+        if (!empty($filters['inscription_code'])) {
+            $query .= ' AND inscription_code = :inscription_code';
+            $boundValues['inscription_code'] = $filters['inscription_code'];
+        }
+
+        return array($query, $boundValues);
     }
 }
