@@ -152,6 +152,12 @@
 
 
 <style>
+    #student-list tbody tr {
+        display: none;
+    }
+    #student-list tbody  tr.user-row {
+        display: table-row;
+    }
     .user-row td {
         font-weight: bold;
     }

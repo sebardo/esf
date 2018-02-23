@@ -25,16 +25,18 @@ class InscriptionActions extends autoInscriptionActions
     public function executeStudents()
     {
         $query = "
-            SELECT    SQL_CALC_FOUND_ROWS 
+            SELECT    -- calc -- 
                       inscription.*
                       , sfci18n.title AS centre_title
                       , kauc.name AS kids_centre_title
                       , course.starts_at 
                       , course.ends_at 
+                      , syi18n.name as school_year
                     
             FROM      inscription
             
-            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id 
+            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id AND sfci18n.culture = 'ca'
+            LEFT JOIN school_year_i18n syi18n on school_year_id = syi18n.id AND syi18n.culture = 'ca'
             LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
             LEFT JOIN course ON course.id = student_course_inscription 
             
@@ -43,30 +45,38 @@ class InscriptionActions extends autoInscriptionActions
         $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
 
         list($query, $boundValues) = $this->_filterStudents($filters, $query);
-
+        $this->setVar(
+            'totalStudents',
+            mysql::getOne("
+                SELECT COUNT(DISTINCT student_name, student_primer_apellido, student_segundo_apellido)
+                FROM ($query) subq",
+                $boundValues
+            )
+        );
+        $query = str_replace('-- calc --', 'SQL_CALC_FOUND_ROWS', $query);
 
         $page = isset($_GET['page']) ? (int)$_GET['page'] : 0;
         $offset = $page * 100;
         $query .= " ORDER BY student_name LIMIT 100 OFFSET {$offset}";
         $inscriptions = mysql::getAll($query, $boundValues);
         $numberOfResults = mysql::getOne('SELECT FOUND_ROWS()');
-
         $this->setVar('inscriptions', $inscriptions);
         $this->setVar('columns', $this->getArrayExportColumns());
         $this->setVar('page', $page);
         $this->setVar('filters', $filters);
         $this->setVar('totalRows', $numberOfResults);
+
     }
 
     public function executeExportstudents()
     {
-        
         $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
 
         list($query, $boundValues) = $this->_filterStudents($filters, "select id from inscription where 1");
 
         $this->getUser()->setAttribute('ids', mysql::getSingleColumn($query, $boundValues));
-        $this->forward('Inscription','export');
+        $this->forward('Inscription', 'export');
+        $this->getUser()->setAttribute('ids', null);
     }
 
     /**
@@ -1049,7 +1059,7 @@ class InscriptionActions extends autoInscriptionActions
     private function _filterStudents($filters, $query)
     {
         $boundValues = array();
-        if (empty($filters)) return array($query, $boundValues);
+        if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
 
         if (!empty($filters['name'])) {
             $parts = explode(' ', $filters['name']); // try to parse 'Name Middle SecondName'

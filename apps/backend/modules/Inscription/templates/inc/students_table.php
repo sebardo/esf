@@ -11,9 +11,11 @@
         <th style="width: 2em">No.</th>
         <th>Codi inscripció</th>
         <th>Data inscripció</th>
-        <th>Centre</th>
+        <th>Escola de procedència</th>
         <th>Centre Kids&Us de procedència</th>
+        <th>Curs Kids&Us realitzat</th>
         <th>Setmana</th>
+        <th>Estat inscripció</th>
     </tr>
     </thead>
     <tbody>
@@ -57,12 +59,14 @@
                 <?php echo link_to($item['inscription_code'], 'Inscription/edit?id=' . $item['id']) ?>
             </td>
             <td><?php echo date('d/m/y', strtotime($item['created_at'])) ?></td>
-            <td><?php echo $item['centre_title'] ?></td>
+            <td></td>
             <td><?php echo $item['kids_centre_title'] ?></td>
+            <td><?php echo $item['school_year'] ?></td>
             <td>
                 <?php echo date('d/m/y', strtotime($item['starts_at'])) ?> -
                 <?php echo date('d/m/y', strtotime($item['ends_at'])) ?>
             </td>
+            <td><?php echo InscriptionPeer::getStateName($item['state']) ?></td>
         </tr>
     <?php endforeach ?>
     </tbody>
@@ -92,7 +96,7 @@
                     </a>
                 </div>
             <?php endif ?>
-            <?php echo $totalRows ?> resultats
+            <?php echo $totalStudents ?> estudients
         </th>
     </tr>
     </tfoot>
