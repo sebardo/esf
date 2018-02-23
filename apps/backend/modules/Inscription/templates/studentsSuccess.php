@@ -6,7 +6,7 @@
 
 <div id="sf_admin_container">
 
-    <h1><?php echo __('Llistat d\'inscripcions') ?></h1>
+    <h1><?php echo __('Llistat d\'estudiants') ?></h1>
 
     <?php $e = function ($array, $key) {
         if (!isset($array[$key])) return '';
@@ -20,7 +20,7 @@
                     <h2>Filtres</h2>
 
                     <div class="form-row form-row-top">
-                        <label for="student_name">Buscar estudientes (nom, apellidos):</label>
+                        <label for="student_name">Buscar estudiants (nom, apellidos):</label>
                         <div class="content">
                             <input id="student_name" name="filters[name]"
                                    value="<?php echo $e($filters, 'name') ?>">
@@ -139,13 +139,23 @@
       do {
         collapsibleRows.push(nextRow)
         nextRow = nextRow.next()
-        console.log(nextRow)
       } while (nextRow.length && !nextRow.hasClass('user-row'))
 
       $.each(collapsibleRows, function () {
         $(this).toggle()
       })
+    })
 
+
+    $('.user-row').each(function () {
+      var nextRow = $(this).next()
+      var count = 0
+      do {
+        nextRow = nextRow.next()
+        count++
+      } while (nextRow.length && !nextRow.hasClass('user-row'))
+
+      $('.student-count', this).html(' (' + count + ' inscripcions)')
     })
   })
 </script>
@@ -155,9 +165,11 @@
     #student-list tbody tr {
         display: none;
     }
-    #student-list tbody  tr.user-row {
+
+    #student-list tbody tr.user-row {
         display: table-row;
     }
+
     .user-row td {
         font-weight: bold;
     }
@@ -170,5 +182,9 @@
         float: left;
         padding-left: 0 !important;
         margin-right: 10px;
+    }
+
+    span.student-count {
+        font-weight: normal;
     }
 </style>

@@ -19,8 +19,8 @@
     </tr>
     </thead>
     <tbody>
-    <?php $name = array('first' => null, 'second' => null, 'surname' => null) ?>
-    <?php
+    <?php 
+    $name = array('first' => null, 'second' => null, 'surname' => null);
     $isNewName = function ($now) use (&$name) {
         if (strtolower($name['first']) === strtolower($now['student_name'])
             && strtolower($name['second']) === strtolower($now['student_primer_apellido'])
@@ -47,6 +47,7 @@
                     ) ?>
                     <a href="<?php echo url_for('Inscription/students') ?>?filters[name]=<?php echo $student ?>">
                         <?php echo $student ?>
+                        <span class="student-count"></span>
                     </a>
                 </td>
             </tr>
@@ -58,13 +59,13 @@
             <td>
                 <?php echo link_to($item['inscription_code'], 'Inscription/edit?id=' . $item['id']) ?>
             </td>
-            <td><?php echo date('d/m/y', strtotime($item['created_at'])) ?></td>
+            <td><?php echo date('d/m/Y', strtotime($item['created_at'])) ?></td>
             <td></td>
             <td><?php echo $item['kids_centre_title'] ?></td>
             <td><?php echo $item['school_year'] ?></td>
             <td>
-                <?php echo date('d/m/y', strtotime($item['starts_at'])) ?> -
-                <?php echo date('d/m/y', strtotime($item['ends_at'])) ?>
+                <?php echo date('d/m/Y', strtotime($item['starts_at'])) ?> -
+                <?php echo date('d/m/Y', strtotime($item['ends_at'])) ?>
             </td>
             <td><?php echo InscriptionPeer::getStateName($item['state']) ?></td>
         </tr>

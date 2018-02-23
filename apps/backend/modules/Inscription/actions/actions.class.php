@@ -24,27 +24,9 @@ class InscriptionActions extends autoInscriptionActions
 
     public function executeStudents()
     {
-        $query = "
-            SELECT    -- calc -- 
-                      inscription.*
-                      , sfci18n.title AS centre_title
-                      , kauc.name AS kids_centre_title
-                      , course.starts_at 
-                      , course.ends_at 
-                      , syi18n.name as school_year
-                    
-            FROM      inscription
-            
-            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id AND sfci18n.culture = 'ca'
-            LEFT JOIN school_year_i18n syi18n on school_year_id = syi18n.id AND syi18n.culture = 'ca'
-            LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
-            LEFT JOIN course ON course.id = student_course_inscription 
-            
-            WHERE     1";
-
         $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
 
-        list($query, $boundValues) = $this->_filterStudents($filters, $query);
+        list($query, $boundValues) = $this->_filterStudents($filters);
         $this->setVar(
             'totalStudents',
             mysql::getOne("
@@ -72,11 +54,46 @@ class InscriptionActions extends autoInscriptionActions
     {
         $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
 
-        list($query, $boundValues) = $this->_filterStudents($filters, "select id from inscription where 1");
+        list($query, $boundValues) = $this->_filterStudents($filters);
+        $inscripcions = mysql::getAll($query, $boundValues);
+        $this->setVar('inscriptions', $inscripcions);
+        
 
-        $this->getUser()->setAttribute('ids', mysql::getSingleColumn($query, $boundValues));
-        $this->forward('Inscription', 'export');
-        $this->getUser()->setAttribute('ids', null);
+        $maxRowsExcel = 3000;
+        $selectedColumns = $this->getRequestParameter('columns');
+        $columns = $this->getArrayExportColumns();
+        $this->setVar('inscripcions', $inscripcions);
+        $this->setVar('columns', $columns);
+        $this->setVar('selectedColumns', $selectedColumns);
+        $this->setVar('maxRowsExcel', $maxRowsExcel);
+
+        set_time_limit(10000);
+
+        $filename = $this->getRequestParameter('filename');
+        if (!$filename) {
+            if (count($inscripcions) <= $maxRowsExcel) {
+                $filename = "export.xls";
+            } else {
+                $filename = "export.zip";
+            }
+        } else {
+            if (count($inscripcions) <= $maxRowsExcel) {
+                $filename .= ".xls";
+            } else {
+                $filename .= ".zip";
+            }
+        }
+        error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE);
+
+
+        if (count($inscripcions) <= $maxRowsExcel) {
+            $this->getResponse()->setContentType('application/x-msexcel; name="' . $filename . '"');
+        } else {
+            $this->getResponse()->setContentType('application/zip; name="' . $filename . '"');
+        }
+
+        $this->getResponse()->setHttpHeader('Content-Disposition', 'inline; filename="' . $filename . '"');
+        $this->setLayout(false);
     }
 
     /**
@@ -643,9 +660,9 @@ class InscriptionActions extends autoInscriptionActions
         $columns[] = $translator->__('Estat pagament');
         $columns[] = $translator->__('Modalitat de pagament');
         $columns[] = $translator->__('Pagament fraccionat');
-        $columns[] = $translator->__('Nom infant');
-        $columns[] = $translator->__('Cognom 1 infant');
-        $columns[] = $translator->__('Cognom 2 infant');
+        $columns[8] = $translator->__('Nom infant');
+        $columns[9] = $translator->__('Cognom 1 infant');
+        $columns[10] = $translator->__('Cognom 2 infant');
         $columns[] = $translator->__('Data de naixement');
         $columns[] = $translator->__('Adreça');
         $columns[] = $translator->__('Codi postal');
@@ -1056,9 +1073,27 @@ class InscriptionActions extends autoInscriptionActions
     }
 
 
-    private function _filterStudents($filters, $query)
+    private function _filterStudents($filters)
     {
         $boundValues = array();
+        $query = "
+            SELECT    -- calc -- 
+                      inscription.*
+                      , sfci18n.title AS centre_title
+                      , kauc.name AS kids_centre_title
+                      , course.starts_at 
+                      , course.ends_at 
+                      , syi18n.name as school_year
+                    
+            FROM      inscription
+            
+            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id AND sfci18n.culture = 'ca'
+            LEFT JOIN school_year_i18n syi18n on school_year_id = syi18n.id AND syi18n.culture = 'ca'
+            LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
+            LEFT JOIN course ON course.id = student_course_inscription 
+            
+            WHERE     1";
+        
         if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
 
         if (!empty($filters['name'])) {
