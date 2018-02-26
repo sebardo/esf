@@ -12,7 +12,7 @@
                 <p><?php echo __("story_description_2", array('[1]' => '<br />'))?></p>
                 <br />
                 <p><?php echo __("story_title_3", array('[1]' => '<br />'))?></p>
-                <h2><?php echo __("¡PARTY TIME!"); ?></h2>
+                <h2 style="margin-bottom:15px;"><?php echo __("¡PARTY TIME!"); ?></h2>
                 <p><?php echo __("story_description_3"); ?></p>
             </div>
         </div>
