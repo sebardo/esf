@@ -166,19 +166,19 @@
         
         <p><?php echo __('Altres aspectes a tenir en compte') ?>:</p>
         <?php echo textarea_tag('studentComments' . $id, '',  array('class' => 'textAreaDisability', 'maxlength' => 500)) ?>
-
+		<div class="vaccination" style="display: none">
         <p>*<?php echo __('registration.trans237') ?>:</p>
         <div><?php echo radiobutton_tag('studentIsVaccinated' . $id, 1, true) ?><span><?php echo __('Sí')?></span></div>
         <?php echo radiobutton_tag('studentIsVaccinated' . $id, 0, false) ?><span><?php echo __('No')?></span>
         
     
-            <div class="vaccination" style="display: none">
+            <div>
                 <label>
-                    Upload vaccination file:
+                    <?php echo __('Upload vaccination file') ?>:
                 </label>
                 <input type="file" name="studentVaccinationFile<?php echo $id ?>" id="studentVaccinationFile<?php echo $id ?>"/>
             </div>
-        
+        </div>
         <p><?php echo __('registration.trans238') ?></p>
 
     </div>
