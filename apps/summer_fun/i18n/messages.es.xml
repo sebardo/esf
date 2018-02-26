@@ -69,7 +69,7 @@
             </trans-unit> 
             <trans-unit id="15">
                 <source>game_description_2_1</source>
-                <target>Juegos dirigidos y actividades de psicomotricidad destinados a cohesionar el grupo, aprender a compartir o  esperar el turno, etc. Dentro de este contexto, los participantes aprenden de una manera sencilla y vivencial a seguir indicaciones en inglés e interiorizan las estructuras gramaticales básicas.</target>
+                <target>Juegos dirigidos y actividades de psicomotricidad destinados a cohesionar el grupo, aprender a compartir o esperar el turno, etc. Dentro de este contexto, los participantes aprenden de una manera sencilla y vivencial a seguir indicaciones en inglés e interiorizan las estructuras gramaticales básicas.</target>
             </trans-unit>
             <trans-unit id="16">
                 <source>Que bé que ens ho hem passat jugant!</source>
@@ -97,11 +97,11 @@
             </trans-unit>
             <trans-unit id="21">
                 <source>home_description_1</source>
-                <target>English Summer Fun es el resultado del esfuerzo continuo de un equipo de personas con una gran experiencia en el mundo de la enseñanza del inglés para niños pequeños. Los conocimientos pedagógicos del equipo de I+D de Kids[1]Us y las necesidades motivacionales de nuestros alumnos se combinan para ofrecer una experiencia única a los más pequeños mientras aprenden inglés.</target>
+                <target>Los campamentos urbanos Summer Fun son el resultado del esfuerzo continuo del Departamento Pedagógico de Kids&amp;Us para ofrecer una actividad de verano única de aprendizaje y diversión para niños y niñas de entre 3 y 12 años.</target>
             </trans-unit>
             <trans-unit id="22">
                 <source>home_description_2</source>
-                <target>English Summer Fun by Kids[1]Us es un campamento de verano con un objetivo muy claro: [2]Que los alumnos salgan contentos, con la sensación de haber vivido unas experiencias divertidas y diferentes y que todo esto lo han estado haciendo al mismo tiempo que aprenden inglés[2].</target>
+                <target>El principal objetivo de los campamentos Summer Fun es que los alumnos vuelvan a casa cada día con la sensación de haber vivido una jornada divertida y diferentes, sin darse cuenta de que, a su vez, han estado aprendiendo inglés. Kids&amp;Us acumula 15 años de experiencia en la enseñanza de inglés a niños pequeños.</target>
             </trans-unit>
             <trans-unit id="23">
                 <source>On seran?</source>
@@ -113,7 +113,7 @@
             </trans-unit>
             <trans-unit id="25">
                 <source>home_1_description</source>
-                <target>Es un campamento de verano cuyo objetivo es conseguir que cada día niños y niñas salgan contentos, con la sensación de haber vivido unas experiencias divertidas y diferentes, ¡y sin darse cuenta de que lo han estado haciendo en inglés! ¡En Summer Fun ofrecemos mucho más que clases de inglés! Organizamos actividades lúdicas, vivenciales y enriquecedoras en las que la lengua vehicular es el inglés.</target>
+                <target>Los campamentos urbanos Summer Fun van dirigidos a niños y niñas de 3 a 12 años, ya sean alumnos Kids&amp;Us o no. El objetivo de los campamentos es conseguir que cada día sea una experiencia inolvidable, que nuestros alumnos vuelvan a casa después de vivir una jornada divertida, diferente y en la que el inglés es el protagonista. En Summer Fun organizamos actividades lúdicas, vivenciales y enriquecedoras en las que la lengua vehicular es el inglés.</target>
             </trans-unit>
             <trans-unit id="26">
                 <source>home_2_title</source>
@@ -121,7 +121,7 @@
             </trans-unit>
             <trans-unit id="27">
                 <source>home_2_description</source>
-                <target>Cada semana el equipo de Kids[1]Us acompaña a vuestros hijos en las diferentes aventuras que proponemos. Nuestra misión es lograr que los niños y las niñas se interesen por las actividades que desarrollamos y lleguen a identificarse plenamente con los personajes y las historias que les contamos, de modo que conseguimos que interioricen las estructuras y el vocabulario de manera natural y sólida sin ser conscientes de que lo están haciendo. Parece magia, ¿verdad?</target>
+                <target>Cada semana el equipo de Kids&amp;Us acompaña a vuestros hijos en las diferentes aventuras que proponemos. Nuestra misión es lograr que los niños y las niñas se interesen por las actividades que desarrollamos y lleguen a identificarse plenamente con los personajes y las historias que les contamos, de modo que conseguimos que interioricen y consoliden estructuras y vocabulario de manera natural sin ser conscientes de que lo están haciendo. Parece magia, ¿verdad?</target>
             </trans-unit>
             <trans-unit id="28">
                 <source>home_3_title</source>
@@ -129,7 +129,7 @@
             </trans-unit>
             <trans-unit id="29">
                 <source>home_3_description</source>
-                <target>Nuestro equipo está formado por personas sociables y con vocación por la docencia, a quienes les apasionan los niños y su mundo, y con aptitudes para la enseñanza del inglés; gente dinámica, alegre y motivada por su trabajo. Todos los profesores tienen experiencia en la enseñanza del inglés con metodología Kids[2]Us. Formación específica en material y dinámica de las Fun Weeks.</target>
+                <target>Nuestro equipo está formado por gente joven, dinámica y motivada por su trabajo, con experiencia en la metodología Kids&amp;Us y con una clara vocación docente. Estos rasgos diferenciales garantizan que todos los niños y niñas que acuden a nuestros campamentos reciban un trato personalizado y familiar para que así participen activamente y puedan mejorar su nivel de inglés de una manera divertida e innovadora.</target>
             </trans-unit>
             <trans-unit id="30">
                 <source>L'HORA DEL CONTE[1]Story Time</source>
@@ -137,7 +137,7 @@
             </trans-unit>
             <trans-unit id="31">
                 <source>story_description_1</source>
-                <target>Cada semana, los monitores explican un cuento relacionado con una temática concreta, el cual permitirá contextualizar el lenguaje aprendido. De este modo, los participantes tendrán la oportunidad de ponerse en la piel de los personajes y vivir en primera persona sus aventuras. Además, todos los viernes los más mayores explican la historia a los pequeños.</target>
+                <target>Cada semana, los monitores explican un cuento relacionado con una temática concreta que permitirá contextualizar el lenguaje aprendido. De este modo, los participantes tendrán la oportunidad de ponerse en la piel de los personajes y vivir sus aventuras en primera persona. Además, todos los viernes los más mayores explican el cuento a los pequeños.</target>
             </trans-unit>
             <trans-unit id="32">
                 <source>ELS BALLS I LES CANÇONS[1]Songs and dances</source>
@@ -157,7 +157,7 @@
             </trans-unit>
             <trans-unit id="36">
                 <source>story_description_3</source>
-                <target>Al final de cada semana temática, abriremos las puertas a las familias para que todos juntos podamos disfrutar de lo que han aprendido sus hijos e hijas. Interpretarán los bailes y las canciones que han ido practicando durante la semana.</target>
+                <target>El último día de la semana abriremos las puertas a las familias para que todos juntos podamos disfrutar de lo que han aprendido sus hijos e hijas. Interpretarán los bailes y las canciones que han ido practicando durante la semana.</target>
             </trans-unit>
             <trans-unit id="37">
                 <source>theater_title_1</source>
@@ -181,7 +181,7 @@
             </trans-unit>
             <trans-unit id="41">
                 <source>theater_description_2</source>
-                <target>El equipo de monitores prepara e interpreta una pequeña obra de teatro relacionada con la temática semanal. Cada día se representa una parte hasta llegar poco a poco al desenlace. Los alumnos, como espectadores, tienen un papel muy activo durante la representación.</target>
+                <target>El equipo de monitores prepara e interpreta una pequeña obra de teatro relacionada con la temática semanal. Cada día se representa una parte hasta llegar poco a poco al desenlace. Los alumnos, como espectadores, tienen un papel muy activo como público durante la representación.</target>
             </trans-unit>
             <trans-unit id="42">
                 <source>theater_title_3</source>
@@ -193,15 +193,15 @@
             </trans-unit>
             <trans-unit id="43">
                 <source>theater_description_3</source>
-                <target>Cada semana realizamos una salida temática que nos permite salir del "decorado" y entrar en contacto "real" con nuestra aventura. Vamos a la playa, al zoo, a una fábrica de yogures, al aeropuerto...</target>
+                <target>Cada semana realizamos una salida temática que nos permitirá salir del "decorado" y entrar en contacto "real" con nuestra aventura. Vamos a la playa, al zoo, a una fábrica de yogures, al aeropuerto...</target>
             </trans-unit>
             <trans-unit id="43_">
                 <source>theater_description_3_1</source>
-                <target>Seguro que cuando sean mayores todas estas experiencias quedarán en nuestros recuerdos de verano.</target>
+                <target>Seguro que cuando sean mayores todas estas experiencias formarán parte de sus recuerdos de verano.</target>
             </trans-unit>
             <trans-unit id="44">
                 <source>Segur que quan siguem grans totes aquestes experiències quedaran en els nostres records d'estiu".</source>
-                <target>Seguro que cuando sean mayores todas estas experiencias quedarán en nuestros recuerdos de verano.</target>
+                <target>Seguro que cuando sean mayores todas estas experiencias formarán parte de sus recuerdos de verano.</target>
             </trans-unit>
             <trans-unit id="45">
                 <source>Coneix els centres Kids[1]Us</source>
@@ -647,7 +647,7 @@
             </trans-unit>
             <trans-unit id="156">
                 <source>El servei d\'acollida té un cost adicional de %preu% € per setmana</source>
-                <target/>El servicio de acogida tiene un coste adicional de %preu% € por semana
+                <target>El servicio de acogida tiene un coste adicional de %preu% € por semana</target>
             </trans-unit>
             <trans-unit id="157">
                 <source>Benvolguts pares,</source>
@@ -1187,6 +1187,15 @@
                 <source>registration.trans239</source>
                 <target><![CDATA[Alumno Kids&Us]]></target>
             </trans-unit>
+            <trans-unit>
+                <source>Upload vaccination file</source>
+                <target><![CDATA[Upload vaccination file]]></target>
+            </trans-unit>
+            <trans-unit>
+                <source>Servicios añadidos</source>
+                <target><![CDATA[Servicios añadidos]]></target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
+
