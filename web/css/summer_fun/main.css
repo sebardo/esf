@@ -82,7 +82,7 @@ h1 { position: absolute; }
 }
 #container-home .content-home div.home1 p {
     width: 170px;
-    top: 66px;
+    top: 60px;
     left: 50px;
     font-size: 9px;
     text-align: justify;
@@ -149,8 +149,8 @@ h1 { position: absolute; }
 #container-activities .content-activities .activity { position: relative; width: 593px; height: 428px; margin-left: 243px; }
 #container-activities .content-activities .activity .box { padding: 10px; }
 #container-activities .content-activities .activity .box h2 { font-size: 18px; font-weight: normal; line-height: 15px; }
-#container-activities .content-activities .activity .box h2 span { font-size: 15px; color: #6a6a6a; }
-#container-activities .content-activities .activity .box p { margin: 6px 0; font-size: 13px; line-height: 14px; }
+#container-activities .content-activities .activity .box h2 span { font-size: 15px; color: #6a6a6a; line-height:2;}
+#container-activities .content-activities .activity .box p { margin: 6px 0; font-size: 13px; line-height: 14px; text-align:left !important;}
 #container-activities .content-activities .activity .box p span { font-size: 15px; }
 #container-centers .content-centers .content-back { margin-top: 20px; text-align: left; }
 #container-centers .content-centers .content-back a { display: block; width: 94px; height: 26px; line-height: 25px; color: #fff; font-size: 14px; text-decoration: none; text-transform: uppercase; text-align: center; background: url(../../images/summer_fun/backgrounds/back.png) no-repeat; }
@@ -224,7 +224,7 @@ h1 { position: absolute; }
 }
 #container-activities .content-activities .theater .theater1 { position: absolute; top: 15px; left: 12px; width: 255px; min-height: 173px; height: auto !important; height: 173px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 #container-activities .content-activities .theater .theater2 { position: absolute; top: 15px; left: 300px; width: 260px; min-height: 110px; height: auto !important; height: 110px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
-#container-activities .content-activities .theater .theater3 { position: absolute; top: 170px; left: 300px; width: 260px; min-height: 228px; height: auto !important; height: 228px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
+#container-activities .content-activities .theater .theater3 { position: absolute; top: 190px; left: 300px; width: 260px; min-height: 228px; height: auto !important; height: 228px; background-color: white; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(/css/PIE.php); opacity: 0.85; }
 
 /*** CENTERS ***/
 /* zones */
@@ -244,16 +244,17 @@ h1 { position: absolute; }
     vertical-align: top; 
     zoom: 1; 
     *display: inline; 
-    width: 255px; 
+    width: 245px; 
     margin-bottom: 15px;
     /*background-color:#e51a53;*/ 
     border-radius: 15px; 
+	padding-right:10px;
 }
 #container-centers .content-centers ul.centers-list li.even { margin-right: 0px; }
 #container-centers .content-centers ul.centers-list li span { 
     display: block; 
     line-height: 20px; 
-    font-size: 16px;
+    font-size: 14px;
     color: #3b5c65;
     text-transform: uppercase;
     font-weight: bold;
@@ -269,7 +270,7 @@ h1 { position: absolute; }
     margin-right: 0px; 
     margin-bottom: 0px; 
     font-family: 'DINAlternateLightRegular'; 
-    font-size: 16px;  
+    font-size: 14px;  
 }
 #container-centers .content-centers ul.centers-list li ul li a { color: #92aeb2; text-decoration: underline; text-transform: capitalize;}
 #container-centers .content-centers ul.centers-list li ul li.last { 
