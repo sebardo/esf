@@ -3,7 +3,7 @@ default:
     content-type: text/html
 
   metas:
-    title:        English Summer Fun | Kids&amp;Us School of English
+    title:        Summer Fun | Kids&amp;Us School of English
     robots:       index, follow
     description:  "Casal d'estiu per a nens i nenes on viuen experiències divertides i diferents mentre aprenen anglès"
     keywords:
