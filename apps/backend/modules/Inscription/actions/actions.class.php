@@ -22,6 +22,80 @@ class InscriptionActions extends autoInscriptionActions
         parent::executeList();
     }
 
+    public function executeStudents()
+    {
+        $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
+
+        list($query, $boundValues) = $this->_filterStudents($filters);
+        $this->setVar(
+            'totalStudents',
+            mysql::getOne("
+                SELECT COUNT(DISTINCT student_name, student_primer_apellido, student_segundo_apellido)
+                FROM ($query) subq",
+                $boundValues
+            )
+        );
+        $query = str_replace('-- calc --', 'SQL_CALC_FOUND_ROWS', $query);
+
+        $page = isset($_GET['page']) ? (int)$_GET['page'] : 0;
+        $offset = $page * 100;
+        $query .= " ORDER BY student_name LIMIT 100 OFFSET {$offset}";
+        $inscriptions = mysql::getAll($query, $boundValues);
+        $numberOfResults = mysql::getOne('SELECT FOUND_ROWS()');
+        $this->setVar('inscriptions', $inscriptions);
+        $this->setVar('columns', $this->getArrayExportColumns());
+        $this->setVar('page', $page);
+        $this->setVar('filters', $filters);
+        $this->setVar('totalRows', $numberOfResults);
+
+    }
+
+    public function executeExportstudents()
+    {
+        $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
+
+        list($query, $boundValues) = $this->_filterStudents($filters);
+        $inscripcions = mysql::getAll($query, $boundValues);
+        $this->setVar('inscriptions', $inscripcions);
+        
+
+        $maxRowsExcel = 3000;
+        $selectedColumns = $this->getRequestParameter('columns');
+        $columns = $this->getArrayExportColumns();
+        $this->setVar('inscripcions', $inscripcions);
+        $this->setVar('columns', $columns);
+        $this->setVar('selectedColumns', $selectedColumns);
+        $this->setVar('maxRowsExcel', $maxRowsExcel);
+
+        set_time_limit(10000);
+
+        $filename = $this->getRequestParameter('filename');
+        if (!$filename) {
+            if (count($inscripcions) <= $maxRowsExcel) {
+                $filename = "export.xls";
+            } else {
+                $filename = "export.zip";
+            }
+        } else {
+            if (count($inscripcions) <= $maxRowsExcel) {
+                $filename .= ".xls";
+            } else {
+                $filename .= ".zip";
+            }
+        }
+        error_reporting(E_ALL ^ E_DEPRECATED ^ E_NOTICE);
+
+
+        if (count($inscripcions) <= $maxRowsExcel) {
+            $this->getResponse()->setContentType('application/x-msexcel; name="' . $filename . '"');
+        } else {
+            $this->getResponse()->setContentType('application/zip; name="' . $filename . '"');
+        }
+
+        $this->getResponse()->setHttpHeader('Content-Disposition', 'inline; filename="' . $filename . '"');
+        $this->setLayout(false);
+    }
+
     /**
      * @var myBackendSummerFun
      */
@@ -54,6 +128,8 @@ class InscriptionActions extends autoInscriptionActions
         list($pdfGenerated, $mail) = util::generarPdf($pdf);
 
         $pdfGenerated->Output('Inscription.pdf', 'I');
+		
+		die();
     }
 
     public function executeSendEmail()
@@ -586,9 +662,9 @@ class InscriptionActions extends autoInscriptionActions
         $columns[] = $translator->__('Estat pagament');
         $columns[] = $translator->__('Modalitat de pagament');
         $columns[] = $translator->__('Pagament fraccionat');
-        $columns[] = $translator->__('Nom infant');
-        $columns[] = $translator->__('Cognom 1 infant');
-        $columns[] = $translator->__('Cognom 2 infant');
+        $columns[8] = $translator->__('Nom infant');
+        $columns[9] = $translator->__('Cognom 1 infant');
+        $columns[10] = $translator->__('Cognom 2 infant');
         $columns[] = $translator->__('Data de naixement');
         $columns[] = $translator->__('Adreça');
         $columns[] = $translator->__('Codi postal');
@@ -840,6 +916,7 @@ class InscriptionActions extends autoInscriptionActions
         }
 
         $pdf->Output('fichas.pdf', 'I');
+		die();
     }
 
 
@@ -861,11 +938,16 @@ class InscriptionActions extends autoInscriptionActions
 
         $this->filters = $this->getUser()->getAttributeHolder()->getAll('sf_admin/inscription/filters');
 
-        $c = new Criteria();
+      	/*$c = new Criteria();
         $this->addSortCriteria($c);
         $this->addFiltersCriteria($c);
 
-        $inscriptions = InscriptionPeer::doSelect($c);
+        $inscriptions = InscriptionPeer::doSelect($c);*/
+		$idInscription = $this->getRequestParameter('id');
+       	$this->forward404Unless($idInscription);
+       	$insc = InscriptionPeer::retrieveByPK($idInscription);
+       	$this->forward404Unless($insc);
+       	$inscriptions = InscriptionPeer::doSelectInsciptionsByInscriptionCode($insc->getInscriptionCode());
         $maxWidth = 140;
 
         foreach ($inscriptions as $inscription) {
@@ -966,6 +1048,7 @@ class InscriptionActions extends autoInscriptionActions
         }
 
         $pdf->Output('fichas.pdf', 'I');
+		die();
     }
 
     /**
@@ -997,4 +1080,90 @@ class InscriptionActions extends autoInscriptionActions
 
         return $this->renderText($result);
     }
+
+
+    private function _filterStudents($filters)
+    {
+        $boundValues = array();
+        $query = "
+            SELECT    -- calc -- 
+                      inscription.*
+                      , sfci18n.title AS centre_title
+                      , kauc.name AS kids_centre_title
+                      , course.starts_at 
+                      , course.ends_at 
+                      , syi18n.name as school_year
+                    
+            FROM      inscription
+            
+            LEFT JOIN summer_fun_center_i18n sfci18n ON summer_fun_center_id = sfci18n.id AND sfci18n.culture = 'ca'
+            LEFT JOIN school_year_i18n syi18n on school_year_id = syi18n.id AND syi18n.culture = 'ca'
+            LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
+            LEFT JOIN course ON course.id = student_course_inscription 
+            
+            WHERE     1";
+        
+        if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
+
+        if (!empty($filters['name'])) {
+            $parts = explode(' ', $filters['name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        student_name LIKE :name{$k}
+                        OR student_primer_apellido LIKE  :name{$k} 
+                        OR student_segundo_apellido LIKE :name{$k}
+                    )";
+                $boundValues["name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['father_name'])) {
+            $parts = explode(' ', $filters['father_name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        father_name LIKE :father_name{$k}
+                        OR father_primer_apellido LIKE  :father_name{$k} 
+                        OR father_primer_apellido LIKE :father_name{$k}
+                    )";
+                $boundValues["father_name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['mother_name'])) {
+            $parts = explode(' ', $filters['mother_name']); // try to parse 'Name Middle SecondName'
+            $innerSearch = array();
+            foreach ($parts as $k => $part) {
+                $innerSearch[] = "(
+                        mother_name LIKE :mother_name{$k}
+                        OR mother_primer_apellido LIKE  :mother_name{$k} 
+                        OR mother_primer_apellido LIKE :mother_name{$k}
+                    )";
+                $boundValues["mother_name{$k}"] = '%' . $part . '%';
+            }
+            if ($innerSearch) {
+                $query .= ' AND ' . implode(' AND ', $innerSearch);
+            }
+        }
+
+        if (!empty($filters['dni'])) {
+            $query .= ' AND ( father_dni LIKE :dni OR mother_dni LIKE :dni )';
+            $boundValues['dni'] = '%' . $filters['dni'] . '%';
+        }
+
+        if (!empty($filters['inscription_code'])) {
+            $query .= ' AND inscription_code = :inscription_code';
+            $boundValues['inscription_code'] = $filters['inscription_code'];
+        }
+
+        return array($query, $boundValues);
+    }
 }
+
