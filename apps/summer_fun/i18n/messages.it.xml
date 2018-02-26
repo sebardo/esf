@@ -1224,6 +1224,14 @@
 				<source>origin_kids_and_us_center</source>
 				<target><![CDATA[Scuola di origine]]></target>
 			</trans-unit>
+			<trans-unit>
+				<source>Upload vaccination file</source>
+				<target><![CDATA[Upload vaccination file]]></target>
+			</trans-unit>
+			<trans-unit>
+                <source>Servicios añadidos</source>
+                <target><![CDATA[Servicios añadidos]]></target>
+            </trans-unit>
 		</body>
 	</file>
 </xliff>
