@@ -1163,6 +1163,15 @@ class InscriptionActions extends autoInscriptionActions
             $boundValues['inscription_code'] = $filters['inscription_code'];
         }
 
+        $user = sfContext::getInstance()->getUser();
+        if (!$user->hasCredential('administrador')) {
+            $query .= " AND course.summer_fun_center_id IN (
+                      SELECT summer_fun_center_id 
+                      FROM summer_fun_center_has_profile WHERE profile_id = :user_id 
+                    )";
+            $boundValues['user_id'] = $user->getAttribute('id');
+        }
+        
         return array($query, $boundValues);
     }
 }

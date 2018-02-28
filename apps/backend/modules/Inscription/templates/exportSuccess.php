@@ -376,7 +376,10 @@
 		        	$grupoProfesores = $insc->getGrupo()->getGrupoHasProfesors();
 		        	$profesores = '';
 		        	foreach ($grupoProfesores as $grupoProfesor) {
-		        		$profesores .= $grupoProfesor->getProfesor()->getNombre() . ', ';
+		        	    if ($professor = $grupoProfesor->getProfesor()) {
+		        		    $profesores .= $professor->getNombre() . ', ';
+                        	    }
+
 		        	}
 		        	
 		        	if ($profesores != '') {
