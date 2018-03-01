@@ -140,10 +140,12 @@ class Inscription extends BaseInscription
         $user = sfContext::getInstance()->getUser();
         if (!$user->hasCredential('administrador')) {
             $extraSearch .= " AND course.summer_fun_center_id IN (
-                      SELECT summer_fun_center_id 
-                      FROM summer_fun_center_has_profile WHERE profile_id = :user_id 
+                      SELECT    DISTINCT chp.summer_fun_center_id 
+                      FROM      sf_guard_user_profile sfprof 
+                      LEFT JOIN summer_fun_center_has_profile chp ON sfchp.profile_id = sfprof.id
+                      WHERE     sfprof.user_id = :user_id 
                     )";
-            $boundValues['user_id'] = $user->getAttribute('id');
+            $boundValues['user_id'] = $user->getProfile()->getId();
         }
 
         # !!!IMPORTANT!!! Select clause mirrors that of Inscription::getAssignedToGrupo()

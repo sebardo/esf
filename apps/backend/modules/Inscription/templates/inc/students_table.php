@@ -88,7 +88,30 @@
                     <a href="<?php echo $pageUrl($page - 1) ?>">
                         <img title="Previous" src="/sf/sf_admin/images/previous.png">
                     </a>
+                    
+                    <?php if ($page >= 3): ?>
+                        <a href="<?php echo $pageUrl($page - 3) ?>"><?php echo $page - 2 ?></a>
+                    <?php endif ?>
+                    <?php if ($page >= 2): ?>
+                        <a href="<?php echo $pageUrl($page - 2) ?>"><?php echo $page - 1 ?></a>
+                    <?php endif ?>
+                    <?php if ($page >= 1): ?>
+                        <a href="<?php echo $pageUrl($page - 1) ?>"><?php echo $page ?></a>
+                    <?php endif ?>
+
                     <span><?php echo $page + 1 ?></span>
+
+                    <?php $pagesLeft = floor($totalRows / 100) - $page ?>
+                    <?php if ($pagesLeft >= 1): ?>
+                        <a href="<?php echo $pageUrl($page + 1) ?>"><?php echo $page + 2 ?></a>
+                    <?php endif ?>
+                    <?php if ($pagesLeft >= 2): ?>
+                        <a href="<?php echo $pageUrl($page + 2) ?>"><?php echo $page + 3 ?></a>
+                    <?php endif ?>
+                    <?php if ($pagesLeft >= 3): ?>
+                        <a href="<?php echo $pageUrl($page + 3) ?>"><?php echo $page + 4 ?></a>
+                    <?php endif ?>
+                    
                     <a href="<?php echo $pageUrl($page + 1) ?>">
                         <img alt="Next" title="Next" src="/sf/sf_admin/images/next.png">
                     </a>

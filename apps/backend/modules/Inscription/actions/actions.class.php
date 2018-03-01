@@ -1103,6 +1103,17 @@ class InscriptionActions extends autoInscriptionActions
             
             WHERE     1";
         
+        $user = sfContext::getInstance()->getUser();
+        if (!$user->hasCredential('administrador')) {
+            $query .= " AND course.summer_fun_center_id IN (
+                      SELECT    DISTINCT chp.summer_fun_center_id 
+                      FROM      sf_guard_user_profile sfprof 
+                      LEFT JOIN summer_fun_center_has_profile chp ON sfchp.profile_id = sfprof.id
+                      WHERE     sfprof.user_id = :user_id 
+                    )";
+            $boundValues['user_id'] = $user->getProfile()->getId();
+        }
+        
         if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
 
         if (!empty($filters['name'])) {
@@ -1161,15 +1172,6 @@ class InscriptionActions extends autoInscriptionActions
         if (!empty($filters['inscription_code'])) {
             $query .= ' AND inscription_code = :inscription_code';
             $boundValues['inscription_code'] = $filters['inscription_code'];
-        }
-
-        $user = sfContext::getInstance()->getUser();
-        if (!$user->hasCredential('administrador')) {
-            $query .= " AND course.summer_fun_center_id IN (
-                      SELECT summer_fun_center_id 
-                      FROM summer_fun_center_has_profile WHERE profile_id = :user_id 
-                    )";
-            $boundValues['user_id'] = $user->getAttribute('id');
         }
         
         return array($query, $boundValues);
