@@ -1175,6 +1175,10 @@
                 <source>Servicios añadidos</source>
                 <target><![CDATA[Serveis addicionals]]></target>
             </trans-unit>
+            <trans-unit>
+                <source>inscription.error</source>
+                <target><![CDATA[Por favor revise los campos resaltados en rojo.]]></target>
+            </trans-unit>
         </body>
     </file>
 </xliff>

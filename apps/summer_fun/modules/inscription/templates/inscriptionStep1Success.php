@@ -22,20 +22,32 @@
     $mostrar_confirm="mostrar";
 }?>
 
+<style>
+.alert {
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+</style>
 <div id="container-inscriptions">
 
-
-
-
     <div class="content_inscriptions">
-
-
-
         <?php echo form_tag('@inscription_step1_' . $sf_user->getCulture(), array('name' => 'inscriptionStep1', 'id' => 'inscriptionStep1', 'class' => $mostrar_formulari, 'enctype' => 'multipart/form-data')); ?>
 
         <h2><?php echo __('Inscripcions') ?></h2>
         <p><?php  echo __('Per inscriure el vostre fill / la vostra filla a les activitats de l\'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.')?></p>
-
+        <?php 
+        if ($error){
+           print_r('<div class="alert alert-danger" role="alert">'.__('inscription.error') ."</div>");
+        } 
+        ?>
 
         <h3><?php echo __('Dades del centre on realitzarà l\'English Summer Fun')?></h3>
 
