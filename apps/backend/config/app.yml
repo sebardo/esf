@@ -104,6 +104,9 @@ all:
           'Comptabilitat':
             url: /accounting/list
             image: euro.png
+          'Estudiants':
+            url: /Inscription/students
+            image: contact.png
 
       Config:
         credentials:      [administrador]
