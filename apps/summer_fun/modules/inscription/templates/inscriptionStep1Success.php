@@ -325,13 +325,16 @@
                     <div class="full-height"><span class="label"><?php echo __('Altres aspectes a tenir en compte')?>:</span> <div><?php echo ${"studentComments$i"} ?></div></div>
                 <?php endif ?>
 
+                <?php if ($center2->getIsVaccination()): ?>
                 <div class="full-height"><span class="label"><?php echo __('registration.trans237')?></span>
                     <?php if (${'studentIsVaccinated' . $i} == 1): ?>
                         <?php echo __('Sí'); ?>
+                        
                     <?php else: ?>
                         <?php echo __('No'); ?>
                     <?php endif ?>
                 </div>
+		<?php endif ?>
 
             </div>
             <div class="dades_alumne_dreta">
