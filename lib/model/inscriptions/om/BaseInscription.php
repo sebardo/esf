@@ -129,7 +129,7 @@ abstract class BaseInscription extends BaseObject  implements Persistent {
 
 
 	
-	protected $is_mother_mail_main = true;
+	protected $is_mother_mail_main = false;
 
 
 	
