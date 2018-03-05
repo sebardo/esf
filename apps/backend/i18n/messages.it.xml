@@ -3140,6 +3140,62 @@
                <source>registration.trans230</source>
               <target><![CDATA[Desitjo pagar %importe% euros ara i el següent pagament de %importe% euros abans del %date%.]]></target>
              </trans-unit>
+            <trans-unit>
+                <source>Cercar:</source>
+                <target>Ricerca:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Setmanes:</source>
+                <target>Settimane:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>DNI del pares:</source>
+                <target>DNI del padre:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Codi inscripció:</source>
+                <target>Codice di iscrizione:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom, cognoms:</source>
+                <target>Nome, cognome:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>No assignat</source>
+                <target>Non assegnato</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Busca a dalt</source>
+                <target>Cerca sopra</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Icona de bloqueig significa "Ja està assignat"</source>
+                <target>L'icona del lucchetto indica le iscrizioni già assegnate</target>
+            </trans-unit>
+            <trans-unit>
+                <source>No s'han trobat resultats</source>
+                <target>Nessun risultato trovato</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Cercar estudiants (nom, cognoms)</source>
+                <target>Cerca studenti (nome, cognome)</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom del pare:</source>
+                <target>Nome del padre</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nom del mare:</source>
+                <target>Nome del madre</target>
+            </trans-unit>
+            <trans-unit>
+                <source>inscripcions</source>
+                <target>iscrizioni</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
+                <target>Could not delete the selected Course. Make sure it does not have any associated items.</target>
+            </trans-unit>
         </body>
     </file>
 </xliff>
