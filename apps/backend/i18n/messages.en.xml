@@ -1452,6 +1452,63 @@
          <source>registration.trans230</source>
         <target><![CDATA[Desitjo pagar %importe% euros ara i el següent pagament de %importe% euros abans del %date%.]]></target>
        </trans-unit>
+      <trans-unit>
+        <source>Cercar:</source>
+        <target>Search:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Setmanes:</source>
+        <target>Weeks:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>DNI del pares:</source>
+        <target>DNI of the father:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Codi inscripció:</source>
+        <target>Inscription code:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Nom, cognoms:</source>
+        <target>Name, surnames:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>No assignat</source>
+        <target>Not assigned</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Busca a dalt</source>
+        <target>Search above</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Icona de bloqueig significa "Ja està assignat"</source>
+        <target>The lock icon denotes already assigned inscriptions</target>
+      </trans-unit>
+      <trans-unit>
+        <source>No s'han trobat resultats</source>
+        <target>No results found</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Cercar estudiants (nom, cognoms)</source>
+        <target>Search students (name, surnames)</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Nom del pare:</source>
+        <target>Name of the father</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Nom del mare:</source>
+        <target>Name of the mother</target>
+      </trans-unit>
+      <trans-unit>
+        <source>inscripcions</source>
+        <target>inscriptions</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
+        <target>Could not delete the selected Course. Make sure it does not have any associated items.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
+
