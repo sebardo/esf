@@ -15,8 +15,8 @@ all:
     email_enabled:        false
 
   sf_admin_dash:
-    site:                 'English Summer Fun - Kids&Us'
-    site_url:             http://www.englishsummerfun.com
+    site:                 'Summer Fun - Kids&Us'
+    site_url:             http://www.kidsandussummerfun.com
     has_ie6_warning:      yes
     include_jquery:       yes
 
