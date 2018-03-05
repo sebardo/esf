@@ -17,8 +17,8 @@ endif; ?>
   </div>
 </noscript>
 
-<div id='sf_admin_footer'>
+<!--<div id='sf_admin_footer'>
   Copyright &copy; <?php echo date('Y') ?> <?php echo sfAdminDash::getProperty('site') ?>.
   <?php echo link_to(sfAdminDash::getProperty('site_url'), sfAdminDash::getProperty('site_url'), 'target=_blank') ?> 
   <?php echo __('All rights reserved')?>.
-</div>
+</div>-->
