@@ -2018,7 +2018,7 @@
 
             <trans-unit id="156">
                 <source>El servei d'acollida té un cost adicional de %preu% € per setmana</source>
-                <target/>El servicio de acogida tiene un coste adicional de %preu% € por semana</target>
+                <target>El servicio de acogida tiene un coste adicional de %preu% € por semana</target>
 			</trans-unit>
 
             <trans-unit id="157">
@@ -2593,7 +2593,7 @@
             </trans-unit>
             <trans-unit>
                 <source>Mostrar "check" autorització excursió:</source>
-                <target>Mostrar "check" autorización excursión:</target>
+                <target>Solicitar autorización excursiones:</target>
             </trans-unit>
             <trans-unit>
                 <source>% de descompte per setmanes:</source>
@@ -3257,6 +3257,148 @@
             <trans-unit>
                 <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
                 <target>La semana que quieres eliminar tiene inscripciones asociadas. Para poder eliminarla, primero debes asignar las inscripciones existentes a otra semana.</target>
+            </trans-unit>
+			
+            <trans-unit>
+                <source>Inici setmana</source>
+                <target>Inicio semana</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Fi setmana</source>
+                <target>Fin semana</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inici setmana:</source>
+                <target>Inicio semana:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Fi setmana:</source>
+                <target>Fin semana:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Excursió</source>
+                <target>Excursión</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Nº de places</source>
+                <target>Nº de plazas</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Inscripció activa</source>
+                <target>Inscripción activa</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Ordre:</source>
+                <target>Orden:</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estudiants</source>
+                <target>Alumnos</target>
+            </trans-unit>
+            <trans-unit>
+                <source>Estudiants:</source>
+                <target>Alumnos:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Grups:</source>
+                <target>Grupos:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Resposta pregunta personalitzada :</source>
+                <target>Respuesta pregunta personalizada :</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Activitat:</source>
+                <target>Semana:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Nom Alumne:</source>
+                <target>Nombre alumno:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Import total inscripció</source>
+                <target>Importe total inscripción</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Import pendent inscripció</source>
+                <target>Importe pendiente inscripción</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Activitat</source>
+                <target>Actividad</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Pagament fraccionat</source>
+                <target>Pago fraccionado</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Data de naixement</source>
+                <target>Fecha nacimiento</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Amics</source>
+                <target>Amigos</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Té alguna discapacitat?</source>
+                <target>Tiene alguna discapacidad?</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Descripció discapacitat</source>
+                <target>Descripción discapacidad</target>
+            </trans-unit>
+			
+			<trans-unit>
+                <source>Té alguna al·lèrgia?</source>
+                <target>Tiene alergias?</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Descripció al·lèrgia</source>
+                <target>Descripción alergias</target>
+            </trans-unit>
+			<trans-unit>
+                <source>S'acull a una beca?</source>
+                <target>Beca?</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Alumne Kids&amp;Us</source>
+                <target>Alumno Kids&amp;Us</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Telèfon tutor/a</source>
+                <target>Teléfono tutor/a</target>
+            </trans-unit>
+			<trans-unit>
+                <source>DNI pare/mare/tutor</source>
+                <target>DNI padre/madre/tutor</target>
+            </trans-unit>
+			<trans-unit>
+                <source>E-mail pare/mare/tutor</source>
+                <target>E-mail padre/madre/tutor</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Inscripcions obertes</source>
+                <target>Inscripciones abiertas</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Vaccination:</source>
+                <target>Solicitar justificante vacunación:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>% de descompte alumne Kids&amp;Us:</source>
+                <target>% de descuento alumno Kids&amp;Us:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>€ de descompte alumne Kids%Us:</source>
+                <target>€ de descuento alumno Kids%Us:</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Mostrar "beca" en inscripció:</source>
+                <target>Ofrecer posibilidad de "beca":</target>
+            </trans-unit>
+			<trans-unit>
+                <source>Llistat d'estudiants</source>
+                <target>Listado alumnos</target>
             </trans-unit>
         </body>
     </file>
