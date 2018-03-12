@@ -57,9 +57,9 @@
                     </div>
                 </fieldset>
                 <ul class="sf_admin_actions">
-                    <input class="sf_admin_action_reset_filter" value="Netejar" onclick="document.location.href='<?php echo url_for('Inscription/students') ?>';" type="button">
+                    <input class="sf_admin_action_reset_filter" value="<?php echo __('reset') ?>" onclick="document.location.href='<?php echo url_for('Inscription/students') ?>';" type="button">
                     <li><?php echo submit_tag(__('filter'), 'class=sf_admin_action_filter') ?></li>
-                    <li><input value="Exportar" name="export" class="sf_admin_action_export" id="export" type="submit">
+                    <li><input value="<?php echo __('Exportar') ?>" name="export" class="sf_admin_action_export" id="export" type="submit">
                     </li>
                 </ul>
             </form>
