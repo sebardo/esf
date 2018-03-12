@@ -137,6 +137,15 @@ class Inscription extends BaseInscription
             $boundValues['dni'] = '%' . $search['dni'] . '%';
         }
 
+        $user = sfContext::getInstance()->getUser();
+        if (!$user->hasCredential('administrador')) {
+            $extraSearch .= " AND course.summer_fun_center_id IN (
+              SELECT    summer_fun_center_id 
+              FROM      summer_fun_center_has_profile 
+              WHERE     profile_id = :user_id
+            )";
+            $boundValues['user_id'] = $user->getProfile()->getId();
+        }
 
         # !!!IMPORTANT!!! Select clause mirrors that of Inscription::getAssignedToGrupo()
         $query = "

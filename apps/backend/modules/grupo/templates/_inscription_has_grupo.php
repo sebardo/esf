@@ -28,7 +28,7 @@ $response->addJavascript('/js/jquery-1.11.2.min.js');
     }
 </style>
 <fieldset>
-    <legend><?php echo __('Buscar:') ?></legend>
+    <legend><?php echo __('Cercar:') ?></legend>
     <div class="form-row ins-search">
         <label for="ins-filter-week"><?php echo __('Setmanes:') ?></label>
         <select id="ins-filter-week" autocomplete="off">
@@ -40,25 +40,25 @@ $response->addJavascript('/js/jquery-1.11.2.min.js');
     </div>
 
     <div class="form-row ins-search">
-        <label for="ins-filter-dni"><?php echo __('Padre DNI:') ?></label>
+        <label for="ins-filter-dni"><?php echo __('DNI del pares:') ?></label>
         <input type="text" id="ins-filter-dni" autocomplete="off">
     </div>
 
     <div class="form-row ins-search">
-        <label for="ins-filter-inscription"><?php echo __('Codi inscripció') ?></label>
+        <label for="ins-filter-inscription"><?php echo __('Codi inscripció:') ?></label>
         <input type="text" id="ins-filter-inscription" autocomplete="off">
     </div>
     <div class="form-row ins-search">
-        <label for="ins-filter-name"><?php echo __('Nom, cognoms') ?></label>
+        <label for="ins-filter-name"><?php echo __('Nom, cognoms:') ?></label>
         <input type="text" id="ins-filter-name" autocomplete="off">
     </div>
 </fieldset>
 
 <div>
     <div style="float: left">
-        <div style="font-weight: bold; padding-bottom: 0.5em">No assignat</div>
+        <div style="font-weight: bold; padding-bottom: 0.5em"><?php echo __('No assignat') ?></div>
         <select id="unassigned_inscriptions" multiple="multiple" class="sf_admin_multiple" size="10">
-            <option disabled>Busca a dalt</option>
+            <option disabled><?php echo __('Busca a dalt') ?></option>
         </select>
     </div>
     <div style="float: left">
@@ -70,7 +70,7 @@ $response->addJavascript('/js/jquery-1.11.2.min.js');
                alt="Previous" type="image">
     </div>
     <div style="float: left">
-        <div style="font-weight: bold; padding-bottom: 0.5em">Assignat</div>
+        <div style="font-weight: bold; padding-bottom: 0.5em"><?php echo __('Assignat') ?></div>
         <select name="inscriptions[]" id="assigned_inscriptions"
                 multiple="multiple" class="sf_admin_multiple-selected">
             <?php foreach (Inscription::getAssignedToGrupo($sf_params->get('id')) as $inscription): ?>
@@ -79,7 +79,7 @@ $response->addJavascript('/js/jquery-1.11.2.min.js');
         </select>
     </div>
     <br style="clear: both">
-    <p style="font-size: small;color:#bbb">Icona de bloqueig significa "Ja està assignat"</p>
+    <p style="font-size: small;color:#bbb"><?php echo __('Icona de bloqueig significa "Ja està assignat"') ?></p>
 </div>
 
 <script type="text/javascript">
@@ -110,7 +110,7 @@ $response->addJavascript('/js/jquery-1.11.2.min.js');
               if ($.isEmptyObject(response.results)) {
                 $('<option/>', {
                   value: '',
-                  text: 'No s\'han trobat resultats',
+                  text: "<?php echo __("No s'han trobat resultats")?>",
                   disabled: true
                 }).appendTo('#unassigned_inscriptions')
                 return

@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="19">
         <source>Did you know that your Internet Explorer is out of date?</source>
-        <target>Sabía que el seu Internet Explorer està desactualitzat?</target>
+        <target>¿Sabía que el seu Internet Explorer està desactualitzat?</target>
       </trans-unit>
       <trans-unit id="19">
         <source>To get the best possible experience using our website we recommend that you upgrade to a newer version or other web browser. A list of the most popular web browsers can be found below.</source>
@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="31">
         <source>Your modifications have been saved</source>
-        <target>Informació desada correctament</target>
+        <target>Les modificacions han estat desades</target>
       </trans-unit>
       <trans-unit id="31">
         <source>The form is not valid because it contains some errors.</source>
@@ -183,7 +183,7 @@
       </trans-unit>
       <trans-unit id="33">
         <source>yes</source>
-        <target>sí</target>
+        <target>si</target>
       </trans-unit>
       <trans-unit id="33">
         <source>no</source>
@@ -191,7 +191,7 @@
       </trans-unit>
       <trans-unit id="33">
         <source>yes or no</source>
-        <target>sí o no</target>
+        <target>si o no</target>
       </trans-unit>
       <trans-unit id="33">
         <source>remove file</source>
@@ -260,7 +260,7 @@
       <!-- ##### CREDENTIALS SCREEN ########## -->
       <trans-unit id="33">
         <source>Credentials Required</source>
-        <target>Permisos insuficients</target>
+        <target>Permisos Insuficients</target>
       </trans-unit>
       <trans-unit id="33">
         <source>This page is in a restricted area.</source>
@@ -335,7 +335,7 @@
       </trans-unit>
       <trans-unit id="">
         <source>sign in</source>
-        <target>Accedir</target>
+        <target>entrar</target>
       </trans-unit>
       <trans-unit id="33">
         <source>Groups:</source>
@@ -411,7 +411,7 @@
       </trans-unit>
       <trans-unit id="33">
         <source>Please, enter a username</source>
-        <target>Si us plau, escriu un nom d'usuari</target>
+        <target>Per favor, escrigui un nom d'usuari</target>
       </trans-unit>
       <trans-unit id="33">
         <source>Password is mandatory</source>
@@ -628,12 +628,12 @@
 
 <trans-unit id="41">
 <source>Castellà</source>
-<target>Español</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="42">
 <source>Anglès</source>
-<target>English</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="43">
@@ -863,7 +863,7 @@
 
 <trans-unit id="88">
 <source>Castellano</source>
-<target>Español</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="89">
@@ -1008,12 +1008,12 @@
 
 <trans-unit id="117">
 <source>Llistat Usuaris</source>
-<target>Llistat d'usuaris</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="118">
 <source>Editar Usuari</source>
-<target>Editar usuari</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="119">
@@ -1028,7 +1028,7 @@
 
 <trans-unit id="121">
 <source>Nom i Cognoms</source>
-<target>Nom i cognoms</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="122">
@@ -1038,7 +1038,7 @@
 
 <trans-unit id="123">
 <source>Permissos</source>
-<target>Permisos</target>
+<target/>
 </trans-unit>
 
 <trans-unit id="124">
@@ -1107,7 +1107,7 @@
 </trans-unit>
 
 <trans-unit id="3">
-<source>Editar curs</source>
+<source>Editar Curs</source>
 <target></target>
 </trans-unit>
 
@@ -1138,7 +1138,7 @@
 
 <trans-unit id="9">
 <source>Banner Home list</source>
-<target>Banner gran</target>
+<target>Banner Gran</target>
 </trans-unit>
 
 <trans-unit id="9">
@@ -1150,10 +1150,13 @@
 <source>Change password</source>
 <target>Clau d'accés</target>
 </trans-unit>
+
         <trans-unit id="10">
             <source>Student name</source>
             <target>Nom de l'estudiant</target>
         </trans-unit>
+
+
         <trans-unit id="197">
             <source>condicions_pdf</source>
             <target>Declaro haver llegit i acceptat les condicions generals i autoritzacions enviades en un document annex al full d’inscripció. Completar amb nom, data i signatura del tutor legal, mare o pare.</target>
@@ -1170,11 +1173,11 @@
 
         <trans-unit id="200">
             <source>pagament</source>
-            <target>*El pagament s'haurà d'efectuar en el transcurs de cinc dies hàbils indicant al concepte el nom de l'infant.</target>
+            <target>*El pagament s'haurà d'efectuar en el transcurs de cinc dies hàbils indicant al concepte el nom del nen/s.</target>
         </trans-unit>
         <trans-unit>
             <source>Seleccione columnas a exportar</source>
-            <target>Seleccioni les columnes a exportar</target>
+            <target>Seleccioni columnes a exportar</target>
         </trans-unit>
         <trans-unit>
             <source>Todas</source>
@@ -1186,11 +1189,11 @@
         </trans-unit>
         <trans-unit>
             <source>Debe introducir un nombre para el fichero</source>
-            <target>Has d'introduir un nom per al fitxer</target>
+            <target>Ha d'introduir un nom per al fitxer</target>
         </trans-unit>
         <trans-unit>
             <source>Debe seleccionar al menos una columna</source>
-            <target>Has de seleccionar almenys una columna</target>
+            <target>Ha de seleccionar almenys una columna</target>
         </trans-unit>
         <trans-unit>
             <source>Nombre fichero</source>
@@ -1230,19 +1233,19 @@
         </trans-unit>
         <trans-unit>
             <source>mark_as_paid</source>
-            <target>Marcar 100% pagat</target>
+            <target>Marcar pagat</target>
         </trans-unit>
         <trans-unit>
           <source>mark_half_as_paid</source>
-          <target>Marcar 50% pagat</target>
+          <target>Marcar la mitat pagat</target>
         </trans-unit>
         <trans-unit>
             <source>mark_as_paid_question</source>
-            <target>Segur que vols marcar la inscripció com pagada?</target>
+            <target>Segur que vol marcar la inscripció com pagada?</target>
         </trans-unit>
       <trans-unit>
         <source>mark_as_half_paid_question</source>
-        <target>Segur que vols marcar la inscripció com pagada al 50%?</target>
+        <target>Segur que vol marcar la inscripció com pagada al 50%?</target>
       </trans-unit>
         <trans-unit>
             <source>number_of_becas</source>
@@ -1291,7 +1294,7 @@
       </trans-unit>
       <trans-unit>
         <source>wrong_discounts</source>
-        <target>Error en el valor dels descomptes. Només està permès un tipus de descompte (% o €)</target>
+        <target>Error en valores de los descuentos. Sólo se permite un tipo de descuento (% o €)</target>
       </trans-unit>
       <trans-unit>
         <source>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</source>
@@ -1303,7 +1306,7 @@
       </trans-unit>
       <trans-unit>
         <source>decimal_help</source>
-        <target>Per a introduir un nombre decimal, cal utilizar el punt como a separador. Ex.: 2.5</target>
+        <target>Per a introduir un número decimal, cal utilizar el punto como a separador. Ex.: 2.5</target>
       </trans-unit>
       <trans-unit>
         <source>brothers_discount_help</source>
@@ -1371,7 +1374,7 @@
       </trans-unit>
       <trans-unit>
         <source>origin_kids_and_us_center_other:</source>
-        <target><![CDATA[Altra escola de procedència:]]></target>
+        <target><![CDATA[Altre escola de procedència:]]></target>
       </trans-unit>
       <trans-unit>
         <source><![CDATA[Centros Kids&Us]]></source>
@@ -1411,7 +1414,7 @@
       </trans-unit>
         <trans-unit>
             <source>registration.vaccination_file</source>
-            <target><![CDATA[Document de vacunació]]></target>
+            <target><![CDATA[Documento de vacunación]]></target>
         </trans-unit>
       <trans-unit>
         <source>registration.vaccinated</source>
@@ -1427,15 +1430,15 @@
       </trans-unit>
       <trans-unit>
         <source>confirm_message</source>
-        <target><![CDATA[Segur que ho vols eliminar?]]></target>
+        <target><![CDATA[¿Segur que ho voleu suprimir?]]></target>
       </trans-unit>
       <trans-unit>
         <source>confirm_message_2</source>
-        <target><![CDATA[Atenció! Estàs a punt d'eliminar de manera definitiva una setmana i totes les inscripcions associades a aquesta. Vols fer-ho?]]></target>
+        <target><![CDATA[Atenció! Aquestes apunt d'eliminar de manera definitiva una setmana i totes les inscripcions associades a aquesta. Vols fer així?]]></target>
       </trans-unit>
       <trans-unit>
         <source>confirm_message_3</source>
-        <target><![CDATA[Atenció! Estàs a punt d'eliminar de manera definitiva un servei. Vols fer-ho?]]></target>
+        <target><![CDATA[Atenció! Aquestes apunt d'eliminar de manera definitiva un servei. Vols fer així?]]></target>
       </trans-unit>
       <trans-unit>
         <source>address_tpv:</source>
@@ -1459,7 +1462,7 @@
       </trans-unit>
       <trans-unit>
         <source>DNI del pares:</source>
-        <target>DNI dels pares:</target>
+        <target>DNI del pares:</target>
       </trans-unit>
       <trans-unit>
         <source>Codi inscripció:</source>
@@ -1495,16 +1498,13 @@
       </trans-unit>
       <trans-unit>
         <source>Nom del mare:</source>
-        <target>Nom de la mare:</target>
+        <target>Nom del mare:</target>
       </trans-unit>
       <trans-unit>
         <source>inscripcions</source>
         <target>inscripcions</target>
       </trans-unit>
-      <trans-unit>
-        <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
-        <target>La setmana que vols eliminar conté inscripcions associades. Per poder eliminar-la, primer has d'assignar les inscripcions existents a una altra setmana.</target>
-      </trans-unit>
     </body>
   </file>
 </xliff>
+
