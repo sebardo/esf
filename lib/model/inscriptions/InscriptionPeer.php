@@ -130,7 +130,7 @@ class InscriptionPeer extends BaseInscriptionPeer
 
     public static function getStatesNames()
     {
-        return self::$stateNamesMap;
+        return array_map('__', self::$stateNamesMap);
     }
 
 
