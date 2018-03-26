@@ -4,9 +4,11 @@
 ?>
 <?php if ($sf_request->getError('delete')): ?>
 <div class="form-errors">
-  <h2><?php echo __('Could not delete the selected %name%', array('%name%' => 'Course')) ?></h2>
+  <h2><?php echo __('Could not delete the selected activity. Make sure it does not have any associated items.') ?></h2>
+ <?php /*
   <ul>
-    <li><?php echo __('Could not delete the selected Course. Make sure it does not have any associated items.') ?></li>
+    <li><?php echo __('Could not delete the selected activity. Make sure it does not have any associated items.') ?></li>
   </ul>
+*/?>
 </div>
 <?php endif; ?>
