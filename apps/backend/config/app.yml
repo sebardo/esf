@@ -42,6 +42,9 @@ all:
           'Inscripcions':
             url: /Inscription/list
             image: inscripcions.png
+          'Estudiants':
+            url: /Inscription/students
+            image: contact.png
           'Serveis':
             url:  /service/list
             image: world.png
@@ -101,6 +104,9 @@ all:
           'Comptabilitat':
             url: /accounting/list
             image: euro.png
+          'Estudiants':
+            url: /Inscription/students
+            image: contact.png
 
       Config:
         credentials:      [administrador]
