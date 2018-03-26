@@ -15,7 +15,7 @@
 
 <trans-unit id="3">
 <source>On?</source>
-<target>Dove?</target>
+<target>Scuole</target>
 </trans-unit>
 
 <trans-unit id="4">
@@ -50,17 +50,171 @@
 
 <trans-unit id="10">
 <source>Jocs i manualitats</source>
-<target>Giochi e attività manuali</target>
+<target>Giochi e mestieri</target>
 </trans-unit>
 
 <trans-unit id="11">
 <source>Dinar i excursions</source>
-<target>Pasti ed escursioni</target>
+<target>Cibo ed escursioni</target>
 </trans-unit>
 
 <trans-unit id="12">
 <source>LES MANUALITATS[1]The crafts</source>
 <target>LE ATTIVITÀ MANUALI[1]The crafts</target>
+</trans-unit>
+
+<trans-unit id="12">
+<source>game_title_1</source>
+<target>ATTIVITÀ MANUALI</target>
+</trans-unit>
+<trans-unit id="12_">
+<source>game_subtitle_1</source>
+<target>Handicrafts</target>
+</trans-unit>
+
+<trans-unit id="13">
+<source>game_description_1</source>
+<target>Attività artistiche ispirate al tema settimanale che ci permettono di interagire in inglese in un contesto creativo.</target>
+</trans-unit>
+<trans-unit id="14">
+<source>game_title_2</source>
+<target>GIOCHI ORGANIZZATI</target>
+</trans-unit>
+<trans-unit id="14_">
+<source>game_subtitle_2</source>
+<target>Structured play</target>
+</trans-unit> 
+<trans-unit id="15">
+<source>game_description_2_1</source>
+<target>Giochi organizzati e attività psicomotorie progettati per promuovere lo spirito di gruppo e favorire il lavoro di squadra e la condivisione. In questo contesto, i partecipanti imparano, in modo semplice, a seguire le istruzioni in inglese e assimilano le strutture grammaticali di base.</target>
+</trans-unit>
+<trans-unit id="16">
+<source>Que bé que ens ho hem passat jugant!</source>
+<target>Qué bien que lo hemos pasado jugando!</target>
+</trans-unit>
+<trans-unit id="17">
+<source>Aprenem que per gaudir en grup val que respectem unes normes bàsiques de convivència i que cal ser tolerants i comprensius amb els companys.</source>
+<target>Aprendemos que para disfrutar en grupo vale que respetamos unas normas básicas de convivencia y que hay que ser tolerantes y comprensivos con los compañeros</target>
+</trans-unit>            
+<trans-unit id="18">
+<source>game_title_3</source>
+<target>GIOCO LIBERO</target>
+</trans-unit>
+<trans-unit id="18_">
+<source>game_subtitle_3</source>
+<target>Free play</target>
+</trans-unit>
+<trans-unit id="19">
+<source>game_description_3</source>
+<target>Momenti di gioco libero per consentire ai bambini di dare spazio all’immaginazione e di relazionarsi tra di loro, sotto la supervisione degli insegnanti.</target>
+</trans-unit>
+<trans-unit id="20">
+<source>ENGLISH SUMMER FUN[1]ESTIU [2]</source>
+<target>SUMMER FUN[1]VERANO [2]</target>
+</trans-unit>
+<trans-unit id="21">
+<source>home_description_1</source>
+<target>I centri estivi Summer Fun sono il risultato del continuo impegno del Dipartimento Pedagogico Kids&amp;Us per far trascorrere ai vostri bambini tra i 3 e i 12 anni un’estate unica all’insegna del divertimento e dell’apprendimento.</target>
+</trans-unit>
+<trans-unit id="22">
+<source>home_description_2</source>
+<target>L'obiettivo principale dei Summer Fun è quello di permettere ai nostri studenti di tornare a casa ogni giorno con la sensazione di aver vissuto una giornata divertente e speciale, senza rendersi conto di averlo fatto praticando l’inglese. Kids&amp;Us ha 15 anni di esperienza nell'insegnamento dell'inglese ai bambini piccoli.</target>
+</trans-unit>
+<trans-unit id="23">
+<source>On seran?</source>
+<target>¿Dónde serán?</target>
+</trans-unit>
+<trans-unit id="24">
+<source>home_1_title</source>
+<target>Cos'è?</target>
+</trans-unit>
+<trans-unit id="25">
+<source>home_1_description</source>
+<target>È un centro estivo il cui obiettivo è quello di permettere ai bambini di vivere un’esperienza indimenticabile e di tornare a casa ogni giorno con la sensazione di aver vissuto una giornata divertente e speciale, senza rendersi conto di averlo fatto in inglese! Al Summer Fun offriamo molto di più di semplici lezioni di inglese! I centri estivi in città Summer Fun sono rivolti ai bambini dai 3 ai 12 anni, siano essi studenti di Kids&amp;Us o meno. Durante le Summer Fun organizziamo attività divertenti, esperienziali e arricchenti in cui la lingua veicolare è l'inglese.</target>
+</trans-unit>
+<trans-unit id="26">
+<source>home_2_title</source>
+<target>Com’è?</target>
+</trans-unit>
+<trans-unit id="27">
+<source>home_2_description</source>
+<target>Ogni settimana il team Kids&amp;Us accompagna i bambini in nuove e avvincenti avventure. La nostra missione è quella di coinvolgere gli alunni nelle attività proposte affinché si indentifichino pienamente con i personaggi dei racconti con il fine di consolidare le strutture linguistiche e il vocabolario in modo naturale senza essere consapevoli di quello che stanno facendo. Sembra magico, vero?</target>
+</trans-unit>
+<trans-unit id="28">
+<source>home_3_title</source>
+<target>Come lo facciamo?</target>
+</trans-unit>
+<trans-unit id="29">
+<source>home_3_description</source>
+<target>Il nostro team è formato da giovani, dinamici e motivati dal loro lavoro, con esperienza nella metodologia Kids&amp;Us e con una chiara vocazione all’insegnamento. Queste caratteristiche garantiscono a tutti i bambini un trattamento personalizzato e familiare che permette loro di partecipare attivamente e migliorare il loro livello di inglese in modo divertente e innovativo.</target>
+</trans-unit>
+<trans-unit id="30">
+<source>L'HORA DEL CONTE[1]Story Time</source>
+<target>L’ORA DEL RACCONTO[1]Story Time</target>
+</trans-unit>
+<trans-unit id="31">
+<source>story_description_1</source>
+<target>Ogni settimana, gli insegnanti raccontano una storia relativa a un tema specifico che consente di contestualizzare le strutture linguistiche apprese. In questo modo, i partecipanti hanno l'opportunità di mettersi nei panni dei vari personaggi e di vivere le loro avventure in prima persona. Inoltre, ogni venerdì i bambini più grandi raccontano la storia ai più piccoli.</target>
+</trans-unit>
+<trans-unit id="32">
+<source>ELS BALLS I LES CANÇONS[1]Songs and dances</source>
+<target>CANZONI E BALLI[1]Songs and dances</target>
+</trans-unit>
+<trans-unit id="33">
+<source>story_description_2</source>
+<target>Con il contributo di canzoni, movimenti e danze ispirati al tema della settimana, creiamo coreografie adatte all'età dei diversi gruppi.</target>
+</trans-unit>
+<trans-unit id="34">
+<source>story_title_3</source>
+<target>I VENERDI’...</target>
+</trans-unit>
+<trans-unit id="35">
+<source>¡PARTY TIME!</source>
+                <target/>
+</trans-unit>
+<trans-unit id="36">
+<source>story_description_3</source>
+<target>L'ultimo giorno della settimana apriamo le porte alle famiglie perché possano venire a vedere tutto ciò che i bambini hanno imparato nei giorni passati insieme a noi: balli, canti e le varie attività in inglese.</target>
+</trans-unit>
+<trans-unit id="37">
+<source>theater_title_1</source>
+<target>L’ORA DEL PASTO</target>
+</trans-unit>
+<trans-unit id="37_">
+<source>theater_subtitle_1</source>
+<target>Lunch activities</target>
+</trans-unit>
+<trans-unit id="38">
+<source>theater_description_1</source>
+<target>L'ora del pasto è una buona occasione per imparare il vocabolario e le espressioni linguistiche inerenti al cibo e alla tavola. Approfittiamo di questo momento, che si ripete ogni giorno, per imparare una serie di strutture in lingua inglese e parole nuove. I nostri insegnanti vestiranno ogni giorno il ruolo di attori. Ai bambini piace molto seguire le avventure dei personaggi interpretati dai loro insegnanti, riuscendo a seguire le storie messe in scena senza alcuna difficoltà.</target>
+</trans-unit>
+<trans-unit id="40">
+<source>theater_title_2</source>
+<target>TEATRO</target>
+</trans-unit>
+<trans-unit id="40_">
+<source>theater_subtitle_2</source>
+<target>Staff performance</target>
+</trans-unit>
+<trans-unit id="41">
+<source>theater_description_2</source>
+<target>Il team di insegnanti prepara e interpreta un piccolo gioco inerente al tema della settimana. Ogni giorno viene rappresentata una parte della storia finché non si raggiunge, a poco a poco, il finale. I bambini, anche se in qualità di spettatori, hanno un ruolo molto attivo durante la rappresentazione.</target>
+</trans-unit>
+<trans-unit id="42">
+<source>theater_title_3</source>
+<target>LE ESCURSIONI</target>
+</trans-unit>
+<trans-unit id="42_">
+<source>theater_subtitle_3</source>
+<target>Day trips</target>
+</trans-unit>
+<trans-unit id="43">
+<source>theater_description_3</source>
+<target>Ogni settimana facciamo una gita che ci permette di lasciare il "set" interno e di entrare in contatto con la nostra avventura "reale". Andiamo in spiaggia, allo zoo, in una fabbrica di yogurt, all'aeroporto...</target>
+</trans-unit>
+<trans-unit id="43_">
+<source>theater_description_3_1</source>
+<target>Sicuramente, quando saranno più grandi, tutte queste esperienze faranno parte dei loro ricordi estivi.</target>
 </trans-unit>
 
 <trans-unit id="13">
@@ -100,7 +254,7 @@
 
 <trans-unit id="20">
 <source>ENGLISH SUMMER FUN[1]ESTIU [2]</source>
-<target>ENGLISH SUMMER FUN[1]ESTATE [2]</target>
+<target>SUMMER FUN[1]ESTATE [2]</target>
 </trans-unit>
 
 <trans-unit id="21">
@@ -1015,12 +1169,12 @@
 <target>Ripetere e-mail:</target>
 </trans-unit>
 
-            <trans-unit id="205">
-                <source>Document per entregar a l'escola un cop signat.</source>
-                <target>Documento presentato alla scuola una volta firmato.</target>
-            </trans-unit>
+<trans-unit id="205">
+<source>Document per entregar a l'escola un cop signat.</source>
+<target>Documento presentato alla scuola una volta firmato.</target>
+</trans-unit>
             
-            <trans-unit id="206">
+<trans-unit id="206">
 				<source>Nom</source>
 				<target>Nombre</target>
 			</trans-unit>
@@ -1064,7 +1218,7 @@
 				<source>No</source>
 				<target>No</target>
 			</trans-unit>
-            <trans-unit id="217">
+<trans-unit id="217">
 				<source>Té alguna discapacitat</source>
 				<target>Avere una disabilità</target>
 			</trans-unit>
@@ -1192,10 +1346,10 @@
         		<source>Com fer-ho?</source>
         		<target>Come fare?</target>
     		</trans-unit>
-            <trans-unit>
-                <source>En breus instants rebreu un correu electrònic a l'adreça principal de contacte indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.</source>
-                <target>Riceverà in breve un’e-mail all’indirizzo principale di contatto indicato in cui troverà l’informazione</target>
-            </trans-unit>
+<trans-unit>
+<source>En breus instants rebreu un correu electrònic a l'adreça principal de contacte indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.</source>
+<target>Riceverà in breve un’e-mail all’indirizzo principale di contatto indicato in cui troverà l’informazione</target>
+</trans-unit>
 			<trans-unit>
 				<source>Desitjo fer el 50% del pagament ara i el següent pagament abans del %date%.</source>
 				<target>Desidero effettuare il pagamento del 50% dell’importo totale ora e il pagamento della somma restante prima del %date%.</target>
@@ -1229,13 +1383,13 @@
 				<target><![CDATA[Upload vaccination file]]></target>
 			</trans-unit>
 			<trans-unit>
-                <source>Servicios añadidos</source>
-                <target><![CDATA[Servicios añadidos]]></target>
-            </trans-unit>
-            <trans-unit>
-                <source>inscription.error</source>
-                <target><![CDATA[Por favor revise los campos resaltados en rojo.]]></target>
-            </trans-unit>
+<source>Servicios añadidos</source>
+<target><![CDATA[Servicios añadidos]]></target>
+</trans-unit>
+<trans-unit>
+<source>inscription.error</source>
+<target><![CDATA[Por favor revise los campos resaltados en rojo.]]></target>
+</trans-unit>
 		</body>
 	</file>
 </xliff>
