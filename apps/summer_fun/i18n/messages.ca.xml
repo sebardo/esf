@@ -336,7 +336,7 @@
             </trans-unit>
             <trans-unit id="78">
                 <source>Centre:</source>
-                <target>entre:</target>
+                <target>Centre:</target>
             </trans-unit>
             <trans-unit id="79">
                 <source>Servei d'acollida:</source>
@@ -404,7 +404,7 @@
             </trans-unit>
             <trans-unit id="95">
                 <source>Inscripció English Summer Fun</source>
-                <target>Inscripció English Summer Fun</target>
+                <target>Inscripció Summer Fun</target>
             </trans-unit>
             <trans-unit id="96">
                 <source>Dades de l'alumne</source>
@@ -496,11 +496,11 @@
             </trans-unit>
             <trans-unit id="119">
                 <source>Per a inscriure el vostre fill/a a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
-                <target>Per a inscriure el vostre fill/a a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</target>
+                <target>Per a inscriure el vostre fill/a a les activitats del Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</target>
             </trans-unit>
             <trans-unit id="120">
                 <source>Dades del centre on realitzarà l'English Summer Fun</source>
-                <target>Dades del centre on realitzarà l'English Summer Fun</target>
+                <target>Dades del centre on realitzarà el Summer Fun</target>
             </trans-unit>
             <trans-unit id="121">
                 <source>Modalitat de pagament</source>
@@ -508,7 +508,7 @@
             </trans-unit>
             <trans-unit id="122">
                 <source>Per fer efectiva la inscripció a l'English Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</source>
-                <target>Per fer efectiva la inscripció a l'English Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</target>
+                <target>Per fer efectiva la inscripció al Summer Fun, confirmeu si us plau la modalitat de pagament que preferiu.</target>
             </trans-unit>
             <trans-unit id="123">
                 <source>Indiqueu si voleu fraccionar el pagament:</source>
@@ -628,7 +628,7 @@
             </trans-unit>
             <trans-unit id="153">
                 <source>Gràcies per inscriure-us a les activitats de l'English Summer Fun.</source>
-                <target>Gràcies per inscriure-us a les activitats de l'English Summer Fun.</target>
+                <target>Gràcies per inscriure-us a les activitats del Summer Fun.</target>
             </trans-unit>
             <trans-unit id="154">
                 <source>En breus instants rebreu un correu electrònic a l'adreça principal de contacte indicada on trobareu la informació necessària per a formalitzar la reserva i realitzar el pagament.</source>
@@ -644,7 +644,7 @@
             </trans-unit>
             <trans-unit id="158">
                 <source>Gràcies per la vostra inscripció a les activitats de l'English Summer Fun.</source>
-                <target>Gràcies per la vostra inscripció a les activitats de l'English Summer Fun.</target>
+                <target>Gràcies per la vostra inscripció a les activitats del Summer Fun.</target>
             </trans-unit>
             <trans-unit id="159">
                 <source>Per formalitzar la reserva, cal que seguiu els passos següents:</source>
@@ -745,7 +745,7 @@
             </trans-unit>
             <trans-unit id="183">
                 <source>Per inscriure el vostre fill / la vostra filla a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</source>
-                <target>Per inscriure el vostre fill / la vostra filla a les activitats de l'English Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</target>
+                <target>Per inscriure el vostre fill / la vostra filla a les activitats del Summer Fun, seguiu les indicacions i ompliu les dades del formulari.</target>
             </trans-unit>
             <trans-unit id="184">
                 <source>Sí, pagar ara el 50%</source>
@@ -1073,7 +1073,7 @@
             </trans-unit>
             <trans-unit>
                 <source>Import total a pagar</source>
-                <target>Importe total a pagar</target>
+                <target>Import total a pagar</target>
             </trans-unit>
             <trans-unit>
                 <source>Alumne</source>
@@ -1169,7 +1169,7 @@
             </trans-unit>
              <trans-unit>
                 <source>Upload vaccination file</source>
-                <target><![CDATA[Upload vaccination file]]></target>
+                <target><![CDATA[Adjuntar comprovant]]></target>
             </trans-unit>
             <trans-unit>
                 <source>Servicios añadidos</source>
@@ -1177,7 +1177,7 @@
             </trans-unit>
             <trans-unit>
                 <source>inscription.error</source>
-                <target><![CDATA[Por favor revise los campos resaltados en rojo.]]></target>
+                <target><![CDATA[Si us plau, revisa els camps marcat en vermell.]]></target>
             </trans-unit>
         </body>
     </file>
