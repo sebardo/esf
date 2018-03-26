@@ -3193,8 +3193,8 @@
                 <target>iscrizioni</target>
             </trans-unit>
             <trans-unit>
-                <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
-                <target>Could not delete the selected Course. Make sure it does not have any associated items.</target>
+                <source>Could not delete the selected activity. Make sure it does not have any associated items.</source>
+                <target>Could not delete the selected activity. Make sure it does not have any associated items.</target>
             </trans-unit>
         </body>
     </file>
