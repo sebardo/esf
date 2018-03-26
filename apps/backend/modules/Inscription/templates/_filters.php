@@ -71,15 +71,16 @@
                 <div class="content">
 
                     <?php
-
+/*
                     $items = InscriptionPeer::getStatesNames();
 
                     for ($i = 0; $i < count($items); $i++) {
                         $items[$i] = __($items[$i]);
                     }
-
+*/
                     echo select_tag('filters[state]',
-                        options_for_select($items,
+                        //options_for_select($items,
+						options_for_select(InscriptionPeer::getStatesNames(),
                             isset($filters['state']) ? $filters['state'] : null,
                             'include_blank=true')
                     ) ?>
