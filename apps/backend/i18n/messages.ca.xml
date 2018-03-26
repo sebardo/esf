@@ -1502,8 +1502,20 @@
         <target>inscripcions</target>
       </trans-unit>
       <trans-unit>
-        <source>Could not delete the selected Course. Make sure it does not have any associated items.</source>
-        <target>La setmana que vols eliminar conté inscripcions associades. Per poder eliminar-la, primer has d'assignar les inscripcions existents a una altra setmana.</target>
+        <source>Could not delete the selected activity. Make sure it does not have any associated items.</source>
+        <target>La setmana que vols eliminar conté inscripcions associades. Per poder-la eliminar, primer has d'assignar les inscripcions existents a una altra setmana, o bé, eliminar-les.</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Vaccination:</source>
+        <target>Sol·licitar justificant vacunació:</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Estudiants</source>
+        <target>Infants</target>
+      </trans-unit>
+      <trans-unit>
+        <source>Llistat d'estudiants</source>
+        <target>Llistat d'infants</target>
       </trans-unit>
     </body>
   </file>
