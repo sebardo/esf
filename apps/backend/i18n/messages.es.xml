@@ -3048,7 +3048,7 @@
             </trans-unit>
             <trans-unit>
                 <source>discounts_help_2</source>
-                <target><![CDATA[Los descuentos son acumulables. Si por ejemmplo se activan todos los desceuntos con un 5%, una inscripción que cumpla con las tres condiciones obtendrá un descuento del 15%.]]></target>
+                <target><![CDATA[Los descuentos son acumulables. Si por ejemplo se activan todos los descuentos con un 5%, una inscripción que cumpla con las tres condiciones obtendrá un descuento del 15%.]]></target>
             </trans-unit>
             <trans-unit>
                 <source>discounts_help_3</source>
@@ -3400,6 +3400,14 @@
                 <source>Llistat d'estudiants</source>
                 <target>Listado alumnos</target>
             </trans-unit>
+            <trans-unit>
+                <source>No trobat</source>
+                <target>No encontrado</target>
+            </trans-unit>
+	        <trans-unit>
+	          <source>Could not delete the selected activity. Make sure it does not have any associated items.</source>
+	          <target>La semana que deseas eliminar contiene inscripciones asociadas. Para poder eliminarla, primero debes asignar las inscripciones existentes a otra semana, o bien, eliminarlas.</target>
+	        </trans-unit>
         </body>
     </file>
 </xliff>
