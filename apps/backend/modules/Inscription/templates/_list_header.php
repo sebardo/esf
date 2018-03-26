@@ -9,7 +9,7 @@
     	<li>
     		<a href="<?php echo url_for('Inscription/generateCarnets') ?>" target="_blank" class="abtn">
     		<img src="/sfAdminDashPlugin/images/icon_pdf.gif" title="Generar Pdf" alt="Generar Pdf">
-    		Generar Carnets
+    		<?php echo __('Generar Carnets') ?>
     		</a>
     	</li>
     	<li>
