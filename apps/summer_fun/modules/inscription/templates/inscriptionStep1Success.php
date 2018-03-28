@@ -325,6 +325,7 @@
                     <div class="full-height"><span class="label"><?php echo __('Altres aspectes a tenir en compte')?>:</span> <div><?php echo ${"studentComments$i"} ?></div></div>
                 <?php endif ?>
 
+				
                 <?php if ($center2->getIsVaccination()): ?>
                 <div class="full-height"><span class="label"><?php echo __('registration.trans237')?></span>
                     <?php if (${'studentIsVaccinated' . $i} == 1): ?>
@@ -334,8 +335,7 @@
                         <?php echo __('No'); ?>
                     <?php endif ?>
                 </div>
-		<?php endif ?>
-
+				<?php endif ?>
             </div>
             <div class="dades_alumne_dreta">
                 <h4><?php echo __('Setmanes de la inscripció') ?></h4>
@@ -343,6 +343,7 @@
                 <?php $z = 0; ?>
                 <?php foreach ($courses as $course): ?>
                     <?php if ($course->getIsRegistrationOpen()): $z++; ?>
+                    <?php if (isset(${'week'.$z.'alumne'.$i})){?>
                         <div><input type="checkbox" name="setmanaDisabled" disabled <?php echo isset(${'week'.$z.'alumne'.$i}) ? 'checked="true"' : '' ?>>
                         <?php echo __('Setmana ')?> <span class="lowcase"><?php echo $course->getWeek(); ?></span></div>
                         <p class="horari2"> <?php if ($course->getSchedule()) echo $course->getSchedule() ?></p>
@@ -362,7 +363,8 @@
                                 </div>
                             <?php endif ?>
                         <?php endforeach ?>
-                    <?php endif ?>
+                    <?php } ?>
+					<?php endif ?>
                 <?php endforeach ?>
             
             
