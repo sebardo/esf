@@ -39,7 +39,7 @@
         <?php if ($isNewName($item)): ?>
             <tr class="user-row">
                 <td colspan="99">
-                    <img src="/images/plus.png" class="expand-next-block">
+                    <div class="expand-next-block"></div>
                     <?php $student = htmlspecialchars(
                         $item['student_name']
                         . ' ' . $item['student_primer_apellido']
