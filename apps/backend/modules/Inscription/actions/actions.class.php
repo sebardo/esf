@@ -1185,11 +1185,11 @@ class InscriptionActions extends autoInscriptionActions
             $boundValues['professor_id'] = $filters['professor_id'];
         }
 
-        if (isset($filters['is_paid']) && ($filters['is_paid'] === '1' || $filters['is_paid'] === '0')) {
+        if (isset($filters['is_paid'])) {
             if ($filters['is_paid'] === '1') {
-                $query .= ' AND is_paid IS NOT NULL';
-            } elseif ($filters['is_paid'] === '“') {
-                $query .= ' AND is_paid IS NULL';
+                $query .= ' AND is_paid = 2';
+            } elseif ($filters['is_paid'] === '0') {
+                $query .= ' AND is_paid <> 2';
             }
         }
 

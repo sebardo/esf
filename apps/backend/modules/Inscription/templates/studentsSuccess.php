@@ -105,15 +105,6 @@
                     <div class="content">
                         <?php echo select_tag('filters[is_paid]', options_for_select(array(1 => __('yes'), 0 => __('no')), $e($filters, 'is_paid'), array('include_custom' => __("yes or no"),)), array()) ?>
                     </div>
-
-                    <label for="filters_inscription_date" style="width: 18em !important">
-                        <?php echo __('Data de naixement:') ?></label>
-                    <div class="content">
-                        <?php echo input_date_range_tag('filters[inscription_date]',
-                            isset($filters['inscription_date']) ? $filters['inscription_date'] : null,
-                            array('rich' => true, 'calendar_button_img' => '/sf/sf_admin/images/date.png'))
-                        ?>
-                    </div>
                 </div>
 
             </fieldset>
