@@ -671,11 +671,13 @@
         $('#submit_step1').click(function(){
 
 
-        <?php $sf_user->setAttribute('step2',1);?>
+            <?php $sf_user->setAttribute('step2',1);?>
 
 
-
-            $('#inscriptionStep1').submit();
+            if($('#center').val() != ''){
+                $('#inscriptionStep1').submit();
+            }
+            
 
         });
 

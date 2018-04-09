@@ -22,8 +22,7 @@ class inscriptionActions extends sfActions
         $this->origin_centers = KidsAndUsCenterPeer::doSelectAll();
         */
 
-	    if ($this->getRequest()->getMethod() != sfRequest::POST)
-        {
+        if ($this->getRequest()->getMethod() != sfRequest::POST){
             if (!isset($this->payment)) $this->payment=0;
             if (!isset($this->fraccionar)) $this->fraccionar=0;
 
@@ -35,8 +34,7 @@ class inscriptionActions extends sfActions
             $this->error=0;
 
             return sfView::SUCCESS;
-        }
-        else {
+        } else {
 
             $this->getDifferentsParents();
             
@@ -79,7 +77,7 @@ class inscriptionActions extends sfActions
                return sfView::SUCCESS;
             }
         }
-	}
+    }
 
 
     public function handleErrorInscriptionStep1()
@@ -152,7 +150,7 @@ class inscriptionActions extends sfActions
 
                 $this->{'amountServices' . $i} = 0;
 
-                $fields = array("studentName$i", "studentPrimerApellido$i", "studentBirthDate$i", "studentZip$i", "studentCity$i", "studentAddress$i", "schoolYear$i");//"studentPhoto$i", 
+                $fields = array("studentName$i", "studentPrimerApellido$i", "studentBirthDate$i", "studentZip$i", "studentCity$i", "studentAddress$i", "schoolYear$i", "studentPhoto$i");
 
                 if ($this->getUser()->getCulture() != 'fr') {
                     $fields[] = 'studentSegundoApellido' . $i;
