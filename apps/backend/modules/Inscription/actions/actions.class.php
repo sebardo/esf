@@ -1088,6 +1088,20 @@ class InscriptionActions extends autoInscriptionActions
     private function _filterStudents($filters)
     {
         $boundValues = array();
+        
+        $user = sfContext::getInstance()->getUser();
+        $profielId = $user->getGuardUser()->getProfile()->getId();
+                
+        $extraSearch = null;
+        if (!$user->hasCredential('administrador')) {
+            $extraSearch = " AND course.summer_fun_center_id IN (
+                      SELECT summer_fun_center_id 
+                      FROM summer_fun_center_has_profile WHERE profile_id = :user_id 
+                    )";
+            $boundValues["user_id"] = $profielId ;
+        }
+       
+        
         $query = "
             SELECT    -- calc -- 
                       inscription.*
@@ -1104,7 +1118,9 @@ class InscriptionActions extends autoInscriptionActions
             LEFT JOIN kids_and_us_center kauc ON kids_and_us_center_id = kauc.id 
             LEFT JOIN course ON course.id = student_course_inscription 
             
-            WHERE     1";
+            WHERE     1
+                    {$extraSearch} ";
+                    
 
         if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
 
@@ -1203,7 +1219,7 @@ class InscriptionActions extends autoInscriptionActions
             $query .= ' AND inscription.created_at <= :created_to';
             $boundValues['created_to'] = date('Y-m-d', strtotime($filters['inscription_date']['to']));
         }
-
+        
         return array($query, $boundValues);
     }
 }

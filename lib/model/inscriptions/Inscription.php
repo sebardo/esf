@@ -143,6 +143,7 @@ class Inscription extends BaseInscription
                       SELECT summer_fun_center_id 
                       FROM summer_fun_center_has_profile WHERE profile_id = :user_id 
                     )";
+            $boundValues['user_id'] = $user->getGuardUser()->getId();
         }
         
         # !!!IMPORTANT!!! Select clause mirrors that of Inscription::getAssignedToGrupo()
