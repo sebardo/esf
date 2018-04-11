@@ -24,7 +24,10 @@ class InscriptionActions extends autoInscriptionActions
 
     public function executeStudents()
     {
-        $filters = empty($_GET['filters']) ? array() : array_map('trim', $_GET['filters']);
+        // deep trim
+        $filters = empty($_GET['filters']) ? array() : array_map(function ($val) {
+            return is_array($val) ? array_map('trim', $val) : trim($val);
+        }, $_GET['filters']);
 
         list($query, $boundValues) = $this->_filterStudents($filters);
         $this->setVar(
@@ -1102,7 +1105,7 @@ class InscriptionActions extends autoInscriptionActions
             LEFT JOIN course ON course.id = student_course_inscription 
             
             WHERE     1";
-        
+
         if (empty($filters)) return array($query . " AND student_name <> ''", $boundValues);
 
         if (!empty($filters['name'])) {
@@ -1127,7 +1130,7 @@ class InscriptionActions extends autoInscriptionActions
             foreach ($parts as $k => $part) {
                 $innerSearch[] = "(
                         father_name LIKE :father_name{$k}
-                        OR father_primer_apellido LIKE  :father_name{$k} 
+                        OR father_primer_apellido LIKE :father_name{$k} 
                         OR father_primer_apellido LIKE :father_name{$k}
                     )";
                 $boundValues["father_name{$k}"] = '%' . $part . '%';
@@ -1143,7 +1146,7 @@ class InscriptionActions extends autoInscriptionActions
             foreach ($parts as $k => $part) {
                 $innerSearch[] = "(
                         mother_name LIKE :mother_name{$k}
-                        OR mother_primer_apellido LIKE  :mother_name{$k} 
+                        OR mother_primer_apellido LIKE :mother_name{$k} 
                         OR mother_primer_apellido LIKE :mother_name{$k}
                     )";
                 $boundValues["mother_name{$k}"] = '%' . $part . '%';
@@ -1151,6 +1154,10 @@ class InscriptionActions extends autoInscriptionActions
             if ($innerSearch) {
                 $query .= ' AND ' . implode(' AND ', $innerSearch);
             }
+        }
+        if (!empty($filters['parent_email'])) {
+            $query .= " AND ( mother_mail LIKE :parent_email OR father_mail LIKE :parent_email) ";
+            $boundValues["parent_email"] = '%' . $filters['parent_email'] . '%';
         }
 
         if (!empty($filters['dni'])) {
@@ -1161,6 +1168,40 @@ class InscriptionActions extends autoInscriptionActions
         if (!empty($filters['inscription_code'])) {
             $query .= ' AND inscription_code = :inscription_code';
             $boundValues['inscription_code'] = $filters['inscription_code'];
+        }
+
+        if (!empty($filters['course_id'])) {
+            $query .= ' AND course.id = :course_id';
+            $boundValues['course_id'] = $filters['course_id'];
+        }
+
+        if (!empty($filters['center_id'])) {
+            $query .= ' AND inscription.summer_fun_center_id = :center_id';
+            $boundValues['center_id'] = $filters['center_id'];
+        }
+
+        if (!empty($filters['professor_id'])) {
+            $query .= ' AND grupo_id IN (select grupo_id from grupo_has_profesor where profesor_id = :professor_id)';
+            $boundValues['professor_id'] = $filters['professor_id'];
+        }
+
+        if (isset($filters['is_paid'])) {
+            if ($filters['is_paid'] === '1') {
+                $query .= ' AND is_paid = 2';
+            } elseif ($filters['is_paid'] === '0') {
+                $query .= ' AND is_paid <> 2';
+            }
+        }
+
+        if (!empty($filters['inscription_date']['from'])) {
+            $query .= ' AND inscription.created_at >= :created_from';
+            $boundValues['created_from'] = date('Y-m-d', strtotime($filters['inscription_date']['from']));
+        }
+
+
+        if (!empty($filters['inscription_date']['to'])) {
+            $query .= ' AND inscription.created_at <= :created_to';
+            $boundValues['created_to'] = date('Y-m-d', strtotime($filters['inscription_date']['to']));
         }
 
         return array($query, $boundValues);
