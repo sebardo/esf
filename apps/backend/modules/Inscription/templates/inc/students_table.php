@@ -11,9 +11,9 @@
         <th style="width: 2em"><?php echo __('No.') ?></th>
         <th><?php echo __('Codi inscripció') ?></th>
         <th><?php echo __('Data inscripció') ?></th>
-        <th><?php echo __('Escola de procedència') ?></th>
-        <th><?php echo __('Centre Kids&Us de procedència') ?></th>
         <th><?php echo __('Curs Kids&Us realitzat') ?></th>
+        <th><?php echo __('Centre Kids&Us de procedència') ?></th>
+        <th><?php echo __('Escola de procedència') ?></th>
         <th><?php echo __('Setmana') ?></th>
         <th><?php echo __('Estat inscripció') ?></th>
     </tr>
@@ -60,9 +60,9 @@
                 <?php echo link_to($item['inscription_code'], 'Inscription/edit?id=' . $item['id']) ?>
             </td>
             <td><?php echo date('d/m/Y', strtotime($item['created_at'])) ?></td>
-            <td></td>
+            <td><?php echo $item['student_school_year'] ?></td>
             <td><?php echo $item['kids_centre_title'] ?></td>
-            <td><?php echo $item['school_year'] ?></td>
+            <td><?php echo $item['centre_title'] ?></td>
             <td>
                 <?php echo date('d/m/Y', strtotime($item['starts_at'])) ?> -
                 <?php echo date('d/m/Y', strtotime($item['ends_at'])) ?>
@@ -120,7 +120,7 @@
                     </a>
                 </div>
             <?php endif ?>
-            <?php echo $totalStudents ?> <?php echo __('estudiants') ?>
+            <?php echo $totalStudents ?> <?php echo __('infants') ?>
         </th>
     </tr>
     </tfoot>
